@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
+Microsoft Visual Studio Solution File, Format Version 11.0
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.project.CSharp", "UnityVS.project.CSharp.csproj", "{76619906-8354-7292-B899-6DA50ADAC95C}"
 EndProject
 Global

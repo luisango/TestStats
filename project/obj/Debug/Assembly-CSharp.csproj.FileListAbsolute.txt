@@ -1,0 +1,12 @@
+E:\PartyPartyGame\project\Temp\bin\Debug\Assembly-CSharp.dll
+E:\PartyPartyGame\project\Temp\bin\Debug\Assembly-CSharp.pdb
+E:\PartyPartyGame\project\Temp\bin\Debug\UnityEditor.dll
+E:\PartyPartyGame\project\Temp\bin\Debug\UnityEngine.dll
+E:\PartyPartyGame\project\Temp\bin\Debug\UnityEngine.UI.dll
+E:\PartyPartyGame\project\Temp\bin\Debug\Mono.Cecil.dll
+E:\PartyPartyGame\project\Temp\bin\Debug\nunit.framework.dll
+E:\PartyPartyGame\project\Temp\bin\Debug\Unity.DataContract.dll
+E:\PartyPartyGame\project\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+E:\PartyPartyGame\project\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+E:\PartyPartyGame\project\obj\Debug\Assembly-CSharp.dll
+E:\PartyPartyGame\project\obj\Debug\Assembly-CSharp.pdb

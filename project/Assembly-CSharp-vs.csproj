@@ -46,7 +46,14 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\PruebaDebug.cs" />
+     <Compile Include="Assets\Scripts\Manager\Game.cs" />
+     <Compile Include="Assets\Scripts\Manager\Minigame.cs" />
+     <Compile Include="Assets\Scripts\Manager\Player.cs" />
+     <Compile Include="Assets\Scripts\Player\Input.cs" />
+     <Compile Include="Assets\Scripts\Player\Stats.cs" />
+     <Compile Include="Assets\Scripts\Player\Wrapper.cs" />
+     <Compile Include="Assets\Scripts\Utils\Observer.cs" />
+     <Compile Include="Assets\Scripts\Utils\Singleton.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
  </Reference>

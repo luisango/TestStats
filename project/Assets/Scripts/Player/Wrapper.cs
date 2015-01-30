@@ -18,11 +18,25 @@ namespace Player
         /// </summary>
         private Stats m_stats;
 
+        /// <summary>
+        /// Puppet for this player
+        /// </summary>
+        private Puppet m_puppet;
+
+        /// <summary>
+        /// Nickname for this player
+        /// </summary>
+        private string m_nickname;
+
 
         public Wrapper()
         {
-            m_input = null;
-            m_stats = null;
+            m_input    = null;
+            m_stats    = null;
+            m_puppet   = null;
+
+            // Automated player name by counting current players
+            m_nickname = "Random player " + (Manager.Player.Instance.Get().Count + 1);
         }
 
         /// <summary>
@@ -59,6 +73,42 @@ namespace Player
         public Stats GetStats()
         {
             return m_stats;
+        }
+
+        /// <summary>
+        /// Set player's puppet
+        /// </summary>
+        /// <param name="puppet">Puppet</param>
+        public void SetPuppet(Puppet puppet)
+        {
+            m_puppet = puppet;
+        }
+
+        /// <summary>
+        /// Get player's puppet
+        /// </summary>
+        /// <returns>Player's puppet</returns>
+        public Puppet GetPuppet()
+        {
+            return m_puppet;
+        }
+
+        /// <summary>
+        /// Set player's nickname
+        /// </summary>
+        /// <param name="nickname">Nickname</param>
+        public void SetNickname(string nickname)
+        {
+            m_nickname = nickname;
+        }
+
+        /// <summary>
+        /// Get player's nickname
+        /// </summary>
+        /// <returns>Player's nickname</returns>
+        public string GetNickname()
+        {
+            return m_nickname;
         }
     }
 }

@@ -2,14 +2,14 @@
 using System.Collections;
 using System.Collections.Generic;
 // TODO: Change this when Minigame class is implemented
-using MinigameWrapper = Player.Wrapper;
+using MinigameWrapper = Minigame.Wrapper;
 
 namespace Manager
 {
     /// <summary>
     /// Manages all minigame related actions
     /// </summary>
-    public class Minigame : Utils.Singleton
+    public class Minigame : Utils.Singleton<Minigame>
     {
         /// <summary>
         /// List to store all active minigames
@@ -17,7 +17,7 @@ namespace Manager
         private List<MinigameWrapper> m_minigames;
 
 
-        protected Minigame()
+        public Minigame()
         {
             m_minigames = new List<MinigameWrapper>();
         }

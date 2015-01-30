@@ -6,32 +6,32 @@ namespace Utils
 {
     public abstract class IObservable
     {
-        private List<IObserver> m_observers;
+        private List<IListener> m_listeners;
 
         IObservable()
         {
-            m_observers = new List<IObserver>();
+            m_listeners = new List<IListener>();
         }
 
-        public void Notify()
+        public void Notify(int evt)
         {
-            foreach (IObserver o in m_observers)
-                o.OnNotification();
+            foreach (IListener o in m_listeners)
+                if (!o.OnEvent(evt)) break;
         }
 
-        public void Subscribe(IObserver observer)
+        public void Subscribe(IListener listener)
         {
-            m_observers.Add(observer);
+            m_listeners.Add(listener);
         }
 
-        public void Unsubscribe(IObserver observer)
+        public void Unsubscribe(IListener listener)
         {
-            m_observers.Remove(observer);
+            m_listeners.Remove(listener);
         }
     }
 
-    public abstract class IObserver
+    public abstract class IListener
     {
-        public abstract void OnNotification();
+        public abstract bool OnEvent(int evt);
     }
 }

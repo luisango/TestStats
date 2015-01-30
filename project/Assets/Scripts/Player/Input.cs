@@ -13,9 +13,9 @@ namespace Player
         /// </summary>
         public enum Key
         {
+            Action,
             Left,
             Right,
-            Action,
             Length
         };
 
@@ -25,7 +25,7 @@ namespace Player
         private string[] m_keys;
 
 
-        Input()
+        public Input()
         {
             m_keys = new string[3];
         }

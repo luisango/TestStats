@@ -3,20 +3,17 @@ using System.Collections;
 
 namespace Utils
 {
-	public class Singleton
-	{
-		private static Singleton m_instance = null;
+    public abstract class Singleton<T> where T : Singleton<T>, new()
+    {
+        private static T _instance = new T();
 
-		protected Singleton()
-		{
-		}
-	
-		public static Singleton Instance()
-		{
-			if (m_instance == null)
-				m_instance = new Singleton();
-			
-			return m_instance;
-		}
-	}
+
+        public static T Instance
+        {
+            get
+            {
+                return _instance;
+            }
+        }
+    }
 }

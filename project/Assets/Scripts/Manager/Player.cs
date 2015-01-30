@@ -8,14 +8,15 @@ namespace Manager
     /// <summary>
     /// Player Manager class stores all information related to all players
     /// </summary>
-	public class Player : Utils.Singleton
+	public class Player : Utils.Singleton<Player>
 	{
         /// <summary>
         /// List to store all players
         /// </summary>
 		private List<PlayerWrapper> m_players;
 
-		protected Player()
+
+        public Player()
 		{
             m_players = new List<PlayerWrapper>();
 		}

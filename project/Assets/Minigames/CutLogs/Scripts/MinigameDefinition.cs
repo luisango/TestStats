@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 namespace CutLogs
 {
     public class MinigameDefinition : Minigame.Definition

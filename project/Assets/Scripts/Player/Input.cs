@@ -1,15 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 namespace Player 
 {
     /// <summary>
-    /// Input class is an abstraction for multiple input keys
+    /// Input class is an abstraction for multiple input keys.
     /// </summary>
     public class Input
     {
         /// <summary>
-        /// Key descriptors
+        /// Key descriptors.
         /// </summary>
         public enum Key
         {
@@ -20,7 +21,7 @@ namespace Player
         };
 
         /// <summary>
-        /// String array to store each key
+        /// String array to store each key.
         /// </summary>
         private string[] m_keys;
 
@@ -31,7 +32,7 @@ namespace Player
         }
 
         /// <summary>
-        /// Sets all input keys at once
+        /// Sets all input keys at once.
         /// </summary>
         /// <param name="actionKey">Action key</param>
         /// <param name="leftKey">Left key</param>
@@ -44,7 +45,7 @@ namespace Player
         }
 
         /// <summary>
-        /// Set a specific key
+        /// Set a specific key.
         /// </summary>
         /// <param name="key">Key descriptor</param>
         /// <param name="value">Key name</param>
@@ -54,7 +55,7 @@ namespace Player
         }
 
         /// <summary>
-        /// Get a specific key
+        /// Get a specific key.
         /// </summary>
         /// <param name="key">Key descriptor</param>
         /// <returns>Key name related to key descriptor</returns>
@@ -64,7 +65,7 @@ namespace Player
         }
 
         /// <summary>
-        /// Detects if key is held down
+        /// Detects if key is held down.
         /// </summary>
         /// <param name="key">Key descriptor</param>
         /// <returns>If the key is held down or not</returns>
@@ -74,7 +75,7 @@ namespace Player
         }
 
         /// <summary>
-        /// Detects if key has just changed to up state
+        /// Detects if key has just changed to up state.
         /// </summary>
         /// <param name="key">Key descriptor</param>
         /// <returns>If key is just up or not</returns>
@@ -84,7 +85,7 @@ namespace Player
         }
 
         /// <summary>
-        /// Detects if key has just pressed
+        /// Detects if key has just pressed.
         /// </summary>
         /// <param name="key">Key descriptor</param>
         /// <returns>If key is just pressed or not</returns>

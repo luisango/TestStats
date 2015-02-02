@@ -6,7 +6,7 @@ using System;
 
 namespace Utils
 {
-    public class List
+    public static class List
     {
         public static void Shuffle<T>(this IList<T> list)
         {

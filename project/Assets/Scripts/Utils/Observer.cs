@@ -4,11 +4,11 @@ using System.Collections.Generic;
 
 namespace Utils
 {
-    public abstract class IObservable
+    public class Observable
     {
         private List<IListener> m_listeners;
 
-        IObservable()
+        public Observable()
         {
             m_listeners = new List<IListener>();
         }

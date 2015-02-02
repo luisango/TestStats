@@ -1,30 +1,31 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 namespace Player
 {
     /// <summary>
-    /// Player Wrapper class stores all information related to a player
+    /// Player Wrapper class stores all information related to a player.
     /// </summary>
     public class Wrapper
     {
         /// <summary>
-        /// Input mapping for this player
+        /// Input mapping for this player.
         /// </summary>
         private Input m_input;
 
         /// <summary>
-        /// Stats for this player
+        /// Stats for this player.
         /// </summary>
         private Stats m_stats;
 
         /// <summary>
-        /// Puppet for this player
+        /// Puppet for this player.
         /// </summary>
         private Puppet m_puppet;
 
         /// <summary>
-        /// Nickname for this player
+        /// Nickname for this player.
         /// </summary>
         private string m_nickname;
 
@@ -40,7 +41,7 @@ namespace Player
         }
 
         /// <summary>
-        /// Set player's input
+        /// Set player's input.
         /// </summary>
         /// <param name="input">Input</param>
         public void SetInput(Input input)
@@ -49,7 +50,7 @@ namespace Player
         }
 
         /// <summary>
-        /// Get player's input 
+        /// Get player's input.
         /// </summary>
         /// <returns>Player's input</returns>
         public Input GetInput()
@@ -58,7 +59,7 @@ namespace Player
         }
 
         /// <summary>
-        /// Set player's stats
+        /// Set player's stats.
         /// </summary>
         /// <param name="stats">Stats</param>
         public void SetStats(Stats stats)
@@ -67,7 +68,7 @@ namespace Player
         }
 
         /// <summary>
-        /// Get player's stats
+        /// Get player's stats.
         /// </summary>
         /// <returns>Player's stats</returns>
         public Stats GetStats()
@@ -76,7 +77,7 @@ namespace Player
         }
 
         /// <summary>
-        /// Set player's puppet
+        /// Set player's puppet.
         /// </summary>
         /// <param name="puppet">Puppet</param>
         public void SetPuppet(Puppet puppet)
@@ -85,7 +86,7 @@ namespace Player
         }
 
         /// <summary>
-        /// Get player's puppet
+        /// Get player's puppet.
         /// </summary>
         /// <returns>Player's puppet</returns>
         public Puppet GetPuppet()
@@ -94,7 +95,7 @@ namespace Player
         }
 
         /// <summary>
-        /// Set player's nickname
+        /// Set player's nickname.
         /// </summary>
         /// <param name="nickname">Nickname</param>
         public void SetNickname(string nickname)
@@ -103,7 +104,7 @@ namespace Player
         }
 
         /// <summary>
-        /// Get player's nickname
+        /// Get player's nickname.
         /// </summary>
         /// <returns>Player's nickname</returns>
         public string GetNickname()

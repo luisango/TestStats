@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using PlayerWrapper = Player.Wrapper;
 
+
 namespace Manager
 {
     /// <summary>
@@ -56,6 +57,11 @@ namespace Manager
             m_players.Remove(player);
 		}
 
+        /// <summary>
+        /// Get a Player.Wrapper at known index.
+        /// </summary>
+        /// <param name="playerIndex">Index of Player.Wrapper</param>
+        /// <returns>Player.Wrapper at current index</returns>
         public PlayerWrapper GetOne(int playerIndex)
         {
             return m_players[playerIndex];

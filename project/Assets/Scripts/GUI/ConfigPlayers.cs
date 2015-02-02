@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 
+
 public class ConfigPlayers : MonoBehaviour 
 {
     /// <summary>
@@ -160,9 +161,10 @@ public class ConfigPlayers : MonoBehaviour
         // Set current player nickname placeholder
         m_nicknameInputField.text = "";
 
-        // Configurate next player
-        Debug.Log("if (" + Manager.Game.Instance.GetNumberOfPlayers() + " == " + m_currentPlayersChoice + ")");
+        // Add current player to player manager
+        AddCurrentPlayerObjectToPlayerManager();
 
+        // Configurate next player
         if (m_currentPlayersChoice >= Manager.Game.Instance.GetNumberOfPlayers()) {
 
 
@@ -177,8 +179,6 @@ public class ConfigPlayers : MonoBehaviour
 
             //Manager.Scene.Instance.Load(Manager.Scene.Type.MainMenu);
         } else {
-            // Add current player to player manager
-            AddCurrentPlayerObjectToPlayerManager();
             m_currentPlayersChoice++;
         }
     }

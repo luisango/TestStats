@@ -1,15 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 namespace Player
 {
     /// <summary>
-    /// Stats class stores all kind of stats for a player
+    /// Stats class stores all kind of stats for a player.
     /// </summary>
     public class Stats
     {
         /// <summary>
-        /// Store simple points
+        /// Store simple points.
         /// </summary>
         private int m_points;
 
@@ -20,7 +21,7 @@ namespace Player
         }
 
         /// <summary>
-        /// Private constructor for add operator
+        /// Private constructor for add operator.
         /// </summary>
         /// <param name="points">Points to set by default</param>
         private Stats(int points)
@@ -29,7 +30,7 @@ namespace Player
         }
 
         /// <summary>
-        /// Adds points
+        /// Adds points.
         /// </summary>
         /// <param name="points">Points to add</param>
         public void AddPoints(int points)
@@ -38,7 +39,7 @@ namespace Player
         }
 
         /// <summary>
-        /// Substracts points
+        /// Substracts points.
         /// </summary>
         /// <param name="points">Points to substract</param>
         public void SubstractPoints(int points)
@@ -47,7 +48,7 @@ namespace Player
         }
 
         /// <summary>
-        /// Sets current points to value
+        /// Sets current points to value.
         /// </summary>
         /// <param name="points">Points to set </param>
         public void SetPoints(int points)
@@ -56,7 +57,7 @@ namespace Player
         }
 
         /// <summary>
-        /// Get points
+        /// Get points.
         /// </summary>
         /// <returns>Current points</returns>
         public int GetPoints()

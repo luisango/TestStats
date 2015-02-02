@@ -6,13 +6,23 @@ namespace Minigame
     /// <summary>
     /// Minigame Wrapper class stores all information related to a minigame
     /// </summary>
-    public class Wrapper : Utils.IListener
+    public abstract class Controller : MonoBehaviour, Utils.IListener
     {
         private bool m_isGameOver;
 
-        public Wrapper()
+        public Controller()
         {
             m_isGameOver = false;
+        }
+
+        void Start()
+        {
+            OnStart();
+        }
+
+        void Update()
+        {
+            OnUpdate();
         }
 
         protected bool IsGameOver()
@@ -20,7 +30,17 @@ namespace Minigame
             return m_isGameOver;
         }
 
-        public override bool OnEvent(int evt)
+        public void OnStart()
+        {
+
+        }
+
+        public void OnUpdate()
+        {
+
+        }
+
+        public bool OnEvent(int evt)
         {
             return true;
         }

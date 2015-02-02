@@ -30,8 +30,8 @@ namespace Utils
         }
     }
 
-    public abstract class IListener
+    public interface IListener
     {
-        public abstract bool OnEvent(int evt);
+        bool OnEvent(int evt);
     }
 }

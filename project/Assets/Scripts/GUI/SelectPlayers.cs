@@ -5,8 +5,8 @@ public class SelectPlayers : MonoBehaviour
 {
     public void OnClickPlayerButton(int numberOfPlayers)
     {
-        Debug.Log(numberOfPlayers +" players selected!!");
-
         Manager.Game.Instance.SetNumberOfPlayers(numberOfPlayers);
+
+        Manager.Scene.Instance.Load(Manager.Scene.Type.ConfigPlayers);
     }
 }

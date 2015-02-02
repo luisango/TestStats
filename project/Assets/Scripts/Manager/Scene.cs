@@ -12,6 +12,7 @@ namespace Manager
         public enum Type
         {
             MainMenu,
+            SelectMinigame,
             SelectPlayers,
             ConfigPlayers,
             Credits,
@@ -29,8 +30,13 @@ namespace Manager
         /// <param name="scene">Scene (definition) to load</param>
         public void Load(Type scene)
         {
-            Debug.Log("CHANGE SCENE TO: " + scene.ToString());
-            Application.LoadLevel(scene.ToString());
+            Load(scene.ToString());
+        }
+
+        public void Load(string name)
+        {
+            Debug.Log("CHANGE SCENE TO: " + name);
+            Application.LoadLevel(name);
         }
     }
 }

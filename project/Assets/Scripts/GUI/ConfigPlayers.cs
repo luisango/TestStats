@@ -16,25 +16,54 @@ public class ConfigPlayers : MonoBehaviour
     private Player.Wrapper m_currentPlayerObject;
 
     /// <summary>
-    /// Stores input key names for current player.
+    /// Stores UI buttons to set input keys.
     /// </summary>
-    private string[] m_inputKeyNames;
+    public Text[] m_inputKeyButtons;
+
+    /// <summary>
+    /// Stores if input is being configurated or not.
+    /// </summary>
+    private bool m_isInputBeingConfigurated;
+
+    /// <summary>
+    /// Stores what key is being configurated.
+    /// </summary>
+    private int m_inputKeyIsBeingConfigurated;
 
     /// <summary>
     /// Handle/Pointer for the nickname GUI input field.
     /// </summary>
     public InputField m_nicknameInputField;
 
+    /// <summary>
+    /// Handle/Pointer for the phase title GUI text.
+    /// </summary>
+    public Text m_phaseTitleText;
+
+
     public void Start()
     {
-        m_currentPlayersChoice = -1;
-        m_currentPlayerObject  = null;
-        m_inputKeyNames        = new string[3];
+        m_currentPlayersChoice        = Manager.Player.Instance.Get().Count;
+        m_currentPlayerObject         = null;
+        m_inputKeyIsBeingConfigurated = -1;
     }
 
     public void Update()
     {
         // TODO: Interpolation between configuration screens
+
+        if (m_isInputBeingConfigurated) {
+            foreach (char c in Input.inputString)
+            {
+                if (c != "\b"[0] && c != "\n"[0] && c != "\r"[0] && m_inputKeyIsBeingConfigurated > -1) {
+                    m_inputKeyButtons[m_inputKeyIsBeingConfigurated].text = c.ToString();
+                }
+
+                m_inputKeyIsBeingConfigurated = -1;
+                m_isInputBeingConfigurated = false;
+                break;
+            }
+        }
     }
 
     /// <summary>
@@ -61,7 +90,6 @@ public class ConfigPlayers : MonoBehaviour
 
         // Reset all player configs for new player
         m_currentPlayerObject = null;
-        m_inputKeyNames       = new string[3];
 
         // Add new player to configurate, even if there are no more players
         GetCurrentPlayerObject();
@@ -89,7 +117,8 @@ public class ConfigPlayers : MonoBehaviour
     /// <param name="keyIdentifier">Key descriptor identifier</param>
     public void OnClickInputKeyButton(int keyIdentifier)
     {
-        // TODO: Complete with key press detection
+        m_inputKeyIsBeingConfigurated = keyIdentifier;
+        m_isInputBeingConfigurated = true;
     }
 
     /// <summary>
@@ -102,9 +131,9 @@ public class ConfigPlayers : MonoBehaviour
         Player.Input input = new Player.Input();
 
         // Set input keys
-        input.SetKey(Player.Input.Key.Action, m_inputKeyNames[0]);
-        input.SetKey(Player.Input.Key.Left, m_inputKeyNames[1]);
-        input.SetKey(Player.Input.Key.Right, m_inputKeyNames[2]);
+        input.SetKey(Player.Input.Key.Left, m_inputKeyButtons[0].text);
+        input.SetKey(Player.Input.Key.Right, m_inputKeyButtons[1].text);
+        input.SetKey(Player.Input.Key.Action, m_inputKeyButtons[2].text);
 
         // Add input to current player
         GetCurrentPlayerObject().SetInput(input);
@@ -128,13 +157,29 @@ public class ConfigPlayers : MonoBehaviour
     /// </summary>
     public void OnClickFinishButton()
     {
-        // Add current player to player manager
-        AddCurrentPlayerObjectToPlayerManager();
-
         // Set current player nickname placeholder
-        m_nicknameInputField.text = GetCurrentPlayerObject().GetNickname();
+        m_nicknameInputField.text = "";
 
         // Configurate next player
-        m_currentPlayersChoice++;
+        Debug.Log("if (" + Manager.Game.Instance.GetNumberOfPlayers() + " == " + m_currentPlayersChoice + ")");
+
+        if (m_currentPlayersChoice >= Manager.Game.Instance.GetNumberOfPlayers()) {
+
+
+            /////////////////////////
+
+            CutLogs.MinigameDefinition cutLogs = new CutLogs.MinigameDefinition();
+
+            Manager.Minigame.Instance.Add(cutLogs);
+            Manager.Minigame.Instance.Load(cutLogs);
+
+            /////////////////////////
+
+            //Manager.Scene.Instance.Load(Manager.Scene.Type.MainMenu);
+        } else {
+            // Add current player to player manager
+            AddCurrentPlayerObjectToPlayerManager();
+            m_currentPlayersChoice++;
+        }
     }
 }

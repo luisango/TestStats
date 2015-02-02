@@ -14,7 +14,7 @@ namespace Manager
 
         public Game()
         {
-            m_numberOfPlayers = 0;
+            m_numberOfPlayers = -1;
         }
 
         /// <summary>
@@ -24,6 +24,7 @@ namespace Manager
         public void SetNumberOfPlayers(int numberOfPlayers)
         {
             m_numberOfPlayers = numberOfPlayers;
+            Debug.Log("SETTED ->>>>>>>>>>>>>     " + numberOfPlayers + "    <<<<<<<<<<<<<- PLAYERS");
         }
 
         /// <summary>

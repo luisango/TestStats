@@ -37,6 +37,14 @@ namespace Manager
         public void Add(PlayerWrapper player)
 		{
             m_players.Add(player);
+
+            Debug.Log(
+                player.GetNickname() + " :: " +
+                player.GetInput().GetKey(global::Player.Input.Key.Left) + " - " +
+                player.GetInput().GetKey(global::Player.Input.Key.Right) + " - " +
+                player.GetInput().GetKey(global::Player.Input.Key.Action) + " :: " +
+                player.GetPuppet().GetIdentifier().ToString()
+                );
 		}
 
         /// <summary>
@@ -47,5 +55,10 @@ namespace Manager
 		{
             m_players.Remove(player);
 		}
+
+        public PlayerWrapper GetOne(int playerIndex)
+        {
+            return m_players[playerIndex];
+        }
 	}
 }

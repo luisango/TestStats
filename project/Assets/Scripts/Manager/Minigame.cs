@@ -13,6 +13,12 @@ namespace Manager
     /// </summary>
     public class Minigame : Utils.Singleton<Minigame>
     {
+        public enum Type
+        {
+            NONE,
+            CutLogs
+        };
+
         /// <summary>
         /// List to store all active minigames.
         /// </summary>

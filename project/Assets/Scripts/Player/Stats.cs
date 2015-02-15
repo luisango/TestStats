@@ -14,19 +14,37 @@ namespace Player
         /// </summary>
         private int m_points;
 
+        /// <summary>
+        /// Store in which box the player is.
+        /// </summary>
+        private int m_position;
+
 
         public Stats()
         {
-            m_points = 0;
+            m_points   = 0;
+            m_position = 0;
         }
 
         /// <summary>
         /// Private constructor for add operator.
         /// </summary>
         /// <param name="points">Points to set by default</param>
-        private Stats(int points)
+        /// <param name="position">Position to set by default</param>
+        private Stats(int points, int position)
         {
-            m_points = points;
+            m_points   = points;
+            m_position = position;
+        }
+
+        private void SetPosition(int position)
+        {
+            m_position = position;
+        }
+
+        public int GetPosition()
+        {
+            return m_position;
         }
 
         /// <summary>
@@ -67,7 +85,7 @@ namespace Player
 
         public static Stats operator +(Stats s1, Stats s2)
         {
-            return new Stats(s1.m_points + s2.m_points);
+            return new Stats(s1.m_points + s2.m_points, s1.m_position + s2.m_position);
         }
 
         public override string ToString()

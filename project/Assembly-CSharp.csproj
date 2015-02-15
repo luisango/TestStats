@@ -49,10 +49,17 @@
      <Compile Include="Assets\Minigames\CutLogs\Scripts\MinigameController.cs" />
      <Compile Include="Assets\Minigames\CutLogs\Scripts\MinigameDefinition.cs" />
      <Compile Include="Assets\Minigames\CutLogs\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\Board\Box.cs" />
+     <Compile Include="Assets\Scripts\Board\MinigameBox.cs" />
+     <Compile Include="Assets\Scripts\Board\PointBox.cs" />
+     <Compile Include="Assets\Scripts\Board\RandomBox.cs" />
+     <Compile Include="Assets\Scripts\Board\Respawner.cs" />
+     <Compile Include="Assets\Scripts\Board\Roulette.cs" />
      <Compile Include="Assets\Scripts\GUI\ConfigPlayers.cs" />
      <Compile Include="Assets\Scripts\GUI\MainMenu.cs" />
      <Compile Include="Assets\Scripts\GUI\Results.cs" />
      <Compile Include="Assets\Scripts\GUI\SelectPlayers.cs" />
+     <Compile Include="Assets\Scripts\Manager\Board.cs" />
      <Compile Include="Assets\Scripts\Manager\Game.cs" />
      <Compile Include="Assets\Scripts\Manager\Minigame.cs" />
      <Compile Include="Assets\Scripts\Manager\Player.cs" />
@@ -62,6 +69,7 @@
      <Compile Include="Assets\Scripts\Player\Controller.cs" />
      <Compile Include="Assets\Scripts\Player\Input.cs" />
      <Compile Include="Assets\Scripts\Player\Puppet.cs" />
+     <Compile Include="Assets\Scripts\Player\PuppetController.cs" />
      <Compile Include="Assets\Scripts\Player\Stats.cs" />
      <Compile Include="Assets\Scripts\Player\Wrapper.cs" />
      <Compile Include="Assets\Scripts\Utils\Observer.cs" />

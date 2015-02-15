@@ -170,14 +170,14 @@ public class ConfigPlayers : MonoBehaviour
 
             /////////////////////////
 
-            CutLogs.MinigameDefinition cutLogs = new CutLogs.MinigameDefinition();
-
-            Manager.Minigame.Instance.Add(cutLogs);
-            Manager.Minigame.Instance.Load(cutLogs);
+            // CutLogs.MinigameDefinition cutLogs = new CutLogs.MinigameDefinition();
+            // 
+            // Manager.Minigame.Instance.Add(cutLogs);
+            // Manager.Minigame.Instance.Load(cutLogs);
 
             /////////////////////////
 
-            //Manager.Scene.Instance.Load(Manager.Scene.Type.MainMenu);
+            Manager.Scene.Instance.Load(Manager.Scene.Type.Board);
         } else {
             m_currentPlayersChoice++;
         }

@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-
 namespace Player
 {
     /// <summary>
     /// Player Wrapper class stores all information related to a player.
     /// </summary>
+    [System.Serializable]
     public class Wrapper
     {
         /// <summary>
@@ -27,13 +27,13 @@ namespace Player
         /// <summary>
         /// Nickname for this player.
         /// </summary>
-        private string m_nickname;
+        public string m_nickname;
 
 
         public Wrapper()
         {
             m_input    = null;
-            m_stats    = null;
+            m_stats    = new Stats();
             m_puppet   = null;
 
             // Automated player name by counting current players
@@ -110,6 +110,51 @@ namespace Player
         public string GetNickname()
         {
             return m_nickname;
+        }
+
+        public override bool Equals(System.Object obj)
+        {
+            // If parameter is null return false.
+            if (obj == null)
+            {
+                return false;
+            }
+
+            // If parameter cannot be cast to Point return false.
+            Wrapper p = obj as Wrapper;
+            if ((System.Object)p == null)
+            {
+                return false;
+            }
+
+            // Return true if the fields match:
+            return m_nickname == p.m_nickname;
+        }
+
+        public bool Equals(Wrapper p)
+        {
+            // If parameter is null return false:
+            if ((object)p == null)
+            {
+                return false;
+            }
+
+            // Return true if the fields match:
+            return m_nickname == p.m_nickname;
+        }
+
+        public override int GetHashCode()
+        {
+            int hash = 0;
+            int factor = 1;
+            foreach (char c in m_nickname)
+            {
+                hash += (((int) c) + factor) * factor;
+
+                factor++;
+            }
+
+            return hash;
         }
     }
 }

@@ -5,11 +5,11 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{7CA597AC-799E-2D81-E8A0-0EA9A568434E}</ProjectGuid>
+	<ProjectGuid>{4BF79580-BD40-8719-DEC4-3FC42411B4D7}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
-	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<AssemblyName>Assembly-UnityScript</AssemblyName>
 	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
 	<FileAlignment>512</FileAlignment>
 	<BaseDirectory>Assets</BaseDirectory>
@@ -46,34 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Minigames\CutLogs\Scripts\MinigameController.cs" />
-     <Compile Include="Assets\Minigames\CutLogs\Scripts\MinigameDefinition.cs" />
-     <Compile Include="Assets\Minigames\CutLogs\Scripts\PlayerController.cs" />
-     <Compile Include="Assets\Scripts\Board\Box.cs" />
-     <Compile Include="Assets\Scripts\Board\MinigameBox.cs" />
-     <Compile Include="Assets\Scripts\Board\PointBox.cs" />
-     <Compile Include="Assets\Scripts\Board\RandomBox.cs" />
-     <Compile Include="Assets\Scripts\Board\Respawner.cs" />
-     <Compile Include="Assets\Scripts\GUI\ConfigPlayers.cs" />
-     <Compile Include="Assets\Scripts\GUI\MainMenu.cs" />
-     <Compile Include="Assets\Scripts\GUI\Results.cs" />
-     <Compile Include="Assets\Scripts\GUI\SelectPlayers.cs" />
-     <Compile Include="Assets\Scripts\Manager\Board.cs" />
-     <Compile Include="Assets\Scripts\Manager\Game.cs" />
-     <Compile Include="Assets\Scripts\Manager\Minigame.cs" />
-     <Compile Include="Assets\Scripts\Manager\Player.cs" />
-     <Compile Include="Assets\Scripts\Manager\Scene.cs" />
-     <Compile Include="Assets\Scripts\Minigame\Controller.cs" />
-     <Compile Include="Assets\Scripts\Minigame\Definition.cs" />
-     <Compile Include="Assets\Scripts\Player\Controller.cs" />
-     <Compile Include="Assets\Scripts\Player\Input.cs" />
-     <Compile Include="Assets\Scripts\Player\Puppet.cs" />
-     <Compile Include="Assets\Scripts\Player\PuppetController.cs" />
-     <Compile Include="Assets\Scripts\Player\Stats.cs" />
-     <Compile Include="Assets\Scripts\Player\Wrapper.cs" />
-     <Compile Include="Assets\Scripts\Utils\Observer.cs" />
-     <Compile Include="Assets\Scripts\Utils\Shuffle.cs" />
-     <Compile Include="Assets\Scripts\Utils\Singleton.cs" />
+     <Compile Include="Assets\Scripts\Board\Roulette.js" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
  </Reference>

@@ -71,7 +71,7 @@ namespace Minigame
         }
 
         /// <summary>
-        /// Checks or sets if is game over.
+        /// Checks or sets if game is over.
         /// </summary>
         /// <param name="set">If true, sets game over</param>
         /// <returns>If is game over or not</returns>
@@ -108,7 +108,7 @@ namespace Minigame
         {
             switch (evt)
             {
-                case (int)Events.GameOver:
+                case (int) Events.GameOver:
                     IsGameOver(true);
                     break;
 

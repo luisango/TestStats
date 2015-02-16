@@ -6,11 +6,27 @@ namespace CutLogs
 {
     public class MinigameController : Minigame.Controller
     {
+        public enum CustomEvents
+        {
+            RockTime,
+            BubbleTime
+        };
+
         public override bool OnEvent(int evt)
         {
-            return base.OnEvent(evt);
+            bool baseEvt = base.OnEvent(evt);
 
-            // Custom event handling...
+            switch (evt)
+            {
+                case (int)CustomEvents.RockTime:
+                    // ROCK TIME!
+                    break;
+
+                default:
+                    break;
+            }
+
+            return true && baseEvt;
         }
 
         protected override void InstantiatePlayers()

@@ -56,13 +56,22 @@ namespace Player
         {
             // If the game is over, then notify GameOver to Minigame.Controller
             if (GameOverCheck())
-                m_eventHandler.Notify(0);
+                SendEvent((int)Minigame.Controller.Events.GameOver);
 
             // Process input commands
             ProcessInput();
 
             // Custom OnUpdate() method
             OnUpdate();
+        }
+
+        /// <summary>
+        /// Send an event to minigame controller
+        /// </summary>
+        /// <param name="evt">Event</param>
+        protected void SendEvent(int evt)
+        {
+            m_eventHandler.Notify(evt);
         }
 
         /// <summary>

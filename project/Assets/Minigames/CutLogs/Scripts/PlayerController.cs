@@ -7,12 +7,17 @@ namespace CutLogs
     public class PlayerController : Player.Controller
     {
         public ParticleSystem m_hitParticle;
-
+        
 
 	    protected override void OnStart()
         {
             this.transform.FindChild("Name").GetComponent<TextMesh>().text = GetPlayer().GetNickname();
 	    }
+        protected override void OnUpdate()
+        {
+            // if (Time.realtimeSinceStartup < 50)
+            //    SendEvent((int)CutLogs.MinigameController.CustomEvents.RockTime);
+        }
 
         protected override Player.Wrapper SetPlayer()
         {

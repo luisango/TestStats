@@ -15,8 +15,8 @@ namespace Utils
 
         public void Notify(int evt)
         {
-            foreach (IListener o in m_listeners)
-                if (!o.OnEvent(evt)) break;
+            foreach (IListener l in m_listeners)
+                if (!l.OnEvent(evt)) break;
         }
 
         public void Subscribe(IListener listener)

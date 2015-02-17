@@ -54,7 +54,10 @@
      <Compile Include="Assets\Scripts\Board\PointBox.cs" />
      <Compile Include="Assets\Scripts\Board\RandomBox.cs" />
      <Compile Include="Assets\Scripts\Board\Respawner.cs" />
+<<<<<<< HEAD
      <Compile Include="Assets\Scripts\Board\Roulette.cs" />
+=======
+>>>>>>> 9e8406c3dcb7a3fce2d9a2991a23f63250176e04
      <Compile Include="Assets\Scripts\GUI\ConfigPlayers.cs" />
      <Compile Include="Assets\Scripts\GUI\MainMenu.cs" />
      <Compile Include="Assets\Scripts\GUI\Results.cs" />

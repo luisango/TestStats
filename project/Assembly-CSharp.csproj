@@ -49,15 +49,15 @@
      <Compile Include="Assets\Minigames\CutLogs\Scripts\MinigameController.cs" />
      <Compile Include="Assets\Minigames\CutLogs\Scripts\MinigameDefinition.cs" />
      <Compile Include="Assets\Minigames\CutLogs\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Minigames\SweetRain\Scripts\MinigameController.cs" />
+     <Compile Include="Assets\Minigames\SweetRain\Scripts\MinigameDefinition.cs" />
+     <Compile Include="Assets\Minigames\SweetRain\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Board\Box.cs" />
      <Compile Include="Assets\Scripts\Board\MinigameBox.cs" />
      <Compile Include="Assets\Scripts\Board\PointBox.cs" />
      <Compile Include="Assets\Scripts\Board\RandomBox.cs" />
      <Compile Include="Assets\Scripts\Board\Respawner.cs" />
-<<<<<<< HEAD
      <Compile Include="Assets\Scripts\Board\Roulette.cs" />
-=======
->>>>>>> 9e8406c3dcb7a3fce2d9a2991a23f63250176e04
      <Compile Include="Assets\Scripts\GUI\ConfigPlayers.cs" />
      <Compile Include="Assets\Scripts\GUI\MainMenu.cs" />
      <Compile Include="Assets\Scripts\GUI\Results.cs" />

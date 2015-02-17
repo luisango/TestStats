@@ -49,6 +49,9 @@
      <Compile Include="Assets\Minigames\CutLogs\Scripts\MinigameController.cs" />
      <Compile Include="Assets\Minigames\CutLogs\Scripts\MinigameDefinition.cs" />
      <Compile Include="Assets\Minigames\CutLogs\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Minigames\SweetRain\Scripts\MinigameController.cs" />
+     <Compile Include="Assets\Minigames\SweetRain\Scripts\MinigameDefinition.cs" />
+     <Compile Include="Assets\Minigames\SweetRain\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Board\Box.cs" />
      <Compile Include="Assets\Scripts\Board\MinigameBox.cs" />
      <Compile Include="Assets\Scripts\Board\PointBox.cs" />

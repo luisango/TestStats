@@ -1,16 +1,29 @@
 # Unity generated
-[Tt]emp/
-[Oo]bj/
-[Bb]uild
-[Ll]ibrary/
-sysinfo.txt
+project/[Tt]emp/
+project/[Oo]bj/
+project/[Bb]uild
+project/[Ll]ibrary/
+project/sysinfo.txt
+
+project/Assembly-CSharp-vs.csproj
+project/Assembly-CSharp.csproj
+project/Assembly-UnityScript-vs.unityproj
+project/Assembly-UnityScript.unityproj
+project/UnityVS.project.CSharp.csproj
+project/UnityVS.project.sln
+project/UnityVS.project.suo
+project/UnityVS.project.v12.suo
+project/project-csharp.sln
+project/project.sln
+project/project.userprefs
+project/UpgradeLog.htm
 
 # Visual Studio / MonoDevelop generated
 *.sdf
 *.opensdf
 *.suo
- 
-# OS generated 
+
+# OS generated
 .DS_Store*
 ._*
 .Spotlight-V100

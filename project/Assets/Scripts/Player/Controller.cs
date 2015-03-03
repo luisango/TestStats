@@ -87,7 +87,7 @@ namespace Player
         /// Adds score to local score.
         /// </summary>
         /// <param name="score">Score to add</param>
-        protected void AddScore(int score)
+        public void AddScore(int score)
         {
             m_score += score;
         }
@@ -96,7 +96,7 @@ namespace Player
         /// Substract score to local score.
         /// </summary>
         /// <param name="score">Score to substract</param>
-        protected void SubstractScore(int score)
+        public void SubstractScore(int score)
         {
             m_score -= score;
         }

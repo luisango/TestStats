@@ -7,8 +7,23 @@ namespace SweetRain
     public class MinigameController : Minigame.Controller
     {
 
-        // Aqui van los métodos que implementan la logica del minijuego. //
+        public GameObject m_dropContainer;
+        public GameObject m_rainDropPrefab;
+        public Vector2 m_rainDropSpawnRange;
+        float timeCount = 0;
+        private int m_numDrops = 5;
 
+        // Aqui van los métodos que implementan la logica del minijuego. //
+        public void Update()
+        {
+            if (timeCount > 90) {
+                timeCount = 0;
+                for (int drop = 0; drop < m_numDrops; drop++) {
+                    InstantiateRainDrop();
+                }
+            }
+            timeCount++;
+        }
 
         public override bool OnEvent(int evt)
         {
@@ -17,6 +32,13 @@ namespace SweetRain
             // Custom event handling...
         }
 
+        protected void InstantiateRainDrop()
+        {
+            GameObject o = (GameObject)Instantiate(m_rainDropPrefab, new Vector3(0, 0, 0), Quaternion.identity);
+            o.transform.parent = m_dropContainer.transform;
+
+            o.transform.position = new Vector3(Random.Range(m_rainDropSpawnRange.x, m_rainDropSpawnRange.y), 4, 0);
+        }
 
         protected override void InstantiatePlayers()
         {

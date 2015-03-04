@@ -16,7 +16,9 @@ namespace Manager
         public enum Type
         {
             NONE,
-            CutLogs
+            SweetRain,
+            CutLogs,
+            Jellyasticity
         };
 
         /// <summary>

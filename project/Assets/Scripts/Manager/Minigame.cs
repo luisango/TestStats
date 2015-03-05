@@ -18,7 +18,8 @@ namespace Manager
             NONE,
             SweetRain,
             CutLogs,
-            Jellyasticity
+            Jellyasticity,
+            ContarObjetos
         };
 
         /// <summary>

@@ -23,6 +23,11 @@ namespace SweetRain
             return GetScore() >= 20;
         }
 
+        protected override void OnStart()
+        {
+            this.transform.FindChild("Name").GetComponent<TextMesh>().text = GetPlayer().GetNickname();
+        }
+
         protected override Player.Wrapper SetPlayer()
         {
             return Manager.Minigame.Instance.GetPlayer();

@@ -23,7 +23,7 @@ namespace SweetRain
 
             this.transform.position = pos + gravity * Time.deltaTime;
 
-            if (this.transform.position.y < 0) Destroy(this.gameObject);
+            if (this.transform.position.y < -1) Destroy(this.gameObject);
         }
 
         protected void OnTriggerEnter(Collider other)

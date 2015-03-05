@@ -2,37 +2,34 @@
 using System.Collections;
 
 
-namespace SweetRain
+namespace ContarObjetos
 {
     public class MinigameController : Minigame.Controller
     {
+        public GameObject m_candyCloudContainer;
+        public GameObject m_candyCloudPrefab;
+        public Vector2 m_candyCloudSpawnRangeX;
+        public Vector2 m_candyCloudSpawnRangeY;
+        public Vector2 m_candyCloudSpawnRangeZ;
+        private static int m_minCandyClouds = 5;
+        private static int m_maxCandyClouds = 15;
 
-        public GameObject m_dropContainer;
-        public GameObject m_rainDropPrefab;
-        public Vector2 m_rainDropSpawnRange;
-        float timeCount = 0;
-        private int m_numDrops, m_maxDrops = 3;
-
-        // Aqui van los métodos que implementan la logica del minijuego. //
-        public void Update()
+        public override void OnStart()
         {
-            if (timeCount > Random.Range(30, 70))
-            {
-                m_numDrops = Random.Range(1, m_maxDrops);
-                timeCount = 0;
-                for (int drop = 0; drop < m_numDrops; drop++) {
-                    InstantiateRainDrop();
-                }
+            int m_numCandyClouds = Random.Range(m_minCandyClouds, m_maxCandyClouds);
+            for (int i = 0; i < m_numCandyClouds; i++) {
+                InstantiateCandyCloud();
             }
-            timeCount++;
         }
 
-        protected void InstantiateRainDrop()
+        protected void InstantiateCandyCloud()
         {
-            GameObject o = (GameObject)Instantiate(m_rainDropPrefab, new Vector3(0, 0, 0), Quaternion.identity);
-            o.transform.parent = m_dropContainer.transform;
+            GameObject o = (GameObject)Instantiate(m_candyCloudPrefab, new Vector3(0, 0, 0), Quaternion.identity);
+            o.transform.parent = m_candyCloudContainer.transform;
 
-            o.transform.position = new Vector3(Random.Range(m_rainDropSpawnRange.x, m_rainDropSpawnRange.y), 4, 0);
+            o.transform.position = new Vector3(Random.Range(m_candyCloudSpawnRangeX.x, m_candyCloudSpawnRangeX.y),
+                Random.Range(m_candyCloudSpawnRangeY.x, m_candyCloudSpawnRangeY.y),
+                Random.Range(m_candyCloudSpawnRangeZ.x, m_candyCloudSpawnRangeZ.y));
         }
 
         protected override void InstantiatePlayers()

@@ -170,7 +170,7 @@ public class ConfigPlayers : MonoBehaviour
 
             /////////////////////////
 
-            SweetRain.MinigameDefinition sweetRain = new SweetRain.MinigameDefinition();
+            Jellyasticity.MinigameDefinition sweetRain = new Jellyasticity.MinigameDefinition();
 
             Manager.Minigame.Instance.Add(sweetRain);
             Manager.Minigame.Instance.Load(sweetRain);

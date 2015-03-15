@@ -6,27 +6,38 @@ namespace Jellyasticity
 {
     public class MinigameController : Minigame.Controller
     {
-        public enum CustomEvents
-        {
-            RockTime,
-            BubbleTime
-        };
+        public GameObject m_objectContainer;
+        public GameObject m_objectPrefab0;
+        public GameObject m_objectPrefab1;
+        public GameObject m_objectPrefab2;
+        public GameObject m_objectPrefab3;
+        public GameObject m_objectPrefab4;
+        public GameObject m_objectPrefab5;
+        public GameObject m_objectPrefab6;
+        public Vector2 m_ObjectSpawnRange;
+        float timeCount = 0;
+        private int m_numObjects, m_maxObjects = 10;
 
-        public override bool OnEvent(int evt)
+        public override void OnUpdate()
         {
-            bool baseEvt = base.OnEvent(evt);
-
-            switch (evt)
+            if (timeCount > 500)
             {
-                case (int)CustomEvents.RockTime:
-                    // ROCK TIME!
-                    break;
-
-                default:
-                    break;
+                m_numObjects = Random.Range(5, m_maxObjects);
+                timeCount = 0;
+                for (int drop = 0; drop < m_numObjects; drop++)
+                {
+                    InstantiateObjects();
+                }
             }
+            timeCount++;
+        }
 
-            return true && baseEvt;
+        public void InstantiateObjects()
+        {
+            GameObject o = (GameObject)Instantiate(m_objectPrefab0, new Vector3(0, 0, 0), Quaternion.identity);
+            o.transform.parent = m_objectContainer.transform;
+
+            o.transform.position = new Vector3(Random.Range(m_ObjectSpawnRange.x, m_ObjectSpawnRange.y), Random.Range(2, 4), 0);
         }
 
         protected override void InstantiatePlayers()

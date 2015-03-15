@@ -6,7 +6,10 @@ namespace Jellyasticity
 {
     public class PlayerController : Player.Controller
     {
-        public ParticleSystem m_hitParticle;
+        public float speed;
+        public float jumpSpeed;
+        public float gravity;
+        public float currentYSpeed;
 
 
         protected override void OnStart()
@@ -17,6 +20,21 @@ namespace Jellyasticity
         {
             // if (Time.realtimeSinceStartup < 50)
             //    SendEvent((int)CutLogs.MinigameController.CustomEvents.RockTime);
+
+            // Process custom gravity
+            Vector3 pos = this.transform.position;
+
+            // El suelo
+            if (pos.y <= 0)
+            {
+                currentYSpeed = jumpSpeed * Time.deltaTime;
+
+                this.transform.position = new Vector3(pos.x, 0, pos.z);
+            }
+
+
+            currentYSpeed -= gravity * Time.deltaTime;
+            this.transform.position = pos + new Vector3(0, currentYSpeed, 0);
         }
 
         protected override Player.Wrapper SetPlayer()
@@ -26,24 +44,27 @@ namespace Jellyasticity
 
         protected override void ProcessInput()
         {
-            this.transform.FindChild("Model").renderer.material.color = GetPlayer().GetPuppet().GetColor();
+            Vector3 pos     = this.transform.position;
+            Transform model = this.transform.FindChild("Model");
 
-            if (GetPlayer().GetInput().IsKeyDown(Player.Input.Key.Action))
+            model.renderer.material.color = GetPlayer().GetPuppet().GetColor();
+
+            if (GetPlayer().GetInput().IsKeyPressed(Player.Input.Key.Left))
             {
-                this.transform.FindChild("Model").renderer.material.color = new Color(255, 0, 0);
-                Hit();
+                model.renderer.material.color = new Color(255, 0, 0);
+                this.transform.position = pos - new Vector3(speed * Time.deltaTime, 0, 0);
+            }
+
+            if (GetPlayer().GetInput().IsKeyPressed(Player.Input.Key.Right))
+            {
+                model.renderer.material.color = new Color(255, 0, 0);
+                this.transform.position = pos + new Vector3(speed * Time.deltaTime, 0, 0);
             }
         }
 
         protected override bool GameOverCheck()
         {
             return GetScore() >= 5;
-        }
-
-        private void Hit()
-        {
-            m_hitParticle.Emit(1);
-            AddScore(1);
         }
     }
 }

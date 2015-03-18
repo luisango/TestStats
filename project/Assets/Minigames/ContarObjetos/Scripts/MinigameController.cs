@@ -18,16 +18,17 @@ namespace ContarObjetos
         public Vector2 m_candyCloudSpawnRangeZ;
 
         private static int m_minCandyClouds = 5;
-        private static int m_maxCandyClouds = 15;
+        private static int m_maxCandyClouds = 7;
         private static int m_minLifesaver_Yellow = 1;
         private static int m_maxLifesaver_Yellow = 7;
         private static int m_minLifesaver_Green = 2;
         private static int m_maxLifesaver_Green = 6;
         private static int m_minLifesaver_Red = 4;
-        private static int m_maxLifesaver_Red = 10;
+        private static int m_maxLifesaver_Red = 6;
 
         public override void OnStart()
         {
+            // Generating differents objects with movement:
             int m_numCandyClouds = Random.Range(m_minCandyClouds, m_maxCandyClouds);
             for (int i = 0; i < m_numCandyClouds; i++) {
                 InstantiateCandyCloud();
@@ -50,8 +51,6 @@ namespace ContarObjetos
             {
                 Instantiate_Lifesaver_Yellow();
             }
-
-            
         }
 
         protected void InstantiateCandyCloud()

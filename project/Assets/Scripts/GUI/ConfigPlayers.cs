@@ -170,10 +170,13 @@ public class ConfigPlayers : MonoBehaviour
 
             /////////////////////////
 
-            Jellyasticity.MinigameDefinition sweetRain = new Jellyasticity.MinigameDefinition();
+            //Jellyasticity.MinigameDefinition jelly = new Jellyasticity.MinigameDefinition();
+            //Manager.Minigame.Instance.Add(jelly);
+            //Manager.Minigame.Instance.Load(jelly);
 
-            Manager.Minigame.Instance.Add(sweetRain);
-            Manager.Minigame.Instance.Load(sweetRain);
+            ContarObjetos.MinigameDefinition count_Objects = new ContarObjetos.MinigameDefinition();
+            Manager.Minigame.Instance.Add(count_Objects);
+            Manager.Minigame.Instance.Load(count_Objects);
 
             /////////////////////////
 

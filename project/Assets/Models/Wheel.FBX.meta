@@ -329,6 +329,12 @@ ModelImporter:
     2300202: Sphere096
     2300204: Sphere097
     2300206: Sphere098
+    2300208: Text001
+    2300210: Text002
+    2300212: Text003
+    2300214: Text004
+    2300216: Text005
+    2300218: Text006
     3300000: Cone001
     3300002: Cone002
     3300004: Cone003
@@ -433,6 +439,12 @@ ModelImporter:
     3300202: Sphere096
     3300204: Sphere097
     3300206: Sphere098
+    3300208: Text001
+    3300210: Text002
+    3300212: Text003
+    3300214: Text004
+    3300216: Text005
+    3300218: Text006
     4300000: Cylinder001
     4300002: Sphere001
     4300004: Cylinder002
@@ -537,6 +549,12 @@ ModelImporter:
     4300202: Cone005
     4300204: Sphere098
     4300206: Cone006
+    4300208: Text001
+    4300210: Text002
+    4300212: Text003
+    4300214: Text004
+    4300216: Text005
+    4300218: Text006
     9500000: //RootNode
   materials:
     importMaterials: 1

@@ -14,6 +14,10 @@ namespace ContarObjetos
             int random =  Random.Range(-5, 5); // Range of velocities to the axis X
             m_speedFactX =  random == 0.0f ? 1.5f : random * 6.0f;
 
+            Debug.Log("Name gamObject: " + this.gameObject.name + " \n "); 
+
+            this.transform.Rotate(90,0,0);
+
             Debug.Log("random: " + random + " \n ");
 
             switch (random)

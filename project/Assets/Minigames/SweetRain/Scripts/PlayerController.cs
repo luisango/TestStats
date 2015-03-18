@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
 using UnityEngine;
 
 
@@ -11,7 +10,6 @@ namespace SweetRain
 	public class PlayerController : Player.Controller
 	{
         private float m_speed = 3;
-        private float m_gravity = 1;
 
         //public int score = 20; // to debug
 
@@ -36,8 +34,6 @@ namespace SweetRain
         protected override void ProcessInput()
         {
             Vector3 pos = this.transform.position;
-            Vector3 gravity = new Vector3(0, -m_gravity, 0);
-            //pos += gravity;
 
             this.transform.FindChild("Model").renderer.material.color = GetPlayer().GetPuppet().GetColor();
 

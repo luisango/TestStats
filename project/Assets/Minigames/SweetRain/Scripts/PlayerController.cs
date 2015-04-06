@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
 using UnityEngine;
 
 
@@ -11,7 +10,7 @@ namespace SweetRain
 	public class PlayerController : Player.Controller
 	{
         private float m_speed = 3;
-        private float m_gravity = 1;
+        private float m_gravity = 2.5f;
 
         //public int score = 20; // to debug
 
@@ -28,6 +27,17 @@ namespace SweetRain
             this.transform.FindChild("Name").GetComponent<TextMesh>().text = GetPlayer().GetNickname();
         }
 
+        protected override void OnUpdate()
+        {
+            Vector3 pos = this.transform.position;
+            // If player is out of platform-clouds, he falls off:
+            if ((pos.x < -4) || (pos.x > 5))
+            {
+                Vector3 gravity = new Vector3(0, -m_gravity, 0);
+                this.transform.position = pos + gravity * Time.deltaTime;
+            }
+        }
+
         protected override Player.Wrapper SetPlayer()
         {
             return Manager.Minigame.Instance.GetPlayer();
@@ -36,8 +46,6 @@ namespace SweetRain
         protected override void ProcessInput()
         {
             Vector3 pos = this.transform.position;
-            Vector3 gravity = new Vector3(0, -m_gravity, 0);
-            //pos += gravity;
 
             this.transform.FindChild("Model").renderer.material.color = GetPlayer().GetPuppet().GetColor();
 

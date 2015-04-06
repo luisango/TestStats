@@ -108,7 +108,7 @@ namespace ContarObjetos
                 // Instantiate player
                 GameObject newPlayer = InstantiatePlayer();
 
-                // Set positoin
+                // Set position
                 newPlayer.transform.position = new Vector3(lastSpawn, 0, 0);
 
                 // Add player as a child

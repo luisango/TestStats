@@ -14,7 +14,7 @@ namespace SweetRain
         private int m_numDrops, m_maxDrops = 3;
 
         // Aqui van los métodos que implementan la logica del minijuego. //
-        public void Update()
+        public override void OnUpdate()
         {
             if (timeCount > Random.Range(30, 70))
             {
@@ -32,7 +32,7 @@ namespace SweetRain
             GameObject o = (GameObject)Instantiate(m_rainDropPrefab, new Vector3(0, 0, 0), Quaternion.identity);
             o.transform.parent = m_dropContainer.transform;
 
-            o.transform.position = new Vector3(Random.Range(m_rainDropSpawnRange.x, m_rainDropSpawnRange.y), 4, 0);
+            o.transform.position = new Vector3(Random.Range(m_rainDropSpawnRange.x, m_rainDropSpawnRange.y), 5, 0);
         }
 
         protected override void InstantiatePlayers()

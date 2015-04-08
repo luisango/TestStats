@@ -41,6 +41,8 @@ namespace Manager
 
             // Shuffle players to order turns
             m_turn.Shuffle();
+
+            m_currentTurn = 0;
         }
 
         /// <summary>
@@ -141,6 +143,24 @@ namespace Manager
         public bool IsRespawning()
         {
             return m_isRespawning;
+        }
+
+        public PlayerWrapper GetCurrentTurnPlayer()
+        {
+            return m_turn[m_currentTurn];
+        }
+
+        public void NextTurn()
+        {
+            m_currentTurn += 1;
+
+            if (m_currentTurn > m_turn.Count - 1)
+                m_currentTurn = 0;
+        }
+
+        public void MoveCurrentPlayer(int boxes)
+        {
+
         }
 	}
 }

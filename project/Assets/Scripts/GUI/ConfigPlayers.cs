@@ -170,14 +170,14 @@ public class ConfigPlayers : MonoBehaviour
 
             /////////////////////////
 
-            SweetRain.MinigameDefinition sweetRain = new SweetRain.MinigameDefinition();
-
-            Manager.Minigame.Instance.Add(sweetRain);
-            Manager.Minigame.Instance.Load(sweetRain);
+            //SweetRain.MinigameDefinition sweetRain = new SweetRain.MinigameDefinition();
+            //
+            //Manager.Minigame.Instance.Add(sweetRain);
+            //Manager.Minigame.Instance.Load(sweetRain);
 
             /////////////////////////
 
-            // Manager.Scene.Instance.Load(Manager.Scene.Type.Board);
+            Manager.Scene.Instance.Load(Manager.Scene.Type.Board);
         } else {
             m_currentPlayersChoice++;
         }

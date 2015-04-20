@@ -42,11 +42,23 @@ public class ConfigPlayers : MonoBehaviour
     public Text m_phaseTitleText;
 
 
+
+
+    public GameObject NicknamePhase;
+    public GameObject CharacterPhase;
+    public GameObject InputPhase;
+    
+
+
+
     public void Start()
     {
         m_currentPlayersChoice        = Manager.Player.Instance.Get().Count;
         m_currentPlayerObject         = null;
         m_inputKeyIsBeingConfigurated = -1;
+
+        CharacterPhase.SetActive(false);
+        InputPhase.SetActive(false);
     }
 
     public void Update()
@@ -108,6 +120,9 @@ public class ConfigPlayers : MonoBehaviour
 
         // Add puppet to current player
         GetCurrentPlayerObject().SetPuppet(puppet);
+
+        CharacterPhase.SetActive(false);
+        InputPhase.SetActive(true);
     }
 
     /// <summary>
@@ -138,6 +153,9 @@ public class ConfigPlayers : MonoBehaviour
 
         // Add input to current player
         GetCurrentPlayerObject().SetInput(input);
+
+        InputPhase.SetActive(false);
+        Finish();
     }
 
     /// <summary>
@@ -149,6 +167,8 @@ public class ConfigPlayers : MonoBehaviour
     {
         // Set nickname, trimmed, to current player
         GetCurrentPlayerObject().SetNickname(m_nicknameInputField.text.Trim());
+        NicknamePhase.SetActive(false);
+        CharacterPhase.SetActive(true);
     }
 
     /// <summary>
@@ -156,7 +176,7 @@ public class ConfigPlayers : MonoBehaviour
     /// configuration phase. Adds current player to player manager, resets
     /// input field nickname and proceeds with next player configuration.
     /// </summary>
-    public void OnClickFinishButton()
+    public void Finish()
     {
         // Set current player nickname placeholder
         m_nicknameInputField.text = "";
@@ -180,6 +200,9 @@ public class ConfigPlayers : MonoBehaviour
             Manager.Scene.Instance.Load(Manager.Scene.Type.Board);
         } else {
             m_currentPlayersChoice++;
+
+            NicknamePhase.SetActive(true);
+            m_phaseTitleText.text = "Select Character P" + (m_currentPlayersChoice + 1);
         }
     }
 }

@@ -15,6 +15,7 @@ namespace Board
             {
                 m_isSpawned = true;
                 Manager.Board.Instance.Respawn();
+                
             }
         }
 

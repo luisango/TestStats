@@ -6,6 +6,10 @@ namespace ContarObjetos
 {
     public class MinigameController : Minigame.Controller
     {
+        public GameObject[] m_models;
+
+
+
         public GameObject m_candyCloudContainer;
 
         public GameObject m_candyCloudPrefab;
@@ -107,6 +111,8 @@ namespace ContarObjetos
 
                 // Instantiate player
                 GameObject newPlayer = InstantiatePlayer();
+                int id = Manager.Player.Instance.Get()[i].GetPuppet().GetIdentifier();
+                newPlayer = m_models[id];
 
                 // Set position
                 newPlayer.transform.position = new Vector3(lastSpawn, 0, 0);

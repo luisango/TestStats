@@ -6,9 +6,12 @@
 		_SpecColor ("Specular Color", Color) = (0.5, 0.5, 0.5, 1)
 		_Shininess ("Shininess", Range (0.05, 1)) = 0.05
 		
+		
+		// SUBSURFACE SCATTERING PROPERTIES
+		
 		// Ambient value, representing translucency that is always present
 		_Ambient ("Ambient", Range (0, 1)) = 0.0
-
+	
 		// Power value for direct translucency
 		_Power ("Power", Float) = 1.0
 		
@@ -27,8 +30,11 @@
 		// Subsurface Intensity
 		_SubIntensity ("Subsurface Intensity", Range (0, 0.1)) = 0.05
 		
+		
+		// OUTLINE PROPERTIES
+		
 		// Outline Size
-		_OutlineSize ("Outline Size", Range(0, 1)) = 0
+		_OutlineSize ("Outline Size", Float) = 0
 		
 		// Outline Color
 		_OutlineColor ("Outline Color", Color) = (0.0, 0.0, 0.0)
@@ -79,7 +85,7 @@
 				half4 c;
 				c.rgb = translucency * (_SubIntensity + _SubColor.rgb);
 				c.rgb += blinn_phong; // comment this line to use only translucency
-				if (pow(dot(viewDir, s.Normal), s.Normal.z) < _OutlineSize) {
+				if (dot(viewDir, s.Normal) < _OutlineSize) {
 					c.rgb = _OutlineColor;
 				}
 				c.a = _LightColor0.a * _SpecColor.a * atten;

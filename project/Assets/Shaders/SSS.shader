@@ -85,7 +85,7 @@
 				half4 c;
 				c.rgb = translucency * (_SubIntensity + _SubColor.rgb);
 				c.rgb += blinn_phong; // comment this line to use only translucency
-				if (dot(viewDir, s.Normal) < _OutlineSize) {
+				if (_OutlineSize != 0 && dot(viewDir, s.Normal) < _OutlineSize) {
 					c.rgb = _OutlineColor;
 				}
 				c.a = _LightColor0.a * _SpecColor.a * atten;

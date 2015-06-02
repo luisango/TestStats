@@ -7,13 +7,7 @@ namespace Jellyasticity
     public class MinigameController : Minigame.Controller
     {
         public GameObject m_objectContainer;
-        public GameObject m_objectPrefab0;
-        public GameObject m_objectPrefab1;
-        public GameObject m_objectPrefab2;
-        public GameObject m_objectPrefab3;
-        public GameObject m_objectPrefab4;
-        public GameObject m_objectPrefab5;
-        public GameObject m_objectPrefab6;
+        public GameObject[] m_objectPrefabs;
         public Vector2 m_ObjectSpawnRange;
         float timeCount = 0;
         private int m_numObjects, m_maxObjects = 10;
@@ -34,10 +28,11 @@ namespace Jellyasticity
 
         public void InstantiateObjects()
         {
-            GameObject o = (GameObject)Instantiate(m_objectPrefab0, new Vector3(0, 0, 0), Quaternion.identity);
+            int id = Random.Range(0, m_objectPrefabs.Length);
+            GameObject o = (GameObject)Instantiate(m_objectPrefabs[id], new Vector3(0, 0, 0), Quaternion.identity);
             o.transform.parent = m_objectContainer.transform;
 
-            o.transform.position = new Vector3(Random.Range(m_ObjectSpawnRange.x, m_ObjectSpawnRange.y), Random.Range(2, 4), 0);
+            o.transform.position = new Vector3(Random.Range(m_ObjectSpawnRange.x, m_ObjectSpawnRange.y), Random.Range(2.0f, 4.0f), 0);
         }
 
         protected override void InstantiatePlayers()

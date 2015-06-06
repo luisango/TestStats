@@ -6,7 +6,7 @@ namespace Jellyasticity
 {
     public class FireflyController : MonoBehaviour
     {
-        public float m_speed = 1.0f;
+        public float m_speedX = 1.0f;
         public float m_speedY = 1.0f;
         public float m_frac = 2.0f;
 
@@ -23,7 +23,7 @@ namespace Jellyasticity
         {
             Vector3 pos = this.transform.position;
 
-            float x = Mathf.Cos(Time.time / m_frac) * m_speed * Time.deltaTime;
+            float x = Mathf.Cos(Time.time / m_frac) * m_speedX * Time.deltaTime;
             float y = Mathf.Cos(Time.time / m_frac * m_randomY) * m_speedY * Time.deltaTime;
             
             this.transform.position = pos + new Vector3(x, y, 0);

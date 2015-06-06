@@ -6,10 +6,6 @@ namespace ContarObjetos
 {
     public class PlayerController : Player.Controller
     {
-
-        private float m_speed = 3;
-        private float m_gravity = 1;
-
         // Canvas puntuation:
         public Canvas canvas_Prefab;
 
@@ -26,13 +22,7 @@ namespace ContarObjetos
         }
         protected override void OnUpdate()
         {
-            Vector3 pos = this.transform.position;
-            // If player is out of platform-clouds, he falls off:
-            if ((pos.x < -10) || (pos.x > 10))
-            {
-                Vector3 gravity = new Vector3(0, -m_gravity, 0);
-                this.transform.position = pos + gravity * Time.deltaTime;
-            }
+            //TODO: read number dialed by the user objects
         }
 
         protected override Player.Wrapper SetPlayer()
@@ -42,30 +32,7 @@ namespace ContarObjetos
 
         protected override void ProcessInput()
         {
-            Vector3 pos = this.transform.position;
-            Vector3 gravity = new Vector3(0, -m_gravity, 0);
-            //pos += gravity;
-
-            this.transform.FindChild("Model").renderer.material.color = GetPlayer().GetPuppet().GetColor();
-
-            if (GetPlayer().GetInput().IsKeyDown(Player.Input.Key.Action))
-            {
-                this.transform.FindChild("Model").renderer.material.color = new Color(255, 0, 0);
-            }
-
-            if (GetPlayer().GetInput().IsKeyPressed(Player.Input.Key.Right))
-            {
-                Debug.Log("Right!");
-                this.transform.position = pos + new Vector3(m_speed * Time.deltaTime, 0, 0);
-            }
-
-            if (GetPlayer().GetInput().IsKeyPressed(Player.Input.Key.Left))
-            {
-                Debug.Log("Left!");
-                this.transform.position = pos - new Vector3(m_speed * Time.deltaTime, 0, 0);
-            }
-
-            // TODO: process input to count num total objects
+            //TODO: process input to count num total objects
         }
 
         protected override bool GameOverCheck()

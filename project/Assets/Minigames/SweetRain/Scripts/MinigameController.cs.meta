@@ -2,7 +2,10 @@ fileFormatVersion: 2
 guid: b72ed62e88b715d4e950e42c038e8e26
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - m_playerPrefab: {instanceID: 0}
+  - m_dropContainer: {instanceID: 0}
+  - m_rainDropPrefab: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

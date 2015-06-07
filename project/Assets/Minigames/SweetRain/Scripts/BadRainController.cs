@@ -6,14 +6,14 @@ using UnityEngine;
 
 namespace SweetRain
 {
-    // Description: class that implements the functionality of good rain 
-    // or sweet rain (bonus points)
-	class RainController : MonoBehaviour
+    // Description: class that implements the functionality of the bad 
+    // or acid rain (penalty points)
+    class BadRainController : MonoBehaviour
 	{
         public float m_gravity = 1.5f;
 
         // Params puntuation:
-        public int bonus = 1;
+        public int penalty = 1;
 
         void Start()
         {
@@ -38,22 +38,25 @@ namespace SweetRain
             if (playerController != null) {
                 // Logica de puntos
                 // To debug
-                /*if ((playerController.GetScore() < playerController.max_score)||
-                 *    (playerController.score < playerController.max_score))
+                /*if ((playerController.GetScore() > 0)||
+                 *    (playerController.score      > 0))
                  *    { 
-                 *          playerController.AddScore(bonus);
-                 *          playerController.score++;
+                 *          playerController.SubstractScore(penalty);
+                 *          playerController.score--;
                  *     }
                 }*/
-                
-                if (playerController.GetScore() < playerController.max_score)
-                    playerController.AddScore(bonus);  // Bonus points
+
+                if (playerController.GetScore() > 0)
+                    playerController.SubstractScore(penalty);  // Penalty points
 
                 //Debug.Log("Player: "+ playerController.name+" Score: "+ playerController.score);
-
+                
                 // Se destruye la gota de galleta
                 Destroy(this.gameObject);
             } // Else: lluvia
         }
 	}
 }
+
+
+

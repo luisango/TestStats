@@ -9,17 +9,22 @@ namespace SweetRain
 {
 	public class PlayerController : Player.Controller
 	{
-        private float m_speed = 3;
-        private float m_gravity = 2.5f;
+        public float m_speed = 3;
+        public float m_gravity = 2.5f;
 
-        //public int score = 20; // to debug
+        private float MAX_LIMIT = 5;
+        private float MIN_LIMIT = -4;
+
+        // Params puntuation:
+        //public int score = 0; // to debug
+        public int max_score = 20;
 
         // Aqui van los métodos que implementan la logica del
         // minijuego para el jugador.
 
         protected override bool GameOverCheck()
         {
-            return GetScore() >= 20;
+            return GetScore() >= max_score;
         }
 
         protected override void OnStart()
@@ -31,7 +36,7 @@ namespace SweetRain
         {
             Vector3 pos = this.transform.position;
             // If player is out of platform-clouds, he falls off:
-            if ((pos.x < -4) || (pos.x > 5))
+            if ((pos.x < MIN_LIMIT) || (pos.x > MAX_LIMIT))
             {
                 Vector3 gravity = new Vector3(0, -m_gravity, 0);
                 this.transform.position = pos + gravity * Time.deltaTime;

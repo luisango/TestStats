@@ -12,19 +12,19 @@ namespace SweetRain
         public float m_speed = 3;
         public float m_gravity = 2.5f;
 
-        private float MAX_LIMIT = 5;
-        private float MIN_LIMIT = -4;
+        private float m_MAX_LIMIT = 5;
+        private float m_MIN_LIMIT = -4;
 
         // Params puntuation:
-        //public int score = 0; // to debug
-        public int max_score = 20;
+        public int score = 0; // to debug
+        public int m_max_score = 20;
 
         // Aqui van los métodos que implementan la logica del
         // minijuego para el jugador.
 
         protected override bool GameOverCheck()
         {
-            return GetScore() >= max_score;
+            return GetScore() >= m_max_score;
         }
 
         protected override void OnStart()
@@ -36,7 +36,7 @@ namespace SweetRain
         {
             Vector3 pos = this.transform.position;
             // If player is out of platform-clouds, he falls off:
-            if ((pos.x < MIN_LIMIT) || (pos.x > MAX_LIMIT))
+            if ((pos.x < m_MIN_LIMIT) || (pos.x > m_MAX_LIMIT))
             {
                 Vector3 gravity = new Vector3(0, -m_gravity, 0);
                 this.transform.position = pos + gravity * Time.deltaTime;
@@ -61,13 +61,13 @@ namespace SweetRain
 
             if (GetPlayer().GetInput().IsKeyPressed(Player.Input.Key.Right))
             {
-                Debug.Log("Right!");
+                //Debug.Log("Right!");
                 this.transform.position = pos + new Vector3(m_speed * Time.deltaTime, 0, 0);
             }
 
             if (GetPlayer().GetInput().IsKeyPressed(Player.Input.Key.Left))
             {
-                Debug.Log("Left!");
+                //Debug.Log("Left!");
                 this.transform.position = pos - new Vector3(m_speed * Time.deltaTime, 0, 0);
             }
         }

@@ -191,7 +191,8 @@ public class ConfigPlayers : MonoBehaviour
             /////////////////////////
 
             SweetRain.MinigameDefinition sweetRain = new SweetRain.MinigameDefinition();
-            //ContarObjetos.MinigameDefinition sweetRain = new ContarObjetos.MinigameDefinition();
+            //CutLogs.MinigameDefinition cutLogs = new CutLogs.MinigameDefinition();
+            //ContarObjetos.MinigameDefinition contarobjs = new ContarObjetos.MinigameDefinition();
             //
             Manager.Minigame.Instance.Add(sweetRain);
             Manager.Minigame.Instance.Load(sweetRain);

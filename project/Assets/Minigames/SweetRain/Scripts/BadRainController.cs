@@ -13,7 +13,7 @@ namespace SweetRain
         public float m_gravity = 1.5f;
 
         // Params puntuation:
-        public int penalty = 1;
+        public int m_penalty = 1;
 
         void Start()
         {
@@ -38,25 +38,25 @@ namespace SweetRain
             if (playerController != null) {
                 // Logica de puntos
                 // To debug
-                /*if ((playerController.GetScore() > 0)||
-                 *    (playerController.score      > 0))
-                 *    { 
-                 *          playerController.SubstractScore(penalty);
-                 *          playerController.score--;
-                 *     }
-                }*/
+                if ((playerController.GetScore() > 0)||
+                     (playerController.score      > 0))
+                     {
+                         playerController.SubstractScore(m_penalty);
+                           playerController.score--;
+                      }
+                }
 
-                if (playerController.GetScore() > 0)
-                    playerController.SubstractScore(penalty);  // Penalty points
+                //if (playerController.GetScore() > 0)
+            //    playerController.SubstractScore(m_penalty);  // Penalty points
 
-                //Debug.Log("Player: "+ playerController.name+" Score: "+ playerController.score);
+            Debug.Log("ACID RAIN!");
+            Debug.Log("Player: "+ playerController.name+" Score: "+ playerController.score);
                 
-                // Se destruye la gota de galleta
-                Destroy(this.gameObject);
+            // Se destruye la gota de galleta
+            Destroy(this.gameObject);
             } // Else: lluvia
         }
 	}
-}
 
 
 

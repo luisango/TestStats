@@ -8,59 +8,47 @@ namespace SweetRain
     {
         // Rain objects:
         public GameObject m_dropContainer;
-        public GameObject m_rainDropPrefab;    // bonus points
-        public GameObject m_rainBadDropPrefab; // penalty points
+
+        public GameObject[] m_drops_objects;
 
         public Vector2 m_rainDropSpawnRange;
         float timeCount = 0;
-        private int m_numDrops, m_maxDrops = 3;
-        private int m_numBadDrops, m_maxBadDrops = 2;
+
+        private int m_minDrops = 1;
+        private int m_maxDrops = 4;
 
         // Aqui van los métodos que implementan la logica del minijuego. //
         public override void OnUpdate()
         {
-            // Generation sweet rain drops...(bonus rain)
+            // Generation of differents rain drops...
             if (timeCount > Random.Range(30, 70))
             {
-                m_numDrops = Random.Range(1, m_maxDrops);
+                int id = Random.Range(0, m_drops_objects.Length);
+                int m_numDrops = 0;
+
+                if (id == 1)// bad rain drop (penalty points)
+                    m_numDrops = Random.Range(1, 2);
+                else        // sweet rain drop (bonus points)
+                    m_numDrops = Random.Range(m_minDrops, m_maxDrops);
+
                 timeCount = 0;
                 for (int drop = 0; drop < m_numDrops; drop++) {
-                    InstantiateRainDrop();
+                    InstantiateRainDrop(id);
                 }
             }
-
-            // Generation acid rain drops...(penalty rain)
-            if (timeCount > Random.Range(30, 70))
-            {
-                m_numBadDrops = Random.Range(1, m_maxBadDrops);
-                timeCount = 0;
-                for (int drop = 0; drop < m_numBadDrops; drop++)
-                {
-                    InstantiateRainBadDrop();
-                }
-            }
-
             timeCount++;
         }
 
         // << Instantiation Rain drops >>
-        // Using two types of diferents instantiation because the logic game
-        // to RainDrop and to RainBadDrop is different.
-        protected void InstantiateRainDrop()
+        // It can instantiate any good or bad drop (bonus or penalty points)
+        protected void InstantiateRainDrop(int id)
         {
-            GameObject o = (GameObject)Instantiate(m_rainDropPrefab, new Vector3(0, 0, 0), Quaternion.identity);
+            GameObject o = (GameObject)Instantiate(m_drops_objects[id], new Vector3(0, 0, 0), Quaternion.identity);
             o.transform.parent = m_dropContainer.transform;
 
             o.transform.position = new Vector3(Random.Range(m_rainDropSpawnRange.x, m_rainDropSpawnRange.y), 5, 0);
         }
 
-        protected void InstantiateRainBadDrop()
-        {
-            GameObject o = (GameObject)Instantiate(m_rainBadDropPrefab, new Vector3(0, 0, 0), Quaternion.identity);
-            o.transform.parent = m_dropContainer.transform;
-
-            o.transform.position = new Vector3(Random.Range(m_rainDropSpawnRange.x, m_rainDropSpawnRange.y), 5, 0);
-        }
 
         protected override void InstantiatePlayers()
         {

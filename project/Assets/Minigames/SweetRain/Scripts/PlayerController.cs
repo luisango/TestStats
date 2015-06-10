@@ -12,8 +12,8 @@ namespace SweetRain
         public float m_speed = 3;
         public float m_gravity = 2.5f;
 
-        private float m_MAX_LIMIT = 5;
-        private float m_MIN_LIMIT = -4;
+        private float m_MAX_LIMIT = 6;
+        private float m_MIN_LIMIT = -7;
 
         // Params puntuation:
         public int score = 0; // to debug

@@ -6,8 +6,8 @@ using UnityEngine;
 
 namespace SweetRain
 {
-    // Description: class that implements the functionality of good rain 
-    // or sweet rain (bonus points)
+    // Description: class that implements the functionality of 
+    // sweet rain (bonus or penalty points)
 	class RainController : MonoBehaviour
 	{
         public float m_gravity = 1.5f;
@@ -42,21 +42,20 @@ namespace SweetRain
                      (playerController.score < playerController.m_max_score))
                      {
                          playerController.AddScore(m_bonus);
-                           playerController.score++;
+                         playerController.score += m_bonus;
                       }
                 }
 
             //if (playerController.GetScore() < playerController.m_max_score)
-            //    playerController.AddScore(m_bonus);  // Bonus points
+            //    playerController.AddScore(m_bonus);  
 
-            Debug.Log("SWEET DROP!");
             Debug.Log("Player: "+ playerController.name+" Score: "+ playerController.score);
 
             // Se destruye la gota de galleta
             Destroy(this.gameObject);
         } // Else: lluvia
 
-        // It allows you to modify the amount of penalty
+        // It allows you to modify the amount of bonus or penalty
         public void SetModifierPoints(int value)
         {
             m_bonus = value;

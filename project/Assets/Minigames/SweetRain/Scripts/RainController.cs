@@ -11,8 +11,6 @@ namespace SweetRain
 	class RainController : MonoBehaviour
 	{
         public float m_gravity = 1.5f;
-
-        // Params puntuation:
         public int m_bonus = 1;
 
         void Start()

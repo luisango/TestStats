@@ -54,9 +54,15 @@ namespace SweetRain
                 
             // Se destruye la gota de galleta
             Destroy(this.gameObject);
-            } // Else: lluvia
+        } // Else: lluvia
+
+        // It allows you to modify the amount of penalty
+        public void SetModifierPoints(int value)
+        {
+            m_penalty = value;
         }
-	}
+     }
+}
 
 
 

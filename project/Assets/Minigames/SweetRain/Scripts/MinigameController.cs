@@ -46,6 +46,13 @@ namespace SweetRain
             GameObject o = (GameObject)Instantiate(m_drops_objects[id], new Vector3(0, 0, 0), Quaternion.identity);
             o.transform.parent = m_dropContainer.transform;
 
+            //if (id == 1)
+            //{
+            //    BadRainController badRainController = o.GetComponent<BadRainController>();
+            //   // badRainController.SetModifierPoints(3);
+            //    badRainController.m_penalty = 3;
+            //}
+
             o.transform.position = new Vector3(Random.Range(m_rainDropSpawnRange.x, m_rainDropSpawnRange.y), 5, 0);
         }
 

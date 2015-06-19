@@ -10,10 +10,10 @@ namespace SweetRain
 	public class PlayerController : Player.Controller
 	{
         public float m_speed = 3;
-        public float m_gravity = 2.5f;
+        public float m_gravity = 3.3f;
 
-        private float m_MAX_LIMIT = 6;
-        private float m_MIN_LIMIT = -7;
+        private float m_MAX_LIMIT =  6;
+        private float m_MIN_LIMIT = -6;
 
         // Params puntuation:
         public int score = 0; // to debug

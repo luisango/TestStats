@@ -51,17 +51,16 @@ namespace ContarObjetos
             // Hardcoded spawn metrics
             Vector2 spawnRange = new Vector2(-11, 9);
             float spawnLength = spawnRange.y - spawnRange.x;
-            float spawnStep = spawnLength / (Manager.Player.Instance.Get().Count * 2);
+            float spawnStep = spawnLength / (Manager.Player.Instance.Get().Count * 2.2f);
             float lastSpawn = spawnRange.x;
+            lastSpawn = -4.0f;
 
             for (int i = 0; i < Manager.Player.Instance.Get().Count; i++)
             {
-                lastSpawn += spawnStep;
-
                 // Instantiate player
                 GameObject newPlayer = InstantiatePlayer();
-                int id = Manager.Player.Instance.Get()[i].GetPuppet().GetIdentifier();
-                newPlayer = m_models[id];
+                //int id = Manager.Player.Instance.Get()[i].GetPuppet().GetIdentifier();
+                //newPlayer = m_models[id];
 
                 // Set position
                 newPlayer.transform.position = new Vector3(lastSpawn, 0, 0);
@@ -71,6 +70,8 @@ namespace ContarObjetos
 
                 // Subscribe to each player
                 newPlayer.GetComponent<PlayerController>().Subscribe(this);
+
+                lastSpawn += spawnStep;
             }
         }
 

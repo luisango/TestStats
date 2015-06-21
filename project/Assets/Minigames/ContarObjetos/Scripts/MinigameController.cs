@@ -21,6 +21,13 @@ namespace ContarObjetos
         private int m_focusedObject;
         private int m_numObjects;
 
+        // GETTERS & SETTERS (auxiliary methods)
+        public int getNumberObjects()
+        {
+            return this.m_numObjects;
+        }
+
+        // MAIN METHODS
         public override void OnStart()
         {
             // Focused object the player must count

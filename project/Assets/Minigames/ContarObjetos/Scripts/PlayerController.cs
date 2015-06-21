@@ -12,7 +12,7 @@ namespace ContarObjetos
         // little interval time
         private int countUp   = 0;
         private int countDown = 0;
-        public const int MAX_INTERVAL_TIME = 8;
+        public const int MAX_INTERVAL_TIME_CLICK = 8;
 
         // Timer params 
         public const float MAX_TIME = 6.0f; // maximum time to count objects (secs)
@@ -101,27 +101,26 @@ namespace ContarObjetos
         protected override void ProcessInput()
         {
             countUp++;
-            if (GetPlayer().GetInput().IsKeyPressed(Player.Input.Key.Right) && countUp == MAX_INTERVAL_TIME)
+            if (GetPlayer().GetInput().IsKeyPressed(Player.Input.Key.Right) && countUp == MAX_INTERVAL_TIME_CLICK)
             {
                 Debug.Log("Add Counter!");
                 this.transform.FindChild("Canvas_Count_objects_Player").
                      transform.FindChild("Arrows").
                      transform.FindChild("ButtonUp").GetComponent<Button>().onClick.Invoke();
             }
-            if (countUp > MAX_INTERVAL_TIME) countUp = 0; // Adding little interval time
+            if (countUp > MAX_INTERVAL_TIME_CLICK) countUp = 0; // Adding little interval time
 
             countDown++;
-            if (GetPlayer().GetInput().IsKeyPressed(Player.Input.Key.Left) && countDown == MAX_INTERVAL_TIME)
+            if (GetPlayer().GetInput().IsKeyPressed(Player.Input.Key.Left) && countDown == MAX_INTERVAL_TIME_CLICK)
             {
                 Debug.Log("Substract Counter!");
                 this.transform.FindChild("Canvas_Count_objects_Player").
                      transform.FindChild("Arrows").
                      transform.FindChild("ButtonDown").GetComponent<Button>().onClick.Invoke();
             }
-            if (countDown > MAX_INTERVAL_TIME) countDown = 0; // Adding little interval time
+            if (countDown > MAX_INTERVAL_TIME_CLICK) countDown = 0; // Adding little interval time
 
-#if true
-            //  TESTING
+#if false    //  TESTING
             String text = this.transform.FindChild("Canvas_Count_objects_Player").
                                       transform.FindChild("Arrows").transform.FindChild("Text").
                                                                     GetComponent<Text>().text;
@@ -136,8 +135,7 @@ namespace ContarObjetos
         {
             // The mini-game finish if:
             // 1.- The time is running out 
-            // 2.- The player hits the correct number objects
-#if true 
+#if false   // TESTING
             number_objects = GameObject.Find("MinigameController").
                                  GetComponent<MinigameController>().getNumberObjects();
             Debug.Log("NUMBER OBJECTS =  " + number_objects);

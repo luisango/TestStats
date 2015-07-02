@@ -37,7 +37,7 @@ namespace Player
             m_position = position;
         }
 
-        private void SetPosition(int position)
+        public void SetPosition(int position)
         {
             m_position = position;
         }

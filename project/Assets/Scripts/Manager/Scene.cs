@@ -32,6 +32,9 @@ namespace Manager
         /// <param name="scene">Scene (definition) to load</param>
         public void Load(Type scene)
         {
+            if (scene == Type.Board)
+                Manager.Board.Instance.PreRespawn();
+
             Load(scene.ToString());
         }
 

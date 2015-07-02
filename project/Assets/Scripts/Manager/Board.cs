@@ -30,7 +30,7 @@ namespace Manager
         /// Used for respawning logic.
         /// </summary>
         private bool m_isRespawning;
-
+        
         public Board()
         {
             m_boxes = new List<Box>();
@@ -43,6 +43,13 @@ namespace Manager
             m_turn.Shuffle();
 
             m_currentTurn = 0;
+        }
+
+        public void PreRespawn()
+        {
+            m_boxes = new List<Box>();
+
+            NextTurn();
         }
 
         /// <summary>
@@ -140,6 +147,8 @@ namespace Manager
             Box currentBox = from;
             int steps = Math.Abs(to);
 
+            path.Add(currentBox);
+
             for (int i = 0; i < steps; i++)
             {
                 currentBox = (to < 0) ? currentBox.GetPrevious() : currentBox.GetNext();
@@ -176,11 +185,6 @@ namespace Manager
 
             if (m_currentTurn > m_turn.Count - 1)
                 m_currentTurn = 0;
-        }
-
-        public void MoveCurrentPlayer(int boxes)
-        {
-
         }
 	}
 }

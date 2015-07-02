@@ -36,14 +36,16 @@ namespace Board
             if (!m_isInitialized)
                 Init();
 
-            if (!m_isRotating)
+            for (int index = 0; index < 2; index++)
             {
-                PlayerWrapper player = Manager.Board.Instance.GetCurrentTurnPlayer();
-                if (player.GetInput().IsKeyDown(Player.Input.Key.Action))
-                    TurnRoulette(100);
-
-                return;
+                
+                Debug.DrawLine(transform.position, transform.position  + Quaternion.Euler( 0,0, index * m_fractions ) *  transform.up * 100.0f, Color.black );
             }
+
+
+
+            if (!m_isRotating)
+                return;
 
             if (m_angularSpeed > 0)
             {
@@ -59,7 +61,10 @@ namespace Board
                     if( index * m_fractions <= currentRot && (index + 1) * m_fractions > currentRot )
                     {
                         m_isRotating = false;
-                        m_steps = index + 1;
+                        m_steps = ( int )Mathf.Repeat( index + 2, m_maxNumber + 1 );
+
+                        if (m_steps == 0) m_steps = 1;
+
                         return;
                     }
                 }
@@ -72,10 +77,11 @@ namespace Board
             m_isRotating = true;
         }
 
-        public int GetSteps( out bool isFinish )
+        public bool GetSteps( out int steps )
         {
-            isFinish = !m_isRotating;
-            return m_steps;
+            steps = m_steps;
+            return !m_isRotating;
         }
+
     }
 }

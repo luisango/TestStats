@@ -34,6 +34,12 @@ namespace Board
         /// </summary>
         private List<Vector3> m_waypoints;
 
+        // Make action when player stops over the box
+        public bool m_idle = false;
+        public Player.PuppetController m_puppetJustEntered;
+        public Vector3 m_puppetJustEnteredLastPosition;
+        public float m_idleWaitingTime = 0;
+
 
         void Start()
         {
@@ -74,6 +80,42 @@ namespace Board
 
             // Set (first box)'s previous box, this box
             //b.GetFirstBox().m_previous = this;
+        }
+
+        void Update()
+        {
+            // If there was a puppet that was entered...
+            if (m_puppetJustEntered)
+            {
+                if (m_puppetJustEntered.transform.position == m_puppetJustEnteredLastPosition)
+                    m_idle = true;
+                else
+                {
+                    m_idle = false;
+                    m_idleWaitingTime = 0;
+                }
+
+                m_puppetJustEnteredLastPosition = m_puppetJustEntered.transform.position;
+
+
+                // But it just leaves the box, remove it
+                if (!m_puppets.Exists(toFind => toFind == m_puppetJustEntered))
+                    m_puppetJustEntered = null;
+            }
+
+
+            // Make action when player stops over the box
+            if (m_idle && m_puppetJustEntered)
+            {
+                m_idleWaitingTime += Time.deltaTime;
+
+                // If it's true 3 seconds
+                if (m_idleWaitingTime > 3)
+                {
+                    m_puppetJustEntered = null;
+                    Manager.Scene.Instance.Load(Manager.Scene.Type.Board);
+                }
+            }
         }
 
         /// <summary>
@@ -144,6 +186,16 @@ namespace Board
             OnTriggerAction(other);
         }
 
+        void OnTriggerExit(Collider other)
+        {
+            Player.PuppetController p = other.GetComponent<Player.PuppetController>();
+
+            if (!m_puppets.Exists(toFind => toFind == p))
+                return;
+
+            m_puppets.Remove(p);
+        }
+
         /// <summary>
         /// MUST BE IMPLEMENTED BY CHILDREN! MUST BE CALLED FOR LOGIC CHECK! 
         /// Box action logic.
@@ -155,6 +207,8 @@ namespace Board
             // If object is already inside the collider / box
             if (m_puppets.Exists(toFind => toFind == p))
                 return true;
+
+            m_puppetJustEntered = other.GetComponent<Player.PuppetController>();
 
             // If object is not already inside the collider / box, then add it
             AddPuppetInsideBox(p);

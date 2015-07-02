@@ -27,6 +27,8 @@ public class Results : MonoBehaviour
 
             if (maxScore1 < thisPlayerScore)
             {
+                maxScore3 = maxScore2;
+                maxScore2 = maxScore1;
                 maxScore1 = thisPlayerScore;
                 winner3 = winner2;
                 winner2 = winner1;
@@ -34,6 +36,7 @@ public class Results : MonoBehaviour
             }
             else if (maxScore2 < thisPlayerScore)
             {
+                maxScore3 = maxScore2;
                 maxScore2 = thisPlayerScore;
                 winner3 = winner2;
                 winner2 = player;
@@ -45,8 +48,8 @@ public class Results : MonoBehaviour
             }
         }
 
-        m_winner1.text = winner1.GetNickname() + ": " + maxScore1;
-        m_winner2.text = winner2.GetNickname() + ": " + maxScore2;
-        m_winner3.text = winner3.GetNickname() + ": " + maxScore3;
+        m_winner1.text = "jugador " + winner1.GetNickname() + ": " + maxScore1;
+        m_winner2.text = "jugador " + winner2.GetNickname() + ": " + maxScore2;
+        m_winner3.text = "jugador " + winner3.GetNickname() + ": " + maxScore3;
     }
 }

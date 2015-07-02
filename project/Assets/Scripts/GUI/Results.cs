@@ -48,8 +48,19 @@ public class Results : MonoBehaviour
             }
         }
 
-        m_winner1.text = "jugador " + winner1.GetNickname() + ": " + maxScore1;
-        m_winner2.text = "jugador " + winner2.GetNickname() + ": " + maxScore2;
-        m_winner3.text = "jugador " + winner3.GetNickname() + ": " + maxScore3;
+        m_winner1.text = winner1.GetNickname() + ": " + maxScore1;
+        m_winner2.text = winner2.GetNickname() + ": " + maxScore2;
+        m_winner3.text = winner3.GetNickname() + ": " + maxScore3;
+    }
+
+    void Update()
+    {
+        foreach (Player.Wrapper player in Manager.Player.Instance.Get())
+        {
+            if (player.GetInput().IsKeyDown(Player.Input.Key.Action))
+            {
+                Manager.Scene.Instance.Load(Manager.Scene.Type.Board);
+            }
+        }
     }
 }

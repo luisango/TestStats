@@ -25,10 +25,8 @@ namespace Board
         {
             foreach (Player.Wrapper p in Manager.Player.Instance.Get())
             {
-                //GameObject puppet = (GameObject)Instantiate(m_puppetPrefab);
-
                 int id = p.GetPuppet().GetIdentifier();
-                GameObject puppet = m_puppetPrefabs[id];
+                GameObject puppet = (GameObject)Instantiate(m_puppetPrefabs[id]);
 
                 puppet.GetComponent<Player.PuppetController>().SetPlayer(p);
             }

@@ -17,12 +17,12 @@ namespace Board
         /// <summary>
         /// Stores previous box.
         /// </summary>
-        private Box m_previous;
+        public Box m_previous;
 
         /// <summary>
         /// Stores next box.
         /// </summary>
-        private Box m_next;
+        public Box m_next;
 
         /// <summary>
         /// Current puppets on the box.
@@ -53,10 +53,11 @@ namespace Board
             m_waypoints = new List<Vector3>();
 
             // Get position in board
-            m_position = b.Get().Count;
+            // LUIS: Se hace solo por el editor
+            //m_position = b.Get().Count;
 
             // Set last box on board as previous box
-            m_previous = b.GetLastBox();
+            //m_previous = b.GetLastBox();
 
             // If previous is null, means this is the first box added
             if (m_previous == null)
@@ -66,13 +67,13 @@ namespace Board
             b.AddBox(this);
 
             // Set the first box as next box
-            m_next = b.GetFirstBox();
+            //m_next = b.GetFirstBox();
 
             // Set (last box)'s next box, this box
-            b.GetLastBox().m_next = this;
+            //b.GetLastBox().m_next = this;
 
             // Set (first box)'s previous box, this box
-            b.GetFirstBox().m_previous = this;
+            //b.GetFirstBox().m_previous = this;
         }
 
         /// <summary>
@@ -80,13 +81,15 @@ namespace Board
         /// </summary>
         private void PrecalculateWaypoints()
         {
+            Transform t = this.transform.FindChild("Model").transform;
+
             int stepSplit = 5;
             // HINT: GetComponent<MeshRenderer>().bounds.extents.x;
             // HINT: GetComponent<MeshFilter>().mesh.bounds.extents.x;
 
-            float height = GetComponent<MeshFilter>().mesh.bounds.extents.y;
-            float width = GetComponent<MeshFilter>().mesh.bounds.extents.x;
-            float length = GetComponent<MeshFilter>().mesh.bounds.extents.z;
+            float height = t.GetComponent<MeshFilter>().mesh.bounds.extents.y * t.localScale.y * this.transform.localScale.y * 2;
+            float width  = t.GetComponent<MeshFilter>().mesh.bounds.extents.x * t.localScale.x * this.transform.localScale.x * 2;
+            float length = t.GetComponent<MeshFilter>().mesh.bounds.extents.z * t.localScale.z * this.transform.localScale.z * 2;
 
             // float midWidth = width / 2;
             // float midLength = length / 2;
@@ -167,7 +170,7 @@ namespace Board
         /// box to this one.
         /// </summary>
         /// <param name="p">PuppetController to add</param>
-        private void AddPuppetInsideBox(Player.PuppetController p)
+        public void AddPuppetInsideBox(Player.PuppetController p)
         {
             m_puppets.Add(p);
             p.SetBox(this);

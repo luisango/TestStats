@@ -28,7 +28,7 @@ namespace Board
             m_isRotating = false;
             m_isInitialized = true;
 
-            Debug.Log("SE PUTO INICIA PLRULETEA");
+            Debug.Log("SE PUTO INICIA RULETA");
         }
 
         void Update()   

@@ -30,9 +30,11 @@ namespace Player
             // TODO: Spawn puppet, configure puppet materials (colors), etc
             int position = m_player.GetStats().GetPosition();
 			Debug.Log("POSITION " + position );
-            Board.Box box = Manager.Board.Instance.Get()[position];
+            Board.Box box = Manager.Board.Instance.GetPositioned(position);
 
+            this.SetBox(box);
             this.transform.position = box.GetWaypoint();
+            m_box.AddPuppetInsideBox(this);
 
             if (m_isWaliking)
             {

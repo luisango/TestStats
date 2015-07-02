@@ -68,8 +68,12 @@ namespace Manager
         {
             if (m_boxes.Count == 0)
                 return null;
-            else
-                return m_boxes[0];
+
+            foreach (Box b in m_boxes)
+                if (b.GetBoardPosition() == 0)
+                    return b;
+
+            return null;
         }
 
         /// <summary>
@@ -80,8 +84,24 @@ namespace Manager
         {
             if (m_boxes.Count == 0)
                 return null;
-            else
-                return m_boxes[m_boxes.Count - 1];
+
+            foreach (Box b in m_boxes)
+                if (b.GetBoardPosition() == m_boxes.Count - 1)
+                    return b;
+
+            return null;
+        }
+
+        public Box GetPositioned(int position)
+        {
+            if (m_boxes.Count == 0)
+                return null;
+
+            foreach (Box b in m_boxes)
+                if (b.GetBoardPosition() == position)
+                    return b;
+
+            return null;
         }
 
         /// <summary>

@@ -36,13 +36,12 @@ namespace SweetRain
             if (playerController != null) {
                 // Logica de puntos
                 // To debug
-                if ((playerController.GetScore() < playerController.m_max_score) ||
-                     (playerController.score < playerController.m_max_score))
-                     {
-                         playerController.SubstractScore(m_penalty);
-                         playerController.score -= m_penalty;
-                      }
+                if (playerController.GetScore() > playerController.m_max_score)
+                {
+                    playerController.SubstractScore(m_penalty);
+                    playerController.score -= m_penalty;
                 }
+            }
 
             //if (playerController.GetScore() < playerController.m_max_score)
             //    playerController.SubstractScore(m_bonus);  

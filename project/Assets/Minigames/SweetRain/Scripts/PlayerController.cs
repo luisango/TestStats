@@ -16,15 +16,17 @@ namespace SweetRain
         private float m_MIN_LIMIT = -6;
 
         // Params puntuation:
-        public int score = 0; // to debug
-        public int m_max_score = 20;
+        public int score = 20; // to debug
+        public int m_max_score = 0;
+
+        private float m_playTime = 30f;
 
         // Aqui van los métodos que implementan la logica del
         // minijuego para el jugador.
 
         protected override bool GameOverCheck()
         {
-            return GetScore() >= m_max_score;
+            return GetScore() < m_max_score || m_playTime <= 0;
         }
 
         protected override void OnStart()
@@ -34,6 +36,8 @@ namespace SweetRain
 
         protected override void OnUpdate()
         {
+            m_playTime -= Time.deltaTime;
+
             Vector3 pos = this.transform.position;
             // If player is out of platform-clouds, he falls off:
             if ((pos.x < m_MIN_LIMIT) || (pos.x > m_MAX_LIMIT))

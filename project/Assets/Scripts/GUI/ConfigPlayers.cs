@@ -190,13 +190,13 @@ public class ConfigPlayers : MonoBehaviour
 
             /////////////////////////
 
-            SweetRain.MinigameDefinition sweetRain = new SweetRain.MinigameDefinition();
+            //SweetRain.MinigameDefinition sweetRain = new SweetRain.MinigameDefinition();
             //CutLogs.MinigameDefinition cutLogs = new CutLogs.MinigameDefinition();
             //ContarObjetos.MinigameDefinition contarobjs = new ContarObjetos.MinigameDefinition();
             //
 
-            Manager.Minigame.Instance.Add (sweetRain);
-            Manager.Minigame.Instance.Load(sweetRain);
+            //Manager.Minigame.Instance.Add (sweetRain);
+            //Manager.Minigame.Instance.Load(sweetRain);
             //Manager.Minigame.Instance.Add(cutLogs);
             //Manager.Minigame.Instance.Load(cutLogs);
             //Manager.Minigame.Instance.Add(contarobjs);
@@ -204,7 +204,7 @@ public class ConfigPlayers : MonoBehaviour
 
             /////////////////////////
 
-            //Manager.Scene.Instance.Load(Manager.Scene.Type.Board);
+            Manager.Scene.Instance.Load(Manager.Scene.Type.Board);
         } else {
             m_currentPlayersChoice++;
 

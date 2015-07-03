@@ -12,8 +12,8 @@ namespace SweetRain
         public float m_speed = 3;
         public float m_gravity = 3.3f;
 
-        private float m_MAX_LIMIT =  6;
-        private float m_MIN_LIMIT = -6;
+        private float m_MAX_LIMIT =  5.7f;
+        private float m_MIN_LIMIT = -5.7f;
 
         // Params puntuation:
         public int score = 20; // to debug
@@ -40,10 +40,13 @@ namespace SweetRain
 
             Vector3 pos = this.transform.position;
             // If player is out of platform-clouds, he falls off:
-            if ((pos.x < m_MIN_LIMIT) || (pos.x > m_MAX_LIMIT))
+            if ( pos.x < m_MIN_LIMIT )
             {
-                Vector3 gravity = new Vector3(0, -m_gravity, 0);
-                this.transform.position = pos + gravity * Time.deltaTime;
+                this.transform.position = new Vector3( m_MIN_LIMIT ,transform.position.y,transform.position.z );
+            }
+            if (pos.x > m_MAX_LIMIT)
+            {
+                this.transform.position = new Vector3( m_MAX_LIMIT, transform.position.y, transform.position.z );
             }
         }
 

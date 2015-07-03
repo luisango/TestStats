@@ -6,12 +6,9 @@ using UnityEngine;
 
 namespace SweetRain
 {
-    // Description: class that implements the functionality of 
-    // sweet rain (bonus or penalty points)
-	class RainController : MonoBehaviour
-	{
-        public float m_gravity = 1.5f;
-        public int m_penalty = 1;
+    class RainController : MonoBehaviour
+    {
+        private float m_gravity = 1.5f;
 
         void Start()
         {
@@ -22,40 +19,24 @@ namespace SweetRain
         {
             //Hacemos que se mueva
             Vector3 pos = this.transform.position;
-            Vector3 gravity = new Vector3(0, -m_gravity, 0);
+            Vector3 gravity = new Vector3( 0, -m_gravity, 0 );
 
             this.transform.position = pos + gravity * Time.deltaTime;
 
-            if (this.transform.position.y < -1) Destroy(this.gameObject);
+            if ( this.transform.position.y < -1 ) Destroy( this.gameObject );
         }
 
-        protected void OnTriggerEnter(Collider other)
+        protected void OnTriggerEnter( Collider other )
         {
             PlayerController playerController = other.gameObject.GetComponent<PlayerController>();
 
-            if (playerController != null) {
-                // Logica de puntos
-                // To debug
-                if (playerController.GetScore() > playerController.m_max_score)
-                {
-                    playerController.SubstractScore(m_penalty);
-                    playerController.score -= m_penalty;
-                }
-            }
+            if ( playerController != null )
+            {
+                if ( playerController.GetScore() > 0 )
+                    playerController.SubstractScore( 1 );
 
-            //if (playerController.GetScore() < playerController.m_max_score)
-            //    playerController.SubstractScore(m_bonus);  
-
-            Debug.Log("Player: "+ playerController.name+" Score: "+ playerController.score);
-
-            // Se destruye la gota de galleta
-            Destroy(this.gameObject);
-        } // Else: lluvia
-
-        // It allows you to modify the amount of bonus or penalty
-        public void SetModifierPoints(int value)
-        {
-            m_penalty = value;
+                Destroy( this.gameObject );
+            } // Else: lluvia
         }
     }
 }

@@ -25,7 +25,7 @@ public class Results : MonoBehaviour
         {
             int thisPlayerScore = Manager.Minigame.Instance.GetLocalScoreForPlayer(player);
 
-            if (maxScore1 < thisPlayerScore)
+            if (maxScore1 <= thisPlayerScore)
             {
                 maxScore3 = maxScore2;
                 maxScore2 = maxScore1;

@@ -113,7 +113,6 @@ namespace Board
                 if (m_idleWaitingTime > 3)
                 {
                     BoxAction();
-                    Manager.Board.Instance.NextTurn();
                     m_puppetJustEntered = null;
                 }
             }

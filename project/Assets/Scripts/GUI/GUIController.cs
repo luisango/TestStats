@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class GUIController : MonoBehaviour {
 
     public Text m_text;
+    public Text m_turn;
+
 
 	// Update is called once per frame
 	void Update () 
@@ -14,7 +16,11 @@ public class GUIController : MonoBehaviour {
         
         foreach (Player.Wrapper p in Manager.Player.Instance.Get())
         {
-            m_text.text += p.GetNickname() + ": " + p.GetStats().GetPoints();
+            m_text.text += p.GetNickname() + ": " + p.GetStats().GetPoints() + "\n";
         }
+
+        Player.Wrapper player = Manager.Board.Instance.GetCurrentTurnPlayer();
+
+        m_turn.text = player.GetNickname() + "'s turn!";
 	}
 }

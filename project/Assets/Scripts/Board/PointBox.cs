@@ -15,7 +15,7 @@ namespace Board
         protected new void Awake()
         {
             // Fix for floating random result
-            m_pointRange = new Vector2(-5, 7);
+            m_pointRange = new Vector2(-3, 7);
 
             if (m_isRangedPoints)
                 m_points = Random.Range((int) m_pointRange.x, (int) m_pointRange.y);
@@ -27,6 +27,8 @@ namespace Board
         protected override void BoxAction()
         {
             m_puppetJustEntered.GetPlayer().GetStats().AddPoints(m_points);
+
+            Manager.Board.Instance.NextTurn();
         }
     }
 }

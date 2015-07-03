@@ -35,7 +35,7 @@ namespace Manager
 
         public Board()
         {
-            m_scoreToWin = 1;
+            m_scoreToWin = 100;
             m_boxes = new List<Box>();
             m_turn = new List<PlayerWrapper>();
 

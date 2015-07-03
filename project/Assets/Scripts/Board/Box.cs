@@ -112,9 +112,8 @@ namespace Board
                 // If it's true 3 seconds
                 if (m_idleWaitingTime > 3)
                 {
-                    m_puppetJustEntered = null;
-
                     BoxAction();
+                    m_puppetJustEntered = null;
                 }
             }
         }

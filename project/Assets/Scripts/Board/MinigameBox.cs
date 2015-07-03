@@ -31,9 +31,12 @@ namespace Board
             if (base.OnTriggerAction(other))
                 return false;
 
-            Manager.Minigame.Instance.Load(m_definition);
-
             return true;
+        }
+
+        protected override void BoxAction()
+        {
+            Manager.Minigame.Instance.Load(m_definition);
         }
     }
 }

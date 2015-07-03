@@ -7,5 +7,10 @@ namespace Board
 {
     class RandomBox : Box
     {
+
+        protected override void BoxAction()
+        {
+            
+        }
     }
 }

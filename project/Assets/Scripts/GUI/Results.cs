@@ -10,7 +10,7 @@ public class Results : MonoBehaviour
     public Text m_winner3;
 
 
-	void Start()
+    void Start()
     {
         // TODO: Shitty way to discover the winner... fix this shit!
 
@@ -51,6 +51,10 @@ public class Results : MonoBehaviour
         m_winner1.text = winner1.GetNickname() + ": " + maxScore1;
         m_winner2.text = winner2.GetNickname() + ": " + maxScore2;
         m_winner3.text = winner3.GetNickname() + ": " + maxScore3;
+
+        winner1.GetStats().AddPoints(Manager.Minigame.Instance.NormalizeScore(maxScore1));
+        winner2.GetStats().AddPoints(Manager.Minigame.Instance.NormalizeScore(maxScore2));
+        winner3.GetStats().AddPoints(Manager.Minigame.Instance.NormalizeScore(maxScore3));
     }
 
     void Update()

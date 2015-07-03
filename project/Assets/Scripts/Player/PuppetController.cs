@@ -40,6 +40,11 @@ namespace Player
             this.transform.position = box.GetWaypoint();
             m_box.AddPuppetInsideBox(this);            
         }
+        
+        public Wrapper GetPlayer()
+        {
+            return m_player;
+        }
 
         public void SetBox(Board.Box box)
         {

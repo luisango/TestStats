@@ -7,7 +7,7 @@ using UnityEngine;
 namespace Board
 {
     [System.Serializable]
-	class Box : MonoBehaviour
+	abstract class Box : MonoBehaviour
 	{
         /// <summary>
         /// Position/Order in board.
@@ -113,10 +113,13 @@ namespace Board
                 if (m_idleWaitingTime > 3)
                 {
                     m_puppetJustEntered = null;
-                    Manager.Scene.Instance.Load(Manager.Scene.Type.Board);
+
+                    BoxAction();
                 }
             }
         }
+
+        protected abstract void BoxAction();
 
         /// <summary>
         /// Precalculate waypoints for current box.

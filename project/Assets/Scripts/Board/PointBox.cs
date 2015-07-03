@@ -20,5 +20,10 @@ namespace Board
             if (m_isRangedPoints)
                 m_points = Random.Range((int) m_pointRange.x, (int) m_pointRange.y);
         }
+
+        protected override void BoxAction()
+        {
+            m_puppetJustEntered.GetPlayer().GetStats().AddPoints(m_points);
+        }
     }
 }

@@ -31,7 +31,7 @@ namespace Manager
         /// </summary>
         private bool m_isRespawning;
 
-        private int m_scoreToWin;
+        public int m_scoreToWin;
 
         public Board()
         {

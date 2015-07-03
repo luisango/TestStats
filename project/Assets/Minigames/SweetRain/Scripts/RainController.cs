@@ -20,7 +20,7 @@ namespace SweetRain
 
         void Update()
         {
-            //Hacemos que se mueva
+            // Hacemos que se mueva
             Vector3 pos = this.transform.position;
             Vector3 gravity = new Vector3(0, -m_gravity, 0);
 

@@ -49,12 +49,19 @@ public class Results : MonoBehaviour
         }
 
         m_winner1.text = winner1.GetNickname() + ": " + maxScore1;
-        m_winner2.text = winner2.GetNickname() + ": " + maxScore2;
-        m_winner3.text = winner3.GetNickname() + ": " + maxScore3;
+        winner1.GetStats().AddPoints( Manager.Minigame.Instance.NormalizeScore( maxScore1 ) );
 
-        winner1.GetStats().AddPoints(Manager.Minigame.Instance.NormalizeScore(maxScore1));
-        winner2.GetStats().AddPoints(Manager.Minigame.Instance.NormalizeScore(maxScore2));
-        winner3.GetStats().AddPoints(Manager.Minigame.Instance.NormalizeScore(maxScore3));
+        if ( Manager.Player.Instance.Get().Count > 1 )
+        {
+            m_winner2.text = winner2.GetNickname() + ": " + maxScore2;
+            winner2.GetStats().AddPoints( Manager.Minigame.Instance.NormalizeScore( maxScore2 ) );
+        }
+        if ( Manager.Player.Instance.Get().Count > 2 )
+        {
+            m_winner3.text = winner3.GetNickname() + ": " + maxScore3;
+            winner3.GetStats().AddPoints( Manager.Minigame.Instance.NormalizeScore( maxScore3 ) );
+        }
+        
     }
 
     void Update()

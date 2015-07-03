@@ -22,7 +22,8 @@ namespace Manager
             Credits,
             Board,
             Minigame,
-            Results
+            Results,
+            Victory
         };
 
 

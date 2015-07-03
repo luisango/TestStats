@@ -11,7 +11,7 @@ namespace SweetRain
 	class RainController : MonoBehaviour
 	{
         public float m_gravity = 1.5f;
-        public int m_bonus = 1;
+        public int m_penalty = 1;
 
         void Start()
         {
@@ -39,13 +39,13 @@ namespace SweetRain
                 if ((playerController.GetScore() < playerController.m_max_score) ||
                      (playerController.score < playerController.m_max_score))
                      {
-                         playerController.AddScore(m_bonus);
-                         playerController.score += m_bonus;
+                         playerController.SubstractScore(m_penalty);
+                         playerController.score -= m_penalty;
                       }
                 }
 
             //if (playerController.GetScore() < playerController.m_max_score)
-            //    playerController.AddScore(m_bonus);  
+            //    playerController.SubstractScore(m_bonus);  
 
             Debug.Log("Player: "+ playerController.name+" Score: "+ playerController.score);
 
@@ -56,7 +56,7 @@ namespace SweetRain
         // It allows you to modify the amount of bonus or penalty
         public void SetModifierPoints(int value)
         {
-            m_bonus = value;
+            m_penalty = value;
         }
     }
 }

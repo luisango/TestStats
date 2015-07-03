@@ -25,7 +25,6 @@ public class Victory : MonoBehaviour
                 winner = player;
             }
         }
-
         m_winner.text = winner.GetNickname();
     }
 

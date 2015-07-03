@@ -25,8 +25,12 @@ public class Victory : MonoBehaviour
                 winner = player;
             }
         }
+<<<<<<< HEAD
 
         m_winner.text = winner.GetNickname() + " : " + maxScore;
+=======
+        m_winner.text = winner.GetNickname();
+>>>>>>> 92319fa9a7e48dbd64724b77c0fe1c880498d55f
     }
 
     void Update()

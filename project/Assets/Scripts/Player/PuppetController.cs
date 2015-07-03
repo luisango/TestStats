@@ -96,7 +96,10 @@ namespace Player
                 Vector3 initialPos = m_path[m_initialPos].GetWaypoint();
                 Vector3 endPos = m_path[m_endPos].GetWaypoint();
 
-                Vector3 pos = Vector3.Lerp(m_path[m_initialPos].GetWaypoint(), m_path[m_endPos].GetWaypoint(), Mathf.Clamp( m_t, 0.0f, 1.1f )  );
+                Vector3 pos = Vector3.Lerp(m_path[m_initialPos].GetWaypoint(), m_path[m_endPos].GetWaypoint(), m_t );
+
+                m_t = Mathf.Clamp( m_t + Time.deltaTime, 0.0f, 1.0f ); 
+                this.transform.position = pos;
 
                 if (m_t >= 1.0f)
                 {
@@ -113,9 +116,6 @@ namespace Player
                         m_endPos += 1;
                     }
                 }
-
-                m_t += Time.deltaTime;
-                this.transform.position = pos;
             }
         }
 	}

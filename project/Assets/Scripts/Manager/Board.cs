@@ -30,9 +30,12 @@ namespace Manager
         /// Used for respawning logic.
         /// </summary>
         private bool m_isRespawning;
-        
+
+        private int m_scoreToWin;
+
         public Board()
         {
+            m_scoreToWin = 1;
             m_boxes = new List<Box>();
             m_turn = new List<PlayerWrapper>();
 
@@ -48,8 +51,6 @@ namespace Manager
         public void PreRespawn()
         {
             m_boxes = new List<Box>();
-
-            NextTurn();
         }
 
         /// <summary>
@@ -181,6 +182,22 @@ namespace Manager
 
         public void NextTurn()
         {
+            List<PlayerWrapper> players = Manager.Player.Instance.Get();
+            bool win = false;
+
+            for ( int index = 0; index < players.Count && !win; index++ )
+            {
+               if( players[ index ].GetStats().GetPoints() >= m_scoreToWin )
+               {
+                   win = true;
+               }
+            }
+
+            if( win )
+            {
+                Scene.Instance.Load( Scene.Type.Victory );
+            }
+
             m_currentTurn += 1;
 
             if (m_currentTurn > m_turn.Count - 1)

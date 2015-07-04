@@ -2,7 +2,11 @@ fileFormatVersion: 2
 guid: 8483235128cd79a42873e5992f1de263
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - m_previous: {instanceID: 0}
+  - m_next: {instanceID: 0}
+  - m_puppetJustEntered: {instanceID: 0}
+  - m_message: {fileID: 11426198, guid: 543b65cdb7db7364aa2d15e1b06beaec, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

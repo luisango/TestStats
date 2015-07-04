@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Text;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Board
 {
@@ -10,6 +11,8 @@ namespace Board
         public bool m_isRangedPoints = false;
         public Vector2 m_pointRange;
         public int m_points = 0;
+
+        public Text m_message;
 
 
         protected new void Awake()
@@ -28,7 +31,23 @@ namespace Board
         {
             m_puppetJustEntered.GetPlayer().GetStats().AddPoints(m_points);
 
+            if (m_points > 0)
+            {
+                m_message.text = "+" + m_points + " points!";
+                m_message.color = new Vector4(0, 0, 1, 1);
+            }
+            else
+            {
+                m_message.text = m_points + " points!";
+                m_message.color = new Vector4(1, 0, 0, 1);
+            }
+
             Manager.Board.Instance.NextTurn();
+        }
+
+        void FixedUpdate()
+        {
+            m_message.color = new Vector4(m_message.color.r, m_message.color.g, m_message.color.b, m_message.color.a - 0.001f);
         }
     }
 }

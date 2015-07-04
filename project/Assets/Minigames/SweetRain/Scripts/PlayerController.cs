@@ -31,6 +31,11 @@ namespace SweetRain
 
         protected override void OnStart()
         {
+            m_speed = 3;
+            m_gravity = 2.5f;
+            m_initialScore = 20;
+            m_max_score = 0;
+
             SetScore( m_initialScore );
         }
 
@@ -63,7 +68,7 @@ namespace SweetRain
 
             if (GetPlayer().GetInput().IsKeyDown(Player.Input.Key.Action))
             {
-                this.transform.FindChild("Model").renderer.material.color = new Color(255, 0, 0);
+                //this.transform.FindChild("Model").renderer.material.color = new Color(255, 0, 0);
             }
 
             if (GetPlayer().GetInput().IsKeyPressed(Player.Input.Key.Right))

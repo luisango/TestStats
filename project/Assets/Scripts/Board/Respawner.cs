@@ -28,6 +28,7 @@ namespace Board
                 int id = p.GetPuppet().GetIdentifier();
                 GameObject puppet = (GameObject)Instantiate(m_puppetPrefabs[id]);
 
+                puppet.AddComponent<Player.PuppetController>();
                 puppet.GetComponent<Player.PuppetController>().SetPlayer(p);
             }
         }

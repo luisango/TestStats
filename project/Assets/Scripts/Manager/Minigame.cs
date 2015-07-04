@@ -145,6 +145,10 @@ namespace Manager
 
         public void SetMinigameLocalScoreForPlayer(PlayerWrapper player, int score)
         {
+            if (score == 0)
+            {
+                int i = 0;
+            }
             m_currentMinigameLocalScore[Player.Instance.Get().IndexOf(player)] = score;
         }
 

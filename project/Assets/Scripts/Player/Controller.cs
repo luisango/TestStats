@@ -110,6 +110,11 @@ namespace Player
             return m_score;
         }
 
+        public void SetScore(int score)
+        {
+            m_score = score;
+        }
+
         /// <summary>
         /// Subscribes a Minigame.Controller to this controller event handler.
         /// </summary>

@@ -16,7 +16,7 @@ namespace SweetRain
         private float m_MIN_LIMIT = -5.7f;
 
         // Params puntuation:
-        public int score = 20; // to debug
+        public int m_initialScore = 20; // to debug
         public int m_max_score = 0;
 
         private float m_playTime = 30f;
@@ -26,12 +26,12 @@ namespace SweetRain
 
         protected override bool GameOverCheck()
         {
-            return GetScore() < m_max_score || m_playTime <= 0;
+           return GetScore() <= m_max_score || m_playTime <= 0;
         }
 
         protected override void OnStart()
         {
-            this.transform.FindChild("Name").GetComponent<TextMesh>().text = GetPlayer().GetNickname();
+            SetScore( m_initialScore );
         }
 
         protected override void OnUpdate()
@@ -59,7 +59,7 @@ namespace SweetRain
         {
             Vector3 pos = this.transform.position;
 
-            this.transform.FindChild("Model").renderer.material.color = GetPlayer().GetPuppet().GetColor();
+     //       this.transform.FindChild("Model").renderer.material.color = GetPlayer().GetPuppet().GetColor();
 
             if (GetPlayer().GetInput().IsKeyDown(Player.Input.Key.Action))
             {
@@ -68,13 +68,11 @@ namespace SweetRain
 
             if (GetPlayer().GetInput().IsKeyPressed(Player.Input.Key.Right))
             {
-                //Debug.Log("Right!");
                 this.transform.position = pos + new Vector3(m_speed * Time.deltaTime, 0, 0);
             }
 
             if (GetPlayer().GetInput().IsKeyPressed(Player.Input.Key.Left))
             {
-                //Debug.Log("Left!");
                 this.transform.position = pos - new Vector3(m_speed * Time.deltaTime, 0, 0);
             }
         }

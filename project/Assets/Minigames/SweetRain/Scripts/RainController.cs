@@ -29,7 +29,9 @@ namespace SweetRain
         protected void OnTriggerEnter( Collider other )
         {
             PlayerController playerController = other.gameObject.GetComponent<PlayerController>();
+            Player.Wrapper player = playerController.GetPlayer();
 
+            Debug.Log( "ANTES: " + playerController.GetScore() );
             if ( playerController != null )
             {
                 if ( playerController.GetScore() > 0 )
@@ -37,6 +39,7 @@ namespace SweetRain
 
                 Destroy( this.gameObject );
             } // Else: lluvia
+            Debug.Log( "DESPUEs: " + playerController.GetScore() );
         }
     }
 }

@@ -14,6 +14,8 @@ namespace SweetRain
         public Vector2 m_rainDropSpawnRange;
         float timeCount = 0;
 
+        public GameObject[] m_puppetPrefabs;
+
         private int m_minDrops = 1;
         private int m_maxDrops = 4;
 
@@ -58,12 +60,17 @@ namespace SweetRain
             float spawnStep = spawnLength / (Manager.Player.Instance.Get().Count * 2);
             float lastSpawn = spawnRange.x;
 
-            for (int i = 0; i < Manager.Player.Instance.Get().Count; i++)
+            foreach (Player.Wrapper p  in Manager.Player.Instance.Get())
             {
                 lastSpawn += spawnStep;
 
+                int id = p.GetPuppet().GetIdentifier();
+
                 // Instantiate player
-                GameObject newPlayer = InstantiatePlayer();
+                GameObject newPlayer = ( GameObject )Instantiate( m_puppetPrefabs[ id ] );
+                newPlayer.AddComponent<SweetRain.PlayerController>();
+
+                m_playerInstances.Add( newPlayer );
 
                 // Set positoin
                 newPlayer.transform.position = new Vector3(lastSpawn, 0, 0);

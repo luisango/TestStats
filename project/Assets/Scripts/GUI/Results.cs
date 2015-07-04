@@ -21,11 +21,13 @@ public class Results : MonoBehaviour
         int maxScore2 = 0;
         int maxScore3 = 0;
 
+        Manager.Minigame m = Manager.Minigame.Instance;
+
         foreach (Player.Wrapper player in Manager.Player.Instance.Get())
         {
             int thisPlayerScore = Manager.Minigame.Instance.GetLocalScoreForPlayer(player);
 
-            if (maxScore1 > thisPlayerScore || winner1 == null )
+            if (maxScore1 < thisPlayerScore || winner1 == null )
             {
                 maxScore3 = maxScore2;
                 maxScore2 = maxScore1;
@@ -34,14 +36,14 @@ public class Results : MonoBehaviour
                 winner2 = winner1;
                 winner1 = player;
             }
-            else if (maxScore1 <= thisPlayerScore && maxScore2 > thisPlayerScore || winner2 == null)
+            else if (maxScore1 >= thisPlayerScore && maxScore2 < thisPlayerScore || winner2 == null)
             {
                 maxScore3 = maxScore2;
                 maxScore2 = thisPlayerScore;
                 winner3 = winner2;
                 winner2 = player;
             }
-            else if ( maxScore2 < thisPlayerScore && maxScore3 > thisPlayerScore || winner3 == null )
+            else if ( maxScore2 >= thisPlayerScore && maxScore3 < thisPlayerScore || winner3 == null )
             {
                 maxScore3 = thisPlayerScore;
                 winner3 = player;

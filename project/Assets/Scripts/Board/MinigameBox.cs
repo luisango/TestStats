@@ -20,7 +20,7 @@ namespace Board
             // If minigame is not selected, then select one randomly
             if (m_definition == null) {
                 Manager.Minigame m = Manager.Minigame.Instance;
-                int selected = Random.Range(0, m.Get().Count);
+                int selected = Random.Range(0, m.Get().Count - 1 );
 
                 m_definition = m.Get()[selected];
             }

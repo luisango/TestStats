@@ -33,7 +33,7 @@ namespace Minigame
         /// <summary>
         /// Player instances.
         /// </summary>
-        private List<GameObject> m_playerInstances;
+        protected List<GameObject> m_playerInstances;
 
 
         public Controller()

@@ -21,6 +21,9 @@ namespace SweetRain
 
         private float m_playTime = 30f;
 
+        private Animator m_animator;
+        private bool right;
+        private bool left;
         // Aqui van los métodos que implementan la logica del
         // minijuego para el jugador.
 
@@ -31,6 +34,15 @@ namespace SweetRain
 
         protected override void OnStart()
         {
+            m_animator = GetComponentInChildren<Animator>();
+
+            m_animator.SetBool("walk", false);
+            m_animator.SetBool("jump", false);
+            m_animator.SetBool("victory", false);
+            m_animator.SetBool("right", false);
+            m_animator.SetBool("left", false);
+            m_animator.SetBool("blow", false);
+
             m_speed = 3;
             m_gravity = 2.5f;
             m_initialScore = 20;
@@ -45,13 +57,29 @@ namespace SweetRain
 
             Vector3 pos = this.transform.position;
             // If player is out of platform-clouds, he falls off:
-            if ( pos.x < m_MIN_LIMIT )
+            
+
+            if (pos.x < m_MIN_LIMIT)
             {
-                this.transform.position = new Vector3( m_MIN_LIMIT ,transform.position.y,transform.position.z );
+                this.transform.position = new Vector3(m_MIN_LIMIT, transform.position.y, transform.position.z);
             }
             if (pos.x > m_MAX_LIMIT)
             {
-                this.transform.position = new Vector3( m_MAX_LIMIT, transform.position.y, transform.position.z );
+                this.transform.position = new Vector3(m_MAX_LIMIT, transform.position.y, transform.position.z);
+            }
+
+            if ((right && left) || (!right && !left) )
+            {
+                m_animator.SetBool("right", false);
+                m_animator.SetBool("left", false);
+            }
+            else if( right )
+            {
+                m_animator.SetBool("right", true);
+            }
+            else if( left )
+            {
+                m_animator.SetBool("left", true);
             }
         }
 
@@ -63,7 +91,7 @@ namespace SweetRain
         protected override void ProcessInput()
         {
             Vector3 pos = this.transform.position;
-
+            right = left = false;
      //       this.transform.FindChild("Model").renderer.material.color = GetPlayer().GetPuppet().GetColor();
 
             if (GetPlayer().GetInput().IsKeyDown(Player.Input.Key.Action))
@@ -74,11 +102,13 @@ namespace SweetRain
             if (GetPlayer().GetInput().IsKeyPressed(Player.Input.Key.Right))
             {
                 this.transform.position = pos + new Vector3(m_speed * Time.deltaTime, 0, 0);
+                right = true;
             }
 
             if (GetPlayer().GetInput().IsKeyPressed(Player.Input.Key.Left))
             {
                 this.transform.position = pos - new Vector3(m_speed * Time.deltaTime, 0, 0);
+                left = true;
             }
         }
 	}

@@ -39,53 +39,53 @@ namespace Manager
 
         public Board()
         {
-            PlayerWrapper m_currentPlayerObject = new PlayerWrapper();
-
-            // Create puppet
-            PlayerPuppet puppet = new PlayerPuppet(0);
-
-            // Add puppet to current player
-            m_currentPlayerObject.SetPuppet(puppet);
-
-            // Create input
-            PlayerInput input = new PlayerInput();
-
-            // Set input keys
-            input.SetKey(PlayerInput.Key.Left, "q");
-            input.SetKey(PlayerInput.Key.Right, "w");
-            input.SetKey(PlayerInput.Key.Action, "e");
-
-            // Add input to current player
-            m_currentPlayerObject.SetInput(input);
-
-            m_currentPlayerObject.SetNickname("QWE");
-
-            // Add current player to player manager
-            Manager.Player.Instance.Add(m_currentPlayerObject);
-            // ------------------------------------------------------------------------
-            m_currentPlayerObject = new PlayerWrapper();
-
-            // Create puppet
-            puppet = new PlayerPuppet(3);
-
-            // Add puppet to current player
-            m_currentPlayerObject.SetPuppet(puppet);
-
-            // Create input
-            input = new PlayerInput();
-
-            // Set input keys
-            input.SetKey(PlayerInput.Key.Left, "a");
-            input.SetKey(PlayerInput.Key.Right, "s");
-            input.SetKey(PlayerInput.Key.Action, "d");
-
-            // Add input to current player
-            m_currentPlayerObject.SetInput(input);
-
-            m_currentPlayerObject.SetNickname("ASD");
-
-            // Add current player to player manager
-            Manager.Player.Instance.Add(m_currentPlayerObject);
+            //PlayerWrapper m_currentPlayerObject = new PlayerWrapper();
+            //
+            //// Create puppet
+            //PlayerPuppet puppet = new PlayerPuppet(0);
+            //
+            //// Add puppet to current player
+            //m_currentPlayerObject.SetPuppet(puppet);
+            //
+            //// Create input
+            //PlayerInput input = new PlayerInput();
+            //
+            //// Set input keys
+            //input.SetKey(PlayerInput.Key.Left, "q");
+            //input.SetKey(PlayerInput.Key.Right, "w");
+            //input.SetKey(PlayerInput.Key.Action, "e");
+            //
+            //// Add input to current player
+            //m_currentPlayerObject.SetInput(input);
+            //
+            //m_currentPlayerObject.SetNickname("QWE");
+            //
+            //// Add current player to player manager
+            //Manager.Player.Instance.Add(m_currentPlayerObject);
+            //// ------------------------------------------------------------------------
+            //m_currentPlayerObject = new PlayerWrapper();
+            //
+            //// Create puppet
+            //puppet = new PlayerPuppet(3);
+            //
+            //// Add puppet to current player
+            //m_currentPlayerObject.SetPuppet(puppet);
+            //
+            //// Create input
+            //input = new PlayerInput();
+            //
+            //// Set input keys
+            //input.SetKey(PlayerInput.Key.Left, "a");
+            //input.SetKey(PlayerInput.Key.Right, "s");
+            //input.SetKey(PlayerInput.Key.Action, "d");
+            //
+            //// Add input to current player
+            //m_currentPlayerObject.SetInput(input);
+            //
+            //m_currentPlayerObject.SetNickname("ASD");
+            //
+            //// Add current player to player manager
+            //Manager.Player.Instance.Add(m_currentPlayerObject);
             // ------------------------------------------------------------------------
 
             m_scoreToWin = 100;

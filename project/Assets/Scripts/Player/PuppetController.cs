@@ -18,6 +18,7 @@ namespace Player
         public float m_t;
         private bool m_haveRolled;
 
+        private Animator m_animator;
         public void SetPlayer(Wrapper player)
         {
             m_player = player;
@@ -53,6 +54,15 @@ namespace Player
 
         public void StartWalking(List<Board.Box> path)
         {
+            m_animator = this.GetComponentInChildren<Animator>();
+            m_animator.SetBool("walk", true);
+
+            m_animator.SetBool("jump"   , false);
+            m_animator.SetBool("victory", false);
+            m_animator.SetBool("right"  , false);
+            m_animator.SetBool("left"   , false);
+            m_animator.SetBool("blow"   , false);
+
             m_isWalking = true;
             m_t = .0f;
             m_initialPos = 0;
@@ -101,7 +111,7 @@ namespace Player
                 Vector3 pos =  m_path[m_endPos].GetWaypoint() - m_path[m_initialPos].GetWaypoint();
                 pos *= m_t;
 
-                transform.LookAt(transform.position + pos * -1);
+                transform.LookAt(transform.position + pos * -1 );
                 this.transform.position = m_path[m_initialPos].GetWaypoint() + pos;
 
                 if (m_t >= 1.0f)
@@ -111,6 +121,7 @@ namespace Player
                     if (m_endPos == m_path.Count - 1)
                     {
                         m_isWalking = false;
+                        m_animator.SetBool("walk", false);
                     }
                     else
                     {

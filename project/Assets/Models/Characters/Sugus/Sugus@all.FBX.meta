@@ -1,0 +1,563 @@
+fileFormatVersion: 2
+guid: 0afe7ae7b8c8e6a49a87615890e7d7b8
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Arc001
+    100002: Box001
+    100004: Box001 1
+    100006: Box002
+    100008: Box003
+    100010: Box004
+    100012: Head
+    100014: Left Shoulder
+    100016: LeftArm
+    100018: LeftFoot
+    100020: LeftForearm
+    100022: LeftHand
+    100024: LeftLeg
+    100026: LeftSpine
+    100028: LeftThigh
+    100030: Line001
+    100032: Line002
+    100034: Right Shoulder
+    100036: RightArm
+    100038: RightFoot
+    100040: RightForearm
+    100042: RightHand
+    100044: RightLeg
+    100046: RightSpine
+    100048: RightThigh
+    100050: Sphere001
+    100052: Sphere002
+    100054: Sugus
+    100056: //RootNode
+    400000: Arc001
+    400002: Box001
+    400004: Box001 1
+    400006: Box002
+    400008: Box003
+    400010: Box004
+    400012: Head
+    400014: Left Shoulder
+    400016: LeftArm
+    400018: LeftFoot
+    400020: LeftForearm
+    400022: LeftHand
+    400024: LeftLeg
+    400026: LeftSpine
+    400028: LeftThigh
+    400030: Line001
+    400032: Line002
+    400034: Right Shoulder
+    400036: RightArm
+    400038: RightFoot
+    400040: RightForearm
+    400042: RightHand
+    400044: RightLeg
+    400046: RightSpine
+    400048: RightThigh
+    400050: Sphere001
+    400052: Sphere002
+    400054: Sugus
+    400056: //RootNode
+    4300000: Box003
+    4300002: Box001
+    4300004: Box002
+    4300006: Box004
+    4300008: Line002
+    4300010: Arc001
+    4300012: Sphere002
+    4300014: Sphere001
+    4300016: Line001
+    4300018: Box001
+    7400000: blow
+    7400002: jump
+    7400004: right
+    7400006: victory
+    7400008: walk
+    9500000: //RootNode
+    13700000: Arc001
+    13700002: Box001
+    13700004: Box001 1
+    13700006: Box002
+    13700008: Box003
+    13700010: Box004
+    13700012: Line001
+    13700014: Line002
+    13700016: Sphere001
+    13700018: Sphere002
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: blow
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: Head/Left Shoulder
+        weight: 1
+      - path: Head/Left Shoulder/LeftArm
+        weight: 1
+      - path: Head/Left Shoulder/LeftArm/LeftForearm
+        weight: 1
+      - path: Head/Left Shoulder/LeftArm/LeftForearm/LeftHand
+        weight: 1
+      - path: Head/LeftSpine
+        weight: 1
+      - path: Head/LeftSpine/LeftThigh
+        weight: 1
+      - path: Head/LeftSpine/LeftThigh/LeftLeg
+        weight: 1
+      - path: Head/LeftSpine/LeftThigh/LeftLeg/LeftFoot
+        weight: 1
+      - path: Head/Right Shoulder
+        weight: 1
+      - path: Head/Right Shoulder/RightArm
+        weight: 1
+      - path: Head/Right Shoulder/RightArm/RightForearm
+        weight: 1
+      - path: Head/Right Shoulder/RightArm/RightForearm/RightHand
+        weight: 1
+      - path: Head/RightSpine
+        weight: 1
+      - path: Head/RightSpine/RightThigh
+        weight: 1
+      - path: Head/RightSpine/RightThigh/RightLeg
+        weight: 1
+      - path: Head/RightSpine/RightThigh/RightLeg/RightFoot
+        weight: 1
+      - path: Sugus
+        weight: 1
+      - path: Sugus/Arc001
+        weight: 1
+      - path: Sugus/Box001
+        weight: 1
+      - path: Sugus/Box001 1
+        weight: 1
+      - path: Sugus/Box002
+        weight: 1
+      - path: Sugus/Box003
+        weight: 1
+      - path: Sugus/Box004
+        weight: 1
+      - path: Sugus/Line001
+        weight: 1
+      - path: Sugus/Line002
+        weight: 1
+      - path: Sugus/Sphere001
+        weight: 1
+      - path: Sugus/Sphere002
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: jump
+      takeName: Take 001
+      firstFrame: 21
+      lastFrame: 41
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: Head/Left Shoulder
+        weight: 1
+      - path: Head/Left Shoulder/LeftArm
+        weight: 1
+      - path: Head/Left Shoulder/LeftArm/LeftForearm
+        weight: 1
+      - path: Head/Left Shoulder/LeftArm/LeftForearm/LeftHand
+        weight: 1
+      - path: Head/LeftSpine
+        weight: 1
+      - path: Head/LeftSpine/LeftThigh
+        weight: 1
+      - path: Head/LeftSpine/LeftThigh/LeftLeg
+        weight: 1
+      - path: Head/LeftSpine/LeftThigh/LeftLeg/LeftFoot
+        weight: 1
+      - path: Head/Right Shoulder
+        weight: 1
+      - path: Head/Right Shoulder/RightArm
+        weight: 1
+      - path: Head/Right Shoulder/RightArm/RightForearm
+        weight: 1
+      - path: Head/Right Shoulder/RightArm/RightForearm/RightHand
+        weight: 1
+      - path: Head/RightSpine
+        weight: 1
+      - path: Head/RightSpine/RightThigh
+        weight: 1
+      - path: Head/RightSpine/RightThigh/RightLeg
+        weight: 1
+      - path: Head/RightSpine/RightThigh/RightLeg/RightFoot
+        weight: 1
+      - path: Sugus
+        weight: 1
+      - path: Sugus/Arc001
+        weight: 1
+      - path: Sugus/Box001
+        weight: 1
+      - path: Sugus/Box001 1
+        weight: 1
+      - path: Sugus/Box002
+        weight: 1
+      - path: Sugus/Box003
+        weight: 1
+      - path: Sugus/Box004
+        weight: 1
+      - path: Sugus/Line001
+        weight: 1
+      - path: Sugus/Line002
+        weight: 1
+      - path: Sugus/Sphere001
+        weight: 1
+      - path: Sugus/Sphere002
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: right
+      takeName: Take 001
+      firstFrame: 42
+      lastFrame: 72
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: Head/Left Shoulder
+        weight: 1
+      - path: Head/Left Shoulder/LeftArm
+        weight: 1
+      - path: Head/Left Shoulder/LeftArm/LeftForearm
+        weight: 1
+      - path: Head/Left Shoulder/LeftArm/LeftForearm/LeftHand
+        weight: 1
+      - path: Head/LeftSpine
+        weight: 1
+      - path: Head/LeftSpine/LeftThigh
+        weight: 1
+      - path: Head/LeftSpine/LeftThigh/LeftLeg
+        weight: 1
+      - path: Head/LeftSpine/LeftThigh/LeftLeg/LeftFoot
+        weight: 1
+      - path: Head/Right Shoulder
+        weight: 1
+      - path: Head/Right Shoulder/RightArm
+        weight: 1
+      - path: Head/Right Shoulder/RightArm/RightForearm
+        weight: 1
+      - path: Head/Right Shoulder/RightArm/RightForearm/RightHand
+        weight: 1
+      - path: Head/RightSpine
+        weight: 1
+      - path: Head/RightSpine/RightThigh
+        weight: 1
+      - path: Head/RightSpine/RightThigh/RightLeg
+        weight: 1
+      - path: Head/RightSpine/RightThigh/RightLeg/RightFoot
+        weight: 1
+      - path: Sugus
+        weight: 1
+      - path: Sugus/Arc001
+        weight: 1
+      - path: Sugus/Box001
+        weight: 1
+      - path: Sugus/Box001 1
+        weight: 1
+      - path: Sugus/Box002
+        weight: 1
+      - path: Sugus/Box003
+        weight: 1
+      - path: Sugus/Box004
+        weight: 1
+      - path: Sugus/Line001
+        weight: 1
+      - path: Sugus/Line002
+        weight: 1
+      - path: Sugus/Sphere001
+        weight: 1
+      - path: Sugus/Sphere002
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: victory
+      takeName: Take 001
+      firstFrame: 73
+      lastFrame: 93
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: Head/Left Shoulder
+        weight: 1
+      - path: Head/Left Shoulder/LeftArm
+        weight: 1
+      - path: Head/Left Shoulder/LeftArm/LeftForearm
+        weight: 1
+      - path: Head/Left Shoulder/LeftArm/LeftForearm/LeftHand
+        weight: 1
+      - path: Head/LeftSpine
+        weight: 1
+      - path: Head/LeftSpine/LeftThigh
+        weight: 1
+      - path: Head/LeftSpine/LeftThigh/LeftLeg
+        weight: 1
+      - path: Head/LeftSpine/LeftThigh/LeftLeg/LeftFoot
+        weight: 1
+      - path: Head/Right Shoulder
+        weight: 1
+      - path: Head/Right Shoulder/RightArm
+        weight: 1
+      - path: Head/Right Shoulder/RightArm/RightForearm
+        weight: 1
+      - path: Head/Right Shoulder/RightArm/RightForearm/RightHand
+        weight: 1
+      - path: Head/RightSpine
+        weight: 1
+      - path: Head/RightSpine/RightThigh
+        weight: 1
+      - path: Head/RightSpine/RightThigh/RightLeg
+        weight: 1
+      - path: Head/RightSpine/RightThigh/RightLeg/RightFoot
+        weight: 1
+      - path: Sugus
+        weight: 1
+      - path: Sugus/Arc001
+        weight: 1
+      - path: Sugus/Box001
+        weight: 1
+      - path: Sugus/Box001 1
+        weight: 1
+      - path: Sugus/Box002
+        weight: 1
+      - path: Sugus/Box003
+        weight: 1
+      - path: Sugus/Box004
+        weight: 1
+      - path: Sugus/Line001
+        weight: 1
+      - path: Sugus/Line002
+        weight: 1
+      - path: Sugus/Sphere001
+        weight: 1
+      - path: Sugus/Sphere002
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: walk
+      takeName: Take 001
+      firstFrame: 94
+      lastFrame: 114
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: Head/Left Shoulder
+        weight: 1
+      - path: Head/Left Shoulder/LeftArm
+        weight: 1
+      - path: Head/Left Shoulder/LeftArm/LeftForearm
+        weight: 1
+      - path: Head/Left Shoulder/LeftArm/LeftForearm/LeftHand
+        weight: 1
+      - path: Head/LeftSpine
+        weight: 1
+      - path: Head/LeftSpine/LeftThigh
+        weight: 1
+      - path: Head/LeftSpine/LeftThigh/LeftLeg
+        weight: 1
+      - path: Head/LeftSpine/LeftThigh/LeftLeg/LeftFoot
+        weight: 1
+      - path: Head/Right Shoulder
+        weight: 1
+      - path: Head/Right Shoulder/RightArm
+        weight: 1
+      - path: Head/Right Shoulder/RightArm/RightForearm
+        weight: 1
+      - path: Head/Right Shoulder/RightArm/RightForearm/RightHand
+        weight: 1
+      - path: Head/RightSpine
+        weight: 1
+      - path: Head/RightSpine/RightThigh
+        weight: 1
+      - path: Head/RightSpine/RightThigh/RightLeg
+        weight: 1
+      - path: Head/RightSpine/RightThigh/RightLeg/RightFoot
+        weight: 1
+      - path: Sugus
+        weight: 1
+      - path: Sugus/Arc001
+        weight: 1
+      - path: Sugus/Box001
+        weight: 1
+      - path: Sugus/Box001 1
+        weight: 1
+      - path: Sugus/Box002
+        weight: 1
+      - path: Sugus/Box003
+        weight: 1
+      - path: Sugus/Box004
+        weight: 1
+      - path: Sugus/Line001
+        weight: 1
+      - path: Sugus/Line002
+        weight: 1
+      - path: Sugus/Sphere001
+        weight: 1
+      - path: Sugus/Sphere002
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

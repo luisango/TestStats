@@ -9,7 +9,7 @@ public class Results : MonoBehaviour
     public Text m_winner2;
     public Text m_winner3;
 
-    public int m_timer = 0;
+    public float m_timer = 0;
 
 
     void Start()
@@ -70,11 +70,11 @@ public class Results : MonoBehaviour
 
     void Update()
     {
-        m_timer++;
+        m_timer += Time.deltaTime;
 
         foreach (Player.Wrapper player in Manager.Player.Instance.Get())
         {
-            if (m_timer > 5000 && player.GetInput().IsKeyDown(Player.Input.Key.Action))
+            if (m_timer > 5 && player.GetInput().IsKeyDown(Player.Input.Key.Action))
             {
 
                 Manager.Scene.Instance.Load(Manager.Scene.Type.Board);

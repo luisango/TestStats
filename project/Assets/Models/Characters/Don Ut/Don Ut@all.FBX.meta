@@ -1,0 +1,902 @@
+fileFormatVersion: 2
+guid: 3ed332f76403dc34a8c7d3ee97688cc4
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Bone001
+    100002: Bone002
+    100004: Bone003
+    100006: Bone004
+    100008: Bone005
+    100010: Bone006
+    100012: Bone007
+    100014: Bone008
+    100016: Bone009
+    100018: Bone010
+    100020: Bone011
+    100022: Bone012
+    100024: Bone013
+    100026: Bone014
+    100028: Bone015
+    100030: Bone016
+    100032: Bone017
+    100034: Bone018
+    100036: Box001
+    100038: Box002
+    100040: Box003
+    100042: Box004
+    100044: Box005
+    100046: Box006
+    100048: Capsule106
+    100050: Capsule185
+    100052: Capsule302
+    100054: Capsule303
+    100056: Capsule304
+    100058: Capsule305
+    100060: Capsule306
+    100062: Capsule307
+    100064: Capsule308
+    100066: Capsule309
+    100068: Capsule310
+    100070: Capsule311
+    100072: Capsule312
+    100074: Capsule313
+    100076: Capsule314
+    100078: Don Ut
+    100080: //RootNode
+    100082: Sphere001
+    100084: Sphere002
+    100086: Torus001
+    100088: Torus002
+    400000: Bone001
+    400002: Bone002
+    400004: Bone003
+    400006: Bone004
+    400008: Bone005
+    400010: Bone006
+    400012: Bone007
+    400014: Bone008
+    400016: Bone009
+    400018: Bone010
+    400020: Bone011
+    400022: Bone012
+    400024: Bone013
+    400026: Bone014
+    400028: Bone015
+    400030: Bone016
+    400032: Bone017
+    400034: Bone018
+    400036: Box001
+    400038: Box002
+    400040: Box003
+    400042: Box004
+    400044: Box005
+    400046: Box006
+    400048: Capsule106
+    400050: Capsule185
+    400052: Capsule302
+    400054: Capsule303
+    400056: Capsule304
+    400058: Capsule305
+    400060: Capsule306
+    400062: Capsule307
+    400064: Capsule308
+    400066: Capsule309
+    400068: Capsule310
+    400070: Capsule311
+    400072: Capsule312
+    400074: Capsule313
+    400076: Capsule314
+    400078: Don Ut
+    400080: //RootNode
+    400082: Sphere001
+    400084: Sphere002
+    400086: Torus001
+    400088: Torus002
+    4300000: Box002
+    4300002: Box001
+    4300004: Box003
+    4300006: Box004
+    4300008: Torus002
+    4300010: Torus001
+    4300012: Capsule308
+    4300014: Box005
+    4300016: Sphere002
+    4300018: Box006
+    4300020: Capsule306
+    4300022: Capsule313
+    4300024: Capsule309
+    4300026: Capsule302
+    4300028: Capsule305
+    4300030: Capsule312
+    4300032: Capsule185
+    4300034: Capsule106
+    4300036: Sphere001
+    4300038: Capsule311
+    4300040: Capsule304
+    4300042: Capsule310
+    4300044: Capsule303
+    4300046: Capsule314
+    4300048: Capsule307
+    7400000: blow
+    7400002: jump
+    7400004: right
+    7400006: left
+    7400008: victory
+    7400010: walk
+    9500000: //RootNode
+    13700000: Box001
+    13700002: Box002
+    13700004: Box003
+    13700006: Box004
+    13700008: Box005
+    13700010: Box006
+    13700012: Capsule106
+    13700014: Capsule185
+    13700016: Capsule302
+    13700018: Capsule303
+    13700020: Capsule304
+    13700022: Capsule305
+    13700024: Capsule306
+    13700026: Capsule307
+    13700028: Capsule308
+    13700030: Capsule309
+    13700032: Capsule310
+    13700034: Capsule311
+    13700036: Capsule312
+    13700038: Capsule313
+    13700040: Capsule314
+    13700042: Sphere001
+    13700044: Sphere002
+    13700046: Torus001
+    13700048: Torus002
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: blow
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bone001
+        weight: 1
+      - path: Bone001/Bone002
+        weight: 1
+      - path: Bone001/Bone002/Bone003
+        weight: 1
+      - path: Bone001/Bone002/Bone003/Bone004
+        weight: 1
+      - path: Bone001/Bone002/Bone003/Bone004/Bone005
+        weight: 1
+      - path: Bone001/Bone006
+        weight: 1
+      - path: Bone001/Bone006/Bone007
+        weight: 1
+      - path: Bone001/Bone006/Bone007/Bone008
+        weight: 1
+      - path: Bone001/Bone006/Bone007/Bone008/Bone009
+        weight: 1
+      - path: Bone001/Bone010
+        weight: 1
+      - path: Bone001/Bone010/Bone011
+        weight: 1
+      - path: Bone001/Bone010/Bone011/Bone012
+        weight: 1
+      - path: Bone001/Bone010/Bone011/Bone012/Bone013
+        weight: 1
+      - path: Bone001/Bone010/Bone011/Bone012/Bone013/Bone014
+        weight: 1
+      - path: Bone001/Bone010/Bone015
+        weight: 1
+      - path: Bone001/Bone010/Bone015/Bone018
+        weight: 1
+      - path: Bone001/Bone010/Bone015/Bone018/Bone016
+        weight: 1
+      - path: Bone001/Bone010/Bone015/Bone018/Bone016/Bone017
+        weight: 1
+      - path: Don Ut
+        weight: 1
+      - path: Don Ut/Box001
+        weight: 1
+      - path: Don Ut/Box002
+        weight: 1
+      - path: Don Ut/Box003
+        weight: 1
+      - path: Don Ut/Box004
+        weight: 1
+      - path: Don Ut/Box005
+        weight: 1
+      - path: Don Ut/Box006
+        weight: 1
+      - path: Don Ut/Capsule106
+        weight: 1
+      - path: Don Ut/Capsule185
+        weight: 1
+      - path: Don Ut/Capsule302
+        weight: 1
+      - path: Don Ut/Capsule303
+        weight: 1
+      - path: Don Ut/Capsule304
+        weight: 1
+      - path: Don Ut/Capsule305
+        weight: 1
+      - path: Don Ut/Capsule306
+        weight: 1
+      - path: Don Ut/Capsule307
+        weight: 1
+      - path: Don Ut/Capsule308
+        weight: 1
+      - path: Don Ut/Capsule309
+        weight: 1
+      - path: Don Ut/Capsule310
+        weight: 1
+      - path: Don Ut/Capsule311
+        weight: 1
+      - path: Don Ut/Capsule312
+        weight: 1
+      - path: Don Ut/Capsule313
+        weight: 1
+      - path: Don Ut/Capsule314
+        weight: 1
+      - path: Don Ut/Sphere001
+        weight: 1
+      - path: Don Ut/Sphere002
+        weight: 1
+      - path: Don Ut/Torus001
+        weight: 1
+      - path: Don Ut/Torus002
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: jump
+      takeName: Take 001
+      firstFrame: 21
+      lastFrame: 41
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bone001
+        weight: 1
+      - path: Bone001/Bone002
+        weight: 1
+      - path: Bone001/Bone002/Bone003
+        weight: 1
+      - path: Bone001/Bone002/Bone003/Bone004
+        weight: 1
+      - path: Bone001/Bone002/Bone003/Bone004/Bone005
+        weight: 1
+      - path: Bone001/Bone006
+        weight: 1
+      - path: Bone001/Bone006/Bone007
+        weight: 1
+      - path: Bone001/Bone006/Bone007/Bone008
+        weight: 1
+      - path: Bone001/Bone006/Bone007/Bone008/Bone009
+        weight: 1
+      - path: Bone001/Bone010
+        weight: 1
+      - path: Bone001/Bone010/Bone011
+        weight: 1
+      - path: Bone001/Bone010/Bone011/Bone012
+        weight: 1
+      - path: Bone001/Bone010/Bone011/Bone012/Bone013
+        weight: 1
+      - path: Bone001/Bone010/Bone011/Bone012/Bone013/Bone014
+        weight: 1
+      - path: Bone001/Bone010/Bone015
+        weight: 1
+      - path: Bone001/Bone010/Bone015/Bone018
+        weight: 1
+      - path: Bone001/Bone010/Bone015/Bone018/Bone016
+        weight: 1
+      - path: Bone001/Bone010/Bone015/Bone018/Bone016/Bone017
+        weight: 1
+      - path: Don Ut
+        weight: 1
+      - path: Don Ut/Box001
+        weight: 1
+      - path: Don Ut/Box002
+        weight: 1
+      - path: Don Ut/Box003
+        weight: 1
+      - path: Don Ut/Box004
+        weight: 1
+      - path: Don Ut/Box005
+        weight: 1
+      - path: Don Ut/Box006
+        weight: 1
+      - path: Don Ut/Capsule106
+        weight: 1
+      - path: Don Ut/Capsule185
+        weight: 1
+      - path: Don Ut/Capsule302
+        weight: 1
+      - path: Don Ut/Capsule303
+        weight: 1
+      - path: Don Ut/Capsule304
+        weight: 1
+      - path: Don Ut/Capsule305
+        weight: 1
+      - path: Don Ut/Capsule306
+        weight: 1
+      - path: Don Ut/Capsule307
+        weight: 1
+      - path: Don Ut/Capsule308
+        weight: 1
+      - path: Don Ut/Capsule309
+        weight: 1
+      - path: Don Ut/Capsule310
+        weight: 1
+      - path: Don Ut/Capsule311
+        weight: 1
+      - path: Don Ut/Capsule312
+        weight: 1
+      - path: Don Ut/Capsule313
+        weight: 1
+      - path: Don Ut/Capsule314
+        weight: 1
+      - path: Don Ut/Sphere001
+        weight: 1
+      - path: Don Ut/Sphere002
+        weight: 1
+      - path: Don Ut/Torus001
+        weight: 1
+      - path: Don Ut/Torus002
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: right
+      takeName: Take 001
+      firstFrame: 42
+      lastFrame: 72
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bone001
+        weight: 1
+      - path: Bone001/Bone002
+        weight: 1
+      - path: Bone001/Bone002/Bone003
+        weight: 1
+      - path: Bone001/Bone002/Bone003/Bone004
+        weight: 1
+      - path: Bone001/Bone002/Bone003/Bone004/Bone005
+        weight: 1
+      - path: Bone001/Bone006
+        weight: 1
+      - path: Bone001/Bone006/Bone007
+        weight: 1
+      - path: Bone001/Bone006/Bone007/Bone008
+        weight: 1
+      - path: Bone001/Bone006/Bone007/Bone008/Bone009
+        weight: 1
+      - path: Bone001/Bone010
+        weight: 1
+      - path: Bone001/Bone010/Bone011
+        weight: 1
+      - path: Bone001/Bone010/Bone011/Bone012
+        weight: 1
+      - path: Bone001/Bone010/Bone011/Bone012/Bone013
+        weight: 1
+      - path: Bone001/Bone010/Bone011/Bone012/Bone013/Bone014
+        weight: 1
+      - path: Bone001/Bone010/Bone015
+        weight: 1
+      - path: Bone001/Bone010/Bone015/Bone018
+        weight: 1
+      - path: Bone001/Bone010/Bone015/Bone018/Bone016
+        weight: 1
+      - path: Bone001/Bone010/Bone015/Bone018/Bone016/Bone017
+        weight: 1
+      - path: Don Ut
+        weight: 1
+      - path: Don Ut/Box001
+        weight: 1
+      - path: Don Ut/Box002
+        weight: 1
+      - path: Don Ut/Box003
+        weight: 1
+      - path: Don Ut/Box004
+        weight: 1
+      - path: Don Ut/Box005
+        weight: 1
+      - path: Don Ut/Box006
+        weight: 1
+      - path: Don Ut/Capsule106
+        weight: 1
+      - path: Don Ut/Capsule185
+        weight: 1
+      - path: Don Ut/Capsule302
+        weight: 1
+      - path: Don Ut/Capsule303
+        weight: 1
+      - path: Don Ut/Capsule304
+        weight: 1
+      - path: Don Ut/Capsule305
+        weight: 1
+      - path: Don Ut/Capsule306
+        weight: 1
+      - path: Don Ut/Capsule307
+        weight: 1
+      - path: Don Ut/Capsule308
+        weight: 1
+      - path: Don Ut/Capsule309
+        weight: 1
+      - path: Don Ut/Capsule310
+        weight: 1
+      - path: Don Ut/Capsule311
+        weight: 1
+      - path: Don Ut/Capsule312
+        weight: 1
+      - path: Don Ut/Capsule313
+        weight: 1
+      - path: Don Ut/Capsule314
+        weight: 1
+      - path: Don Ut/Sphere001
+        weight: 1
+      - path: Don Ut/Sphere002
+        weight: 1
+      - path: Don Ut/Torus001
+        weight: 1
+      - path: Don Ut/Torus002
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: left
+      takeName: Take 001
+      firstFrame: 73
+      lastFrame: 103
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bone001
+        weight: 1
+      - path: Bone001/Bone002
+        weight: 1
+      - path: Bone001/Bone002/Bone003
+        weight: 1
+      - path: Bone001/Bone002/Bone003/Bone004
+        weight: 1
+      - path: Bone001/Bone002/Bone003/Bone004/Bone005
+        weight: 1
+      - path: Bone001/Bone006
+        weight: 1
+      - path: Bone001/Bone006/Bone007
+        weight: 1
+      - path: Bone001/Bone006/Bone007/Bone008
+        weight: 1
+      - path: Bone001/Bone006/Bone007/Bone008/Bone009
+        weight: 1
+      - path: Bone001/Bone010
+        weight: 1
+      - path: Bone001/Bone010/Bone011
+        weight: 1
+      - path: Bone001/Bone010/Bone011/Bone012
+        weight: 1
+      - path: Bone001/Bone010/Bone011/Bone012/Bone013
+        weight: 1
+      - path: Bone001/Bone010/Bone011/Bone012/Bone013/Bone014
+        weight: 1
+      - path: Bone001/Bone010/Bone015
+        weight: 1
+      - path: Bone001/Bone010/Bone015/Bone018
+        weight: 1
+      - path: Bone001/Bone010/Bone015/Bone018/Bone016
+        weight: 1
+      - path: Bone001/Bone010/Bone015/Bone018/Bone016/Bone017
+        weight: 1
+      - path: Don Ut
+        weight: 1
+      - path: Don Ut/Box001
+        weight: 1
+      - path: Don Ut/Box002
+        weight: 1
+      - path: Don Ut/Box003
+        weight: 1
+      - path: Don Ut/Box004
+        weight: 1
+      - path: Don Ut/Box005
+        weight: 1
+      - path: Don Ut/Box006
+        weight: 1
+      - path: Don Ut/Capsule106
+        weight: 1
+      - path: Don Ut/Capsule185
+        weight: 1
+      - path: Don Ut/Capsule302
+        weight: 1
+      - path: Don Ut/Capsule303
+        weight: 1
+      - path: Don Ut/Capsule304
+        weight: 1
+      - path: Don Ut/Capsule305
+        weight: 1
+      - path: Don Ut/Capsule306
+        weight: 1
+      - path: Don Ut/Capsule307
+        weight: 1
+      - path: Don Ut/Capsule308
+        weight: 1
+      - path: Don Ut/Capsule309
+        weight: 1
+      - path: Don Ut/Capsule310
+        weight: 1
+      - path: Don Ut/Capsule311
+        weight: 1
+      - path: Don Ut/Capsule312
+        weight: 1
+      - path: Don Ut/Capsule313
+        weight: 1
+      - path: Don Ut/Capsule314
+        weight: 1
+      - path: Don Ut/Sphere001
+        weight: 1
+      - path: Don Ut/Sphere002
+        weight: 1
+      - path: Don Ut/Torus001
+        weight: 1
+      - path: Don Ut/Torus002
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: victory
+      takeName: Take 001
+      firstFrame: 104
+      lastFrame: 124
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bone001
+        weight: 1
+      - path: Bone001/Bone002
+        weight: 1
+      - path: Bone001/Bone002/Bone003
+        weight: 1
+      - path: Bone001/Bone002/Bone003/Bone004
+        weight: 1
+      - path: Bone001/Bone002/Bone003/Bone004/Bone005
+        weight: 1
+      - path: Bone001/Bone006
+        weight: 1
+      - path: Bone001/Bone006/Bone007
+        weight: 1
+      - path: Bone001/Bone006/Bone007/Bone008
+        weight: 1
+      - path: Bone001/Bone006/Bone007/Bone008/Bone009
+        weight: 1
+      - path: Bone001/Bone010
+        weight: 1
+      - path: Bone001/Bone010/Bone011
+        weight: 1
+      - path: Bone001/Bone010/Bone011/Bone012
+        weight: 1
+      - path: Bone001/Bone010/Bone011/Bone012/Bone013
+        weight: 1
+      - path: Bone001/Bone010/Bone011/Bone012/Bone013/Bone014
+        weight: 1
+      - path: Bone001/Bone010/Bone015
+        weight: 1
+      - path: Bone001/Bone010/Bone015/Bone018
+        weight: 1
+      - path: Bone001/Bone010/Bone015/Bone018/Bone016
+        weight: 1
+      - path: Bone001/Bone010/Bone015/Bone018/Bone016/Bone017
+        weight: 1
+      - path: Don Ut
+        weight: 1
+      - path: Don Ut/Box001
+        weight: 1
+      - path: Don Ut/Box002
+        weight: 1
+      - path: Don Ut/Box003
+        weight: 1
+      - path: Don Ut/Box004
+        weight: 1
+      - path: Don Ut/Box005
+        weight: 1
+      - path: Don Ut/Box006
+        weight: 1
+      - path: Don Ut/Capsule106
+        weight: 1
+      - path: Don Ut/Capsule185
+        weight: 1
+      - path: Don Ut/Capsule302
+        weight: 1
+      - path: Don Ut/Capsule303
+        weight: 1
+      - path: Don Ut/Capsule304
+        weight: 1
+      - path: Don Ut/Capsule305
+        weight: 1
+      - path: Don Ut/Capsule306
+        weight: 1
+      - path: Don Ut/Capsule307
+        weight: 1
+      - path: Don Ut/Capsule308
+        weight: 1
+      - path: Don Ut/Capsule309
+        weight: 1
+      - path: Don Ut/Capsule310
+        weight: 1
+      - path: Don Ut/Capsule311
+        weight: 1
+      - path: Don Ut/Capsule312
+        weight: 1
+      - path: Don Ut/Capsule313
+        weight: 1
+      - path: Don Ut/Capsule314
+        weight: 1
+      - path: Don Ut/Sphere001
+        weight: 1
+      - path: Don Ut/Sphere002
+        weight: 1
+      - path: Don Ut/Torus001
+        weight: 1
+      - path: Don Ut/Torus002
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: walk
+      takeName: Take 001
+      firstFrame: 125
+      lastFrame: 145
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bone001
+        weight: 1
+      - path: Bone001/Bone002
+        weight: 1
+      - path: Bone001/Bone002/Bone003
+        weight: 1
+      - path: Bone001/Bone002/Bone003/Bone004
+        weight: 1
+      - path: Bone001/Bone002/Bone003/Bone004/Bone005
+        weight: 1
+      - path: Bone001/Bone006
+        weight: 1
+      - path: Bone001/Bone006/Bone007
+        weight: 1
+      - path: Bone001/Bone006/Bone007/Bone008
+        weight: 1
+      - path: Bone001/Bone006/Bone007/Bone008/Bone009
+        weight: 1
+      - path: Bone001/Bone010
+        weight: 1
+      - path: Bone001/Bone010/Bone011
+        weight: 1
+      - path: Bone001/Bone010/Bone011/Bone012
+        weight: 1
+      - path: Bone001/Bone010/Bone011/Bone012/Bone013
+        weight: 1
+      - path: Bone001/Bone010/Bone011/Bone012/Bone013/Bone014
+        weight: 1
+      - path: Bone001/Bone010/Bone015
+        weight: 1
+      - path: Bone001/Bone010/Bone015/Bone018
+        weight: 1
+      - path: Bone001/Bone010/Bone015/Bone018/Bone016
+        weight: 1
+      - path: Bone001/Bone010/Bone015/Bone018/Bone016/Bone017
+        weight: 1
+      - path: Don Ut
+        weight: 1
+      - path: Don Ut/Box001
+        weight: 1
+      - path: Don Ut/Box002
+        weight: 1
+      - path: Don Ut/Box003
+        weight: 1
+      - path: Don Ut/Box004
+        weight: 1
+      - path: Don Ut/Box005
+        weight: 1
+      - path: Don Ut/Box006
+        weight: 1
+      - path: Don Ut/Capsule106
+        weight: 1
+      - path: Don Ut/Capsule185
+        weight: 1
+      - path: Don Ut/Capsule302
+        weight: 1
+      - path: Don Ut/Capsule303
+        weight: 1
+      - path: Don Ut/Capsule304
+        weight: 1
+      - path: Don Ut/Capsule305
+        weight: 1
+      - path: Don Ut/Capsule306
+        weight: 1
+      - path: Don Ut/Capsule307
+        weight: 1
+      - path: Don Ut/Capsule308
+        weight: 1
+      - path: Don Ut/Capsule309
+        weight: 1
+      - path: Don Ut/Capsule310
+        weight: 1
+      - path: Don Ut/Capsule311
+        weight: 1
+      - path: Don Ut/Capsule312
+        weight: 1
+      - path: Don Ut/Capsule313
+        weight: 1
+      - path: Don Ut/Capsule314
+        weight: 1
+      - path: Don Ut/Sphere001
+        weight: 1
+      - path: Don Ut/Sphere002
+        weight: 1
+      - path: Don Ut/Torus001
+        weight: 1
+      - path: Don Ut/Torus002
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

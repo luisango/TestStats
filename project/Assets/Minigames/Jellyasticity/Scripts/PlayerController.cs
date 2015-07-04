@@ -11,6 +11,7 @@ namespace Jellyasticity
         public float gravity;
         public float currentYSpeed;
 
+        private Animator m_animator;
 
         protected override void OnStart()
         {
@@ -19,6 +20,14 @@ namespace Jellyasticity
             jumpSpeed = 16;
             gravity = 0.5f;
             currentYSpeed = 0;
+
+            m_animator = GetComponentInChildren<Animator>();
+            m_animator.SetBool("walk", false);
+            m_animator.SetBool("jump", false);
+            m_animator.SetBool("victory", false);
+            m_animator.SetBool("right", false);
+            m_animator.SetBool("left", false);
+            m_animator.SetBool("blow", false);
         }
         protected override void OnUpdate()
         {
@@ -31,9 +40,15 @@ namespace Jellyasticity
             // El suelo
             if (pos.y <= 0)
             {
+                m_animator.SetBool("jump", true);
+
                 currentYSpeed = jumpSpeed * Time.deltaTime;
 
                 this.transform.position = new Vector3(pos.x, 0, pos.z);
+            }
+            else
+            {
+                m_animator.SetBool("jump", false);
             }
 
 

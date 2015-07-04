@@ -1,0 +1,2019 @@
+fileFormatVersion: 2
+guid: 64755beb9b90c3d4a93ecdb697471a3b
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Arc001
+    100002: Box001
+    100004: Box002
+    100006: Box003
+    100008: Box004
+    100010: Capsule001
+    100012: Capsule002
+    100014: Capsule003
+    100016: Capsule004
+    100018: Capsule005
+    100020: Capsule006
+    100022: Capsule007
+    100024: Capsule008
+    100026: Capsule009
+    100028: Capsule010
+    100030: Capsule011
+    100032: Capsule012
+    100034: Capsule013
+    100036: Capsule014
+    100038: Capsule015
+    100040: Capsule016
+    100042: Capsule017
+    100044: Capsule018
+    100046: Capsule019
+    100048: Capsule020
+    100050: Capsule021
+    100052: Capsule022
+    100054: Capsule023
+    100056: Capsule024
+    100058: Capsule025
+    100060: Capsule026
+    100062: Capsule027
+    100064: Capsule028
+    100066: Capsule029
+    100068: Capsule030
+    100070: Capsule031
+    100072: Capsule032
+    100074: Capsule033
+    100076: Capsule034
+    100078: Capsule035
+    100080: Capsule036
+    100082: Capsule037
+    100084: Capsule038
+    100086: Capsule039
+    100088: Capsule040
+    100090: Capsule041
+    100092: Capsule042
+    100094: Capsule043
+    100096: Capsule044
+    100098: Capsule045
+    100100: Capsule046
+    100102: Capsule047
+    100104: Capsule048
+    100106: Capsule049
+    100108: Capsule050
+    100110: Capsule051
+    100112: Capsule052
+    100114: Capsule053
+    100116: Capsule054
+    100118: Capsule055
+    100120: Capsule056
+    100122: Capsule057
+    100124: Capsule058
+    100126: Capsule059
+    100128: Capsule060
+    100130: Capsule061
+    100132: Capsule062
+    100134: Capsule063
+    100136: Capsule064
+    100138: Capsule065
+    100140: Capsule066
+    100142: Capsule067
+    100144: Capsule068
+    100146: Capsule069
+    100148: Capsule070
+    100150: Capsule071
+    100152: Capsule072
+    100154: Capsule073
+    100156: Capsule074
+    100158: Capsule075
+    100160: Capsule076
+    100162: Capsule077
+    100164: Capsule078
+    100166: Capsule079
+    100168: Capsule080
+    100170: Capsule081
+    100172: Capsule082
+    100174: Capsule083
+    100176: Capsule084
+    100178: Capsule085
+    100180: Capsule086
+    100182: Capsule087
+    100184: Capsule088
+    100186: Capsule089
+    100188: Capsule090
+    100190: Capsule091
+    100192: Capsule092
+    100194: Capsule093
+    100196: Capsule094
+    100198: Capsule095
+    100200: Capsule096
+    100202: Capsule097
+    100204: Capsule098
+    100206: Capsule099
+    100208: Capsule100
+    100210: Capsule101
+    100212: Capsule102
+    100214: Capsule103
+    100216: Capsule104
+    100218: Capsule105
+    100220: Cylinder001
+    100222: Cylinder002
+    100224: Head
+    100226: //RootNode
+    100228: IceCreamCone
+    100230: Left Shoulder
+    100232: LeftArm
+    100234: LeftFoot
+    100236: LeftForearm
+    100238: LeftHand
+    100240: LeftLeg
+    100242: LeftSpine
+    100244: LeftThigh
+    100246: Right Shoulder
+    100248: RightArm
+    100250: RightFoot
+    100252: RightForearm
+    100254: RightHand
+    100256: RightLeg
+    100258: RightSpine
+    100260: RightThigh
+    100262: Sphere001
+    100264: Sphere002
+    400000: Arc001
+    400002: Box001
+    400004: Box002
+    400006: Box003
+    400008: Box004
+    400010: Capsule001
+    400012: Capsule002
+    400014: Capsule003
+    400016: Capsule004
+    400018: Capsule005
+    400020: Capsule006
+    400022: Capsule007
+    400024: Capsule008
+    400026: Capsule009
+    400028: Capsule010
+    400030: Capsule011
+    400032: Capsule012
+    400034: Capsule013
+    400036: Capsule014
+    400038: Capsule015
+    400040: Capsule016
+    400042: Capsule017
+    400044: Capsule018
+    400046: Capsule019
+    400048: Capsule020
+    400050: Capsule021
+    400052: Capsule022
+    400054: Capsule023
+    400056: Capsule024
+    400058: Capsule025
+    400060: Capsule026
+    400062: Capsule027
+    400064: Capsule028
+    400066: Capsule029
+    400068: Capsule030
+    400070: Capsule031
+    400072: Capsule032
+    400074: Capsule033
+    400076: Capsule034
+    400078: Capsule035
+    400080: Capsule036
+    400082: Capsule037
+    400084: Capsule038
+    400086: Capsule039
+    400088: Capsule040
+    400090: Capsule041
+    400092: Capsule042
+    400094: Capsule043
+    400096: Capsule044
+    400098: Capsule045
+    400100: Capsule046
+    400102: Capsule047
+    400104: Capsule048
+    400106: Capsule049
+    400108: Capsule050
+    400110: Capsule051
+    400112: Capsule052
+    400114: Capsule053
+    400116: Capsule054
+    400118: Capsule055
+    400120: Capsule056
+    400122: Capsule057
+    400124: Capsule058
+    400126: Capsule059
+    400128: Capsule060
+    400130: Capsule061
+    400132: Capsule062
+    400134: Capsule063
+    400136: Capsule064
+    400138: Capsule065
+    400140: Capsule066
+    400142: Capsule067
+    400144: Capsule068
+    400146: Capsule069
+    400148: Capsule070
+    400150: Capsule071
+    400152: Capsule072
+    400154: Capsule073
+    400156: Capsule074
+    400158: Capsule075
+    400160: Capsule076
+    400162: Capsule077
+    400164: Capsule078
+    400166: Capsule079
+    400168: Capsule080
+    400170: Capsule081
+    400172: Capsule082
+    400174: Capsule083
+    400176: Capsule084
+    400178: Capsule085
+    400180: Capsule086
+    400182: Capsule087
+    400184: Capsule088
+    400186: Capsule089
+    400188: Capsule090
+    400190: Capsule091
+    400192: Capsule092
+    400194: Capsule093
+    400196: Capsule094
+    400198: Capsule095
+    400200: Capsule096
+    400202: Capsule097
+    400204: Capsule098
+    400206: Capsule099
+    400208: Capsule100
+    400210: Capsule101
+    400212: Capsule102
+    400214: Capsule103
+    400216: Capsule104
+    400218: Capsule105
+    400220: Cylinder001
+    400222: Cylinder002
+    400224: Head
+    400226: //RootNode
+    400228: IceCreamCone
+    400230: Left Shoulder
+    400232: LeftArm
+    400234: LeftFoot
+    400236: LeftForearm
+    400238: LeftHand
+    400240: LeftLeg
+    400242: LeftSpine
+    400244: LeftThigh
+    400246: Right Shoulder
+    400248: RightArm
+    400250: RightFoot
+    400252: RightForearm
+    400254: RightHand
+    400256: RightLeg
+    400258: RightSpine
+    400260: RightThigh
+    400262: Sphere001
+    400264: Sphere002
+    4300000: Capsule030
+    4300002: Capsule057
+    4300004: Capsule018
+    4300006: Capsule021
+    4300008: Capsule024
+    4300010: Capsule028
+    4300012: Capsule044
+    4300014: Capsule034
+    4300016: Capsule039
+    4300018: Capsule032
+    4300020: Capsule026
+    4300022: Capsule041
+    4300024: Capsule031
+    4300026: Capsule045
+    4300028: Capsule048
+    4300030: Capsule037
+    4300032: Capsule049
+    4300034: Capsule051
+    4300036: Capsule033
+    4300038: Capsule059
+    4300040: Capsule036
+    4300042: Capsule047
+    4300044: Capsule050
+    4300046: Capsule027
+    4300048: Capsule025
+    4300050: Capsule035
+    4300052: Capsule076
+    4300054: Capsule100
+    4300056: Capsule064
+    4300058: Capsule065
+    4300060: Capsule066
+    4300062: Capsule071
+    4300064: Capsule062
+    4300066: Capsule075
+    4300068: Capsule060
+    4300070: Capsule077
+    4300072: Capsule079
+    4300074: Capsule061
+    4300076: Capsule081
+    4300078: Cylinder001
+    4300080: Cylinder002
+    4300082: Box001
+    4300084: Capsule001
+    4300086: Capsule002
+    4300088: Capsule006
+    4300090: Capsule010
+    4300092: Box003
+    4300094: Box002
+    4300096: Box004
+    4300098: Capsule003
+    4300100: Capsule029
+    4300102: Sphere002
+    4300104: Arc001
+    4300106: Capsule004
+    4300108: Capsule011
+    4300110: Capsule015
+    4300112: Capsule016
+    4300114: Capsule017
+    4300116: Capsule007
+    4300118: Capsule008
+    4300120: Capsule009
+    4300122: Capsule012
+    4300124: Capsule013
+    4300126: Capsule005
+    4300128: Capsule014
+    4300130: Capsule054
+    4300132: Capsule023
+    4300134: Capsule052
+    4300136: Capsule020
+    4300138: Capsule038
+    4300140: Capsule046
+    4300142: Capsule043
+    4300144: Capsule055
+    4300146: Capsule022
+    4300148: Capsule053
+    4300150: Capsule056
+    4300152: Capsule040
+    4300154: Capsule042
+    4300156: Capsule058
+    4300158: Capsule019
+    4300160: Capsule063
+    4300162: Capsule072
+    4300164: Capsule078
+    4300166: Capsule082
+    4300168: Capsule085
+    4300170: Capsule074
+    4300172: Capsule084
+    4300174: Capsule086
+    4300176: Capsule088
+    4300178: Capsule080
+    4300180: Capsule089
+    4300182: Capsule090
+    4300184: Capsule073
+    4300186: Capsule091
+    4300188: Capsule093
+    4300190: Capsule069
+    4300192: Capsule092
+    4300194: Capsule094
+    4300196: Capsule067
+    4300198: Capsule083
+    4300200: Capsule095
+    4300202: Capsule097
+    4300204: Capsule098
+    4300206: Capsule099
+    4300208: Capsule101
+    4300210: Capsule087
+    4300212: Capsule068
+    4300214: Capsule070
+    4300216: Capsule096
+    4300218: Capsule105
+    4300220: Capsule103
+    4300222: Sphere001
+    4300224: Capsule104
+    4300226: Capsule102
+    7400000: jump
+    7400002: blow
+    7400004: right
+    7400006: victory
+    7400008: walk
+    9500000: //RootNode
+    13700000: Arc001
+    13700002: Box001
+    13700004: Box002
+    13700006: Box003
+    13700008: Box004
+    13700010: Capsule001
+    13700012: Capsule002
+    13700014: Capsule003
+    13700016: Capsule004
+    13700018: Capsule005
+    13700020: Capsule006
+    13700022: Capsule007
+    13700024: Capsule008
+    13700026: Capsule009
+    13700028: Capsule010
+    13700030: Capsule011
+    13700032: Capsule012
+    13700034: Capsule013
+    13700036: Capsule014
+    13700038: Capsule015
+    13700040: Capsule016
+    13700042: Capsule017
+    13700044: Capsule018
+    13700046: Capsule019
+    13700048: Capsule020
+    13700050: Capsule021
+    13700052: Capsule022
+    13700054: Capsule023
+    13700056: Capsule024
+    13700058: Capsule025
+    13700060: Capsule026
+    13700062: Capsule027
+    13700064: Capsule028
+    13700066: Capsule029
+    13700068: Capsule030
+    13700070: Capsule031
+    13700072: Capsule032
+    13700074: Capsule033
+    13700076: Capsule034
+    13700078: Capsule035
+    13700080: Capsule036
+    13700082: Capsule037
+    13700084: Capsule038
+    13700086: Capsule039
+    13700088: Capsule040
+    13700090: Capsule041
+    13700092: Capsule042
+    13700094: Capsule043
+    13700096: Capsule044
+    13700098: Capsule045
+    13700100: Capsule046
+    13700102: Capsule047
+    13700104: Capsule048
+    13700106: Capsule049
+    13700108: Capsule050
+    13700110: Capsule051
+    13700112: Capsule052
+    13700114: Capsule053
+    13700116: Capsule054
+    13700118: Capsule055
+    13700120: Capsule056
+    13700122: Capsule057
+    13700124: Capsule058
+    13700126: Capsule059
+    13700128: Capsule060
+    13700130: Capsule061
+    13700132: Capsule062
+    13700134: Capsule063
+    13700136: Capsule064
+    13700138: Capsule065
+    13700140: Capsule066
+    13700142: Capsule067
+    13700144: Capsule068
+    13700146: Capsule069
+    13700148: Capsule070
+    13700150: Capsule071
+    13700152: Capsule072
+    13700154: Capsule073
+    13700156: Capsule074
+    13700158: Capsule075
+    13700160: Capsule076
+    13700162: Capsule077
+    13700164: Capsule078
+    13700166: Capsule079
+    13700168: Capsule080
+    13700170: Capsule081
+    13700172: Capsule082
+    13700174: Capsule083
+    13700176: Capsule084
+    13700178: Capsule085
+    13700180: Capsule086
+    13700182: Capsule087
+    13700184: Capsule088
+    13700186: Capsule089
+    13700188: Capsule090
+    13700190: Capsule091
+    13700192: Capsule092
+    13700194: Capsule093
+    13700196: Capsule094
+    13700198: Capsule095
+    13700200: Capsule096
+    13700202: Capsule097
+    13700204: Capsule098
+    13700206: Capsule099
+    13700208: Capsule100
+    13700210: Capsule101
+    13700212: Capsule102
+    13700214: Capsule103
+    13700216: Capsule104
+    13700218: Capsule105
+    13700220: Cylinder001
+    13700222: Cylinder002
+    13700224: Sphere001
+    13700226: Sphere002
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: blow
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: Head/Left Shoulder
+        weight: 1
+      - path: Head/Left Shoulder/LeftArm
+        weight: 1
+      - path: Head/Left Shoulder/LeftArm/LeftForearm
+        weight: 1
+      - path: Head/Left Shoulder/LeftArm/LeftForearm/LeftHand
+        weight: 1
+      - path: Head/LeftSpine
+        weight: 1
+      - path: Head/LeftSpine/LeftThigh
+        weight: 1
+      - path: Head/LeftSpine/LeftThigh/LeftLeg
+        weight: 1
+      - path: Head/LeftSpine/LeftThigh/LeftLeg/LeftFoot
+        weight: 1
+      - path: Head/Right Shoulder
+        weight: 1
+      - path: Head/Right Shoulder/RightArm
+        weight: 1
+      - path: Head/Right Shoulder/RightArm/RightForearm
+        weight: 1
+      - path: Head/Right Shoulder/RightArm/RightForearm/RightHand
+        weight: 1
+      - path: Head/RightSpine
+        weight: 1
+      - path: Head/RightSpine/RightThigh
+        weight: 1
+      - path: Head/RightSpine/RightThigh/RightLeg
+        weight: 1
+      - path: Head/RightSpine/RightThigh/RightLeg/RightFoot
+        weight: 1
+      - path: IceCreamCone
+        weight: 1
+      - path: IceCreamCone/Arc001
+        weight: 1
+      - path: IceCreamCone/Box001
+        weight: 1
+      - path: IceCreamCone/Box002
+        weight: 1
+      - path: IceCreamCone/Box003
+        weight: 1
+      - path: IceCreamCone/Box004
+        weight: 1
+      - path: IceCreamCone/Capsule001
+        weight: 1
+      - path: IceCreamCone/Capsule002
+        weight: 1
+      - path: IceCreamCone/Capsule003
+        weight: 1
+      - path: IceCreamCone/Capsule004
+        weight: 1
+      - path: IceCreamCone/Capsule005
+        weight: 1
+      - path: IceCreamCone/Capsule006
+        weight: 1
+      - path: IceCreamCone/Capsule007
+        weight: 1
+      - path: IceCreamCone/Capsule008
+        weight: 1
+      - path: IceCreamCone/Capsule009
+        weight: 1
+      - path: IceCreamCone/Capsule010
+        weight: 1
+      - path: IceCreamCone/Capsule011
+        weight: 1
+      - path: IceCreamCone/Capsule012
+        weight: 1
+      - path: IceCreamCone/Capsule013
+        weight: 1
+      - path: IceCreamCone/Capsule014
+        weight: 1
+      - path: IceCreamCone/Capsule015
+        weight: 1
+      - path: IceCreamCone/Capsule016
+        weight: 1
+      - path: IceCreamCone/Capsule017
+        weight: 1
+      - path: IceCreamCone/Capsule018
+        weight: 1
+      - path: IceCreamCone/Capsule019
+        weight: 1
+      - path: IceCreamCone/Capsule020
+        weight: 1
+      - path: IceCreamCone/Capsule021
+        weight: 1
+      - path: IceCreamCone/Capsule022
+        weight: 1
+      - path: IceCreamCone/Capsule023
+        weight: 1
+      - path: IceCreamCone/Capsule024
+        weight: 1
+      - path: IceCreamCone/Capsule025
+        weight: 1
+      - path: IceCreamCone/Capsule026
+        weight: 1
+      - path: IceCreamCone/Capsule027
+        weight: 1
+      - path: IceCreamCone/Capsule028
+        weight: 1
+      - path: IceCreamCone/Capsule029
+        weight: 1
+      - path: IceCreamCone/Capsule030
+        weight: 1
+      - path: IceCreamCone/Capsule031
+        weight: 1
+      - path: IceCreamCone/Capsule032
+        weight: 1
+      - path: IceCreamCone/Capsule033
+        weight: 1
+      - path: IceCreamCone/Capsule034
+        weight: 1
+      - path: IceCreamCone/Capsule035
+        weight: 1
+      - path: IceCreamCone/Capsule036
+        weight: 1
+      - path: IceCreamCone/Capsule037
+        weight: 1
+      - path: IceCreamCone/Capsule038
+        weight: 1
+      - path: IceCreamCone/Capsule039
+        weight: 1
+      - path: IceCreamCone/Capsule040
+        weight: 1
+      - path: IceCreamCone/Capsule041
+        weight: 1
+      - path: IceCreamCone/Capsule042
+        weight: 1
+      - path: IceCreamCone/Capsule043
+        weight: 1
+      - path: IceCreamCone/Capsule044
+        weight: 1
+      - path: IceCreamCone/Capsule045
+        weight: 1
+      - path: IceCreamCone/Capsule046
+        weight: 1
+      - path: IceCreamCone/Capsule047
+        weight: 1
+      - path: IceCreamCone/Capsule048
+        weight: 1
+      - path: IceCreamCone/Capsule049
+        weight: 1
+      - path: IceCreamCone/Capsule050
+        weight: 1
+      - path: IceCreamCone/Capsule051
+        weight: 1
+      - path: IceCreamCone/Capsule052
+        weight: 1
+      - path: IceCreamCone/Capsule053
+        weight: 1
+      - path: IceCreamCone/Capsule054
+        weight: 1
+      - path: IceCreamCone/Capsule055
+        weight: 1
+      - path: IceCreamCone/Capsule056
+        weight: 1
+      - path: IceCreamCone/Capsule057
+        weight: 1
+      - path: IceCreamCone/Capsule058
+        weight: 1
+      - path: IceCreamCone/Capsule059
+        weight: 1
+      - path: IceCreamCone/Capsule060
+        weight: 1
+      - path: IceCreamCone/Capsule061
+        weight: 1
+      - path: IceCreamCone/Capsule062
+        weight: 1
+      - path: IceCreamCone/Capsule063
+        weight: 1
+      - path: IceCreamCone/Capsule064
+        weight: 1
+      - path: IceCreamCone/Capsule065
+        weight: 1
+      - path: IceCreamCone/Capsule066
+        weight: 1
+      - path: IceCreamCone/Capsule067
+        weight: 1
+      - path: IceCreamCone/Capsule068
+        weight: 1
+      - path: IceCreamCone/Capsule069
+        weight: 1
+      - path: IceCreamCone/Capsule070
+        weight: 1
+      - path: IceCreamCone/Capsule071
+        weight: 1
+      - path: IceCreamCone/Capsule072
+        weight: 1
+      - path: IceCreamCone/Capsule073
+        weight: 1
+      - path: IceCreamCone/Capsule074
+        weight: 1
+      - path: IceCreamCone/Capsule075
+        weight: 1
+      - path: IceCreamCone/Capsule076
+        weight: 1
+      - path: IceCreamCone/Capsule077
+        weight: 1
+      - path: IceCreamCone/Capsule078
+        weight: 1
+      - path: IceCreamCone/Capsule079
+        weight: 1
+      - path: IceCreamCone/Capsule080
+        weight: 1
+      - path: IceCreamCone/Capsule081
+        weight: 1
+      - path: IceCreamCone/Capsule082
+        weight: 1
+      - path: IceCreamCone/Capsule083
+        weight: 1
+      - path: IceCreamCone/Capsule084
+        weight: 1
+      - path: IceCreamCone/Capsule085
+        weight: 1
+      - path: IceCreamCone/Capsule086
+        weight: 1
+      - path: IceCreamCone/Capsule087
+        weight: 1
+      - path: IceCreamCone/Capsule088
+        weight: 1
+      - path: IceCreamCone/Capsule089
+        weight: 1
+      - path: IceCreamCone/Capsule090
+        weight: 1
+      - path: IceCreamCone/Capsule091
+        weight: 1
+      - path: IceCreamCone/Capsule092
+        weight: 1
+      - path: IceCreamCone/Capsule093
+        weight: 1
+      - path: IceCreamCone/Capsule094
+        weight: 1
+      - path: IceCreamCone/Capsule095
+        weight: 1
+      - path: IceCreamCone/Capsule096
+        weight: 1
+      - path: IceCreamCone/Capsule097
+        weight: 1
+      - path: IceCreamCone/Capsule098
+        weight: 1
+      - path: IceCreamCone/Capsule099
+        weight: 1
+      - path: IceCreamCone/Capsule100
+        weight: 1
+      - path: IceCreamCone/Capsule101
+        weight: 1
+      - path: IceCreamCone/Capsule102
+        weight: 1
+      - path: IceCreamCone/Capsule103
+        weight: 1
+      - path: IceCreamCone/Capsule104
+        weight: 1
+      - path: IceCreamCone/Capsule105
+        weight: 1
+      - path: IceCreamCone/Cylinder001
+        weight: 1
+      - path: IceCreamCone/Cylinder002
+        weight: 1
+      - path: IceCreamCone/Sphere001
+        weight: 1
+      - path: IceCreamCone/Sphere002
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: jump
+      takeName: Take 001
+      firstFrame: 21
+      lastFrame: 42
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: Head/Left Shoulder
+        weight: 1
+      - path: Head/Left Shoulder/LeftArm
+        weight: 1
+      - path: Head/Left Shoulder/LeftArm/LeftForearm
+        weight: 1
+      - path: Head/Left Shoulder/LeftArm/LeftForearm/LeftHand
+        weight: 1
+      - path: Head/LeftSpine
+        weight: 1
+      - path: Head/LeftSpine/LeftThigh
+        weight: 1
+      - path: Head/LeftSpine/LeftThigh/LeftLeg
+        weight: 1
+      - path: Head/LeftSpine/LeftThigh/LeftLeg/LeftFoot
+        weight: 1
+      - path: Head/Right Shoulder
+        weight: 1
+      - path: Head/Right Shoulder/RightArm
+        weight: 1
+      - path: Head/Right Shoulder/RightArm/RightForearm
+        weight: 1
+      - path: Head/Right Shoulder/RightArm/RightForearm/RightHand
+        weight: 1
+      - path: Head/RightSpine
+        weight: 1
+      - path: Head/RightSpine/RightThigh
+        weight: 1
+      - path: Head/RightSpine/RightThigh/RightLeg
+        weight: 1
+      - path: Head/RightSpine/RightThigh/RightLeg/RightFoot
+        weight: 1
+      - path: IceCreamCone
+        weight: 1
+      - path: IceCreamCone/Arc001
+        weight: 1
+      - path: IceCreamCone/Box001
+        weight: 1
+      - path: IceCreamCone/Box002
+        weight: 1
+      - path: IceCreamCone/Box003
+        weight: 1
+      - path: IceCreamCone/Box004
+        weight: 1
+      - path: IceCreamCone/Capsule001
+        weight: 1
+      - path: IceCreamCone/Capsule002
+        weight: 1
+      - path: IceCreamCone/Capsule003
+        weight: 1
+      - path: IceCreamCone/Capsule004
+        weight: 1
+      - path: IceCreamCone/Capsule005
+        weight: 1
+      - path: IceCreamCone/Capsule006
+        weight: 1
+      - path: IceCreamCone/Capsule007
+        weight: 1
+      - path: IceCreamCone/Capsule008
+        weight: 1
+      - path: IceCreamCone/Capsule009
+        weight: 1
+      - path: IceCreamCone/Capsule010
+        weight: 1
+      - path: IceCreamCone/Capsule011
+        weight: 1
+      - path: IceCreamCone/Capsule012
+        weight: 1
+      - path: IceCreamCone/Capsule013
+        weight: 1
+      - path: IceCreamCone/Capsule014
+        weight: 1
+      - path: IceCreamCone/Capsule015
+        weight: 1
+      - path: IceCreamCone/Capsule016
+        weight: 1
+      - path: IceCreamCone/Capsule017
+        weight: 1
+      - path: IceCreamCone/Capsule018
+        weight: 1
+      - path: IceCreamCone/Capsule019
+        weight: 1
+      - path: IceCreamCone/Capsule020
+        weight: 1
+      - path: IceCreamCone/Capsule021
+        weight: 1
+      - path: IceCreamCone/Capsule022
+        weight: 1
+      - path: IceCreamCone/Capsule023
+        weight: 1
+      - path: IceCreamCone/Capsule024
+        weight: 1
+      - path: IceCreamCone/Capsule025
+        weight: 1
+      - path: IceCreamCone/Capsule026
+        weight: 1
+      - path: IceCreamCone/Capsule027
+        weight: 1
+      - path: IceCreamCone/Capsule028
+        weight: 1
+      - path: IceCreamCone/Capsule029
+        weight: 1
+      - path: IceCreamCone/Capsule030
+        weight: 1
+      - path: IceCreamCone/Capsule031
+        weight: 1
+      - path: IceCreamCone/Capsule032
+        weight: 1
+      - path: IceCreamCone/Capsule033
+        weight: 1
+      - path: IceCreamCone/Capsule034
+        weight: 1
+      - path: IceCreamCone/Capsule035
+        weight: 1
+      - path: IceCreamCone/Capsule036
+        weight: 1
+      - path: IceCreamCone/Capsule037
+        weight: 1
+      - path: IceCreamCone/Capsule038
+        weight: 1
+      - path: IceCreamCone/Capsule039
+        weight: 1
+      - path: IceCreamCone/Capsule040
+        weight: 1
+      - path: IceCreamCone/Capsule041
+        weight: 1
+      - path: IceCreamCone/Capsule042
+        weight: 1
+      - path: IceCreamCone/Capsule043
+        weight: 1
+      - path: IceCreamCone/Capsule044
+        weight: 1
+      - path: IceCreamCone/Capsule045
+        weight: 1
+      - path: IceCreamCone/Capsule046
+        weight: 1
+      - path: IceCreamCone/Capsule047
+        weight: 1
+      - path: IceCreamCone/Capsule048
+        weight: 1
+      - path: IceCreamCone/Capsule049
+        weight: 1
+      - path: IceCreamCone/Capsule050
+        weight: 1
+      - path: IceCreamCone/Capsule051
+        weight: 1
+      - path: IceCreamCone/Capsule052
+        weight: 1
+      - path: IceCreamCone/Capsule053
+        weight: 1
+      - path: IceCreamCone/Capsule054
+        weight: 1
+      - path: IceCreamCone/Capsule055
+        weight: 1
+      - path: IceCreamCone/Capsule056
+        weight: 1
+      - path: IceCreamCone/Capsule057
+        weight: 1
+      - path: IceCreamCone/Capsule058
+        weight: 1
+      - path: IceCreamCone/Capsule059
+        weight: 1
+      - path: IceCreamCone/Capsule060
+        weight: 1
+      - path: IceCreamCone/Capsule061
+        weight: 1
+      - path: IceCreamCone/Capsule062
+        weight: 1
+      - path: IceCreamCone/Capsule063
+        weight: 1
+      - path: IceCreamCone/Capsule064
+        weight: 1
+      - path: IceCreamCone/Capsule065
+        weight: 1
+      - path: IceCreamCone/Capsule066
+        weight: 1
+      - path: IceCreamCone/Capsule067
+        weight: 1
+      - path: IceCreamCone/Capsule068
+        weight: 1
+      - path: IceCreamCone/Capsule069
+        weight: 1
+      - path: IceCreamCone/Capsule070
+        weight: 1
+      - path: IceCreamCone/Capsule071
+        weight: 1
+      - path: IceCreamCone/Capsule072
+        weight: 1
+      - path: IceCreamCone/Capsule073
+        weight: 1
+      - path: IceCreamCone/Capsule074
+        weight: 1
+      - path: IceCreamCone/Capsule075
+        weight: 1
+      - path: IceCreamCone/Capsule076
+        weight: 1
+      - path: IceCreamCone/Capsule077
+        weight: 1
+      - path: IceCreamCone/Capsule078
+        weight: 1
+      - path: IceCreamCone/Capsule079
+        weight: 1
+      - path: IceCreamCone/Capsule080
+        weight: 1
+      - path: IceCreamCone/Capsule081
+        weight: 1
+      - path: IceCreamCone/Capsule082
+        weight: 1
+      - path: IceCreamCone/Capsule083
+        weight: 1
+      - path: IceCreamCone/Capsule084
+        weight: 1
+      - path: IceCreamCone/Capsule085
+        weight: 1
+      - path: IceCreamCone/Capsule086
+        weight: 1
+      - path: IceCreamCone/Capsule087
+        weight: 1
+      - path: IceCreamCone/Capsule088
+        weight: 1
+      - path: IceCreamCone/Capsule089
+        weight: 1
+      - path: IceCreamCone/Capsule090
+        weight: 1
+      - path: IceCreamCone/Capsule091
+        weight: 1
+      - path: IceCreamCone/Capsule092
+        weight: 1
+      - path: IceCreamCone/Capsule093
+        weight: 1
+      - path: IceCreamCone/Capsule094
+        weight: 1
+      - path: IceCreamCone/Capsule095
+        weight: 1
+      - path: IceCreamCone/Capsule096
+        weight: 1
+      - path: IceCreamCone/Capsule097
+        weight: 1
+      - path: IceCreamCone/Capsule098
+        weight: 1
+      - path: IceCreamCone/Capsule099
+        weight: 1
+      - path: IceCreamCone/Capsule100
+        weight: 1
+      - path: IceCreamCone/Capsule101
+        weight: 1
+      - path: IceCreamCone/Capsule102
+        weight: 1
+      - path: IceCreamCone/Capsule103
+        weight: 1
+      - path: IceCreamCone/Capsule104
+        weight: 1
+      - path: IceCreamCone/Capsule105
+        weight: 1
+      - path: IceCreamCone/Cylinder001
+        weight: 1
+      - path: IceCreamCone/Cylinder002
+        weight: 1
+      - path: IceCreamCone/Sphere001
+        weight: 1
+      - path: IceCreamCone/Sphere002
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: right
+      takeName: Take 001
+      firstFrame: 42
+      lastFrame: 72
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: Head/Left Shoulder
+        weight: 1
+      - path: Head/Left Shoulder/LeftArm
+        weight: 1
+      - path: Head/Left Shoulder/LeftArm/LeftForearm
+        weight: 1
+      - path: Head/Left Shoulder/LeftArm/LeftForearm/LeftHand
+        weight: 1
+      - path: Head/LeftSpine
+        weight: 1
+      - path: Head/LeftSpine/LeftThigh
+        weight: 1
+      - path: Head/LeftSpine/LeftThigh/LeftLeg
+        weight: 1
+      - path: Head/LeftSpine/LeftThigh/LeftLeg/LeftFoot
+        weight: 1
+      - path: Head/Right Shoulder
+        weight: 1
+      - path: Head/Right Shoulder/RightArm
+        weight: 1
+      - path: Head/Right Shoulder/RightArm/RightForearm
+        weight: 1
+      - path: Head/Right Shoulder/RightArm/RightForearm/RightHand
+        weight: 1
+      - path: Head/RightSpine
+        weight: 1
+      - path: Head/RightSpine/RightThigh
+        weight: 1
+      - path: Head/RightSpine/RightThigh/RightLeg
+        weight: 1
+      - path: Head/RightSpine/RightThigh/RightLeg/RightFoot
+        weight: 1
+      - path: IceCreamCone
+        weight: 1
+      - path: IceCreamCone/Arc001
+        weight: 1
+      - path: IceCreamCone/Box001
+        weight: 1
+      - path: IceCreamCone/Box002
+        weight: 1
+      - path: IceCreamCone/Box003
+        weight: 1
+      - path: IceCreamCone/Box004
+        weight: 1
+      - path: IceCreamCone/Capsule001
+        weight: 1
+      - path: IceCreamCone/Capsule002
+        weight: 1
+      - path: IceCreamCone/Capsule003
+        weight: 1
+      - path: IceCreamCone/Capsule004
+        weight: 1
+      - path: IceCreamCone/Capsule005
+        weight: 1
+      - path: IceCreamCone/Capsule006
+        weight: 1
+      - path: IceCreamCone/Capsule007
+        weight: 1
+      - path: IceCreamCone/Capsule008
+        weight: 1
+      - path: IceCreamCone/Capsule009
+        weight: 1
+      - path: IceCreamCone/Capsule010
+        weight: 1
+      - path: IceCreamCone/Capsule011
+        weight: 1
+      - path: IceCreamCone/Capsule012
+        weight: 1
+      - path: IceCreamCone/Capsule013
+        weight: 1
+      - path: IceCreamCone/Capsule014
+        weight: 1
+      - path: IceCreamCone/Capsule015
+        weight: 1
+      - path: IceCreamCone/Capsule016
+        weight: 1
+      - path: IceCreamCone/Capsule017
+        weight: 1
+      - path: IceCreamCone/Capsule018
+        weight: 1
+      - path: IceCreamCone/Capsule019
+        weight: 1
+      - path: IceCreamCone/Capsule020
+        weight: 1
+      - path: IceCreamCone/Capsule021
+        weight: 1
+      - path: IceCreamCone/Capsule022
+        weight: 1
+      - path: IceCreamCone/Capsule023
+        weight: 1
+      - path: IceCreamCone/Capsule024
+        weight: 1
+      - path: IceCreamCone/Capsule025
+        weight: 1
+      - path: IceCreamCone/Capsule026
+        weight: 1
+      - path: IceCreamCone/Capsule027
+        weight: 1
+      - path: IceCreamCone/Capsule028
+        weight: 1
+      - path: IceCreamCone/Capsule029
+        weight: 1
+      - path: IceCreamCone/Capsule030
+        weight: 1
+      - path: IceCreamCone/Capsule031
+        weight: 1
+      - path: IceCreamCone/Capsule032
+        weight: 1
+      - path: IceCreamCone/Capsule033
+        weight: 1
+      - path: IceCreamCone/Capsule034
+        weight: 1
+      - path: IceCreamCone/Capsule035
+        weight: 1
+      - path: IceCreamCone/Capsule036
+        weight: 1
+      - path: IceCreamCone/Capsule037
+        weight: 1
+      - path: IceCreamCone/Capsule038
+        weight: 1
+      - path: IceCreamCone/Capsule039
+        weight: 1
+      - path: IceCreamCone/Capsule040
+        weight: 1
+      - path: IceCreamCone/Capsule041
+        weight: 1
+      - path: IceCreamCone/Capsule042
+        weight: 1
+      - path: IceCreamCone/Capsule043
+        weight: 1
+      - path: IceCreamCone/Capsule044
+        weight: 1
+      - path: IceCreamCone/Capsule045
+        weight: 1
+      - path: IceCreamCone/Capsule046
+        weight: 1
+      - path: IceCreamCone/Capsule047
+        weight: 1
+      - path: IceCreamCone/Capsule048
+        weight: 1
+      - path: IceCreamCone/Capsule049
+        weight: 1
+      - path: IceCreamCone/Capsule050
+        weight: 1
+      - path: IceCreamCone/Capsule051
+        weight: 1
+      - path: IceCreamCone/Capsule052
+        weight: 1
+      - path: IceCreamCone/Capsule053
+        weight: 1
+      - path: IceCreamCone/Capsule054
+        weight: 1
+      - path: IceCreamCone/Capsule055
+        weight: 1
+      - path: IceCreamCone/Capsule056
+        weight: 1
+      - path: IceCreamCone/Capsule057
+        weight: 1
+      - path: IceCreamCone/Capsule058
+        weight: 1
+      - path: IceCreamCone/Capsule059
+        weight: 1
+      - path: IceCreamCone/Capsule060
+        weight: 1
+      - path: IceCreamCone/Capsule061
+        weight: 1
+      - path: IceCreamCone/Capsule062
+        weight: 1
+      - path: IceCreamCone/Capsule063
+        weight: 1
+      - path: IceCreamCone/Capsule064
+        weight: 1
+      - path: IceCreamCone/Capsule065
+        weight: 1
+      - path: IceCreamCone/Capsule066
+        weight: 1
+      - path: IceCreamCone/Capsule067
+        weight: 1
+      - path: IceCreamCone/Capsule068
+        weight: 1
+      - path: IceCreamCone/Capsule069
+        weight: 1
+      - path: IceCreamCone/Capsule070
+        weight: 1
+      - path: IceCreamCone/Capsule071
+        weight: 1
+      - path: IceCreamCone/Capsule072
+        weight: 1
+      - path: IceCreamCone/Capsule073
+        weight: 1
+      - path: IceCreamCone/Capsule074
+        weight: 1
+      - path: IceCreamCone/Capsule075
+        weight: 1
+      - path: IceCreamCone/Capsule076
+        weight: 1
+      - path: IceCreamCone/Capsule077
+        weight: 1
+      - path: IceCreamCone/Capsule078
+        weight: 1
+      - path: IceCreamCone/Capsule079
+        weight: 1
+      - path: IceCreamCone/Capsule080
+        weight: 1
+      - path: IceCreamCone/Capsule081
+        weight: 1
+      - path: IceCreamCone/Capsule082
+        weight: 1
+      - path: IceCreamCone/Capsule083
+        weight: 1
+      - path: IceCreamCone/Capsule084
+        weight: 1
+      - path: IceCreamCone/Capsule085
+        weight: 1
+      - path: IceCreamCone/Capsule086
+        weight: 1
+      - path: IceCreamCone/Capsule087
+        weight: 1
+      - path: IceCreamCone/Capsule088
+        weight: 1
+      - path: IceCreamCone/Capsule089
+        weight: 1
+      - path: IceCreamCone/Capsule090
+        weight: 1
+      - path: IceCreamCone/Capsule091
+        weight: 1
+      - path: IceCreamCone/Capsule092
+        weight: 1
+      - path: IceCreamCone/Capsule093
+        weight: 1
+      - path: IceCreamCone/Capsule094
+        weight: 1
+      - path: IceCreamCone/Capsule095
+        weight: 1
+      - path: IceCreamCone/Capsule096
+        weight: 1
+      - path: IceCreamCone/Capsule097
+        weight: 1
+      - path: IceCreamCone/Capsule098
+        weight: 1
+      - path: IceCreamCone/Capsule099
+        weight: 1
+      - path: IceCreamCone/Capsule100
+        weight: 1
+      - path: IceCreamCone/Capsule101
+        weight: 1
+      - path: IceCreamCone/Capsule102
+        weight: 1
+      - path: IceCreamCone/Capsule103
+        weight: 1
+      - path: IceCreamCone/Capsule104
+        weight: 1
+      - path: IceCreamCone/Capsule105
+        weight: 1
+      - path: IceCreamCone/Cylinder001
+        weight: 1
+      - path: IceCreamCone/Cylinder002
+        weight: 1
+      - path: IceCreamCone/Sphere001
+        weight: 1
+      - path: IceCreamCone/Sphere002
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: victory
+      takeName: Take 001
+      firstFrame: 73
+      lastFrame: 93
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: Head/Left Shoulder
+        weight: 1
+      - path: Head/Left Shoulder/LeftArm
+        weight: 1
+      - path: Head/Left Shoulder/LeftArm/LeftForearm
+        weight: 1
+      - path: Head/Left Shoulder/LeftArm/LeftForearm/LeftHand
+        weight: 1
+      - path: Head/LeftSpine
+        weight: 1
+      - path: Head/LeftSpine/LeftThigh
+        weight: 1
+      - path: Head/LeftSpine/LeftThigh/LeftLeg
+        weight: 1
+      - path: Head/LeftSpine/LeftThigh/LeftLeg/LeftFoot
+        weight: 1
+      - path: Head/Right Shoulder
+        weight: 1
+      - path: Head/Right Shoulder/RightArm
+        weight: 1
+      - path: Head/Right Shoulder/RightArm/RightForearm
+        weight: 1
+      - path: Head/Right Shoulder/RightArm/RightForearm/RightHand
+        weight: 1
+      - path: Head/RightSpine
+        weight: 1
+      - path: Head/RightSpine/RightThigh
+        weight: 1
+      - path: Head/RightSpine/RightThigh/RightLeg
+        weight: 1
+      - path: Head/RightSpine/RightThigh/RightLeg/RightFoot
+        weight: 1
+      - path: IceCreamCone
+        weight: 1
+      - path: IceCreamCone/Arc001
+        weight: 1
+      - path: IceCreamCone/Box001
+        weight: 1
+      - path: IceCreamCone/Box002
+        weight: 1
+      - path: IceCreamCone/Box003
+        weight: 1
+      - path: IceCreamCone/Box004
+        weight: 1
+      - path: IceCreamCone/Capsule001
+        weight: 1
+      - path: IceCreamCone/Capsule002
+        weight: 1
+      - path: IceCreamCone/Capsule003
+        weight: 1
+      - path: IceCreamCone/Capsule004
+        weight: 1
+      - path: IceCreamCone/Capsule005
+        weight: 1
+      - path: IceCreamCone/Capsule006
+        weight: 1
+      - path: IceCreamCone/Capsule007
+        weight: 1
+      - path: IceCreamCone/Capsule008
+        weight: 1
+      - path: IceCreamCone/Capsule009
+        weight: 1
+      - path: IceCreamCone/Capsule010
+        weight: 1
+      - path: IceCreamCone/Capsule011
+        weight: 1
+      - path: IceCreamCone/Capsule012
+        weight: 1
+      - path: IceCreamCone/Capsule013
+        weight: 1
+      - path: IceCreamCone/Capsule014
+        weight: 1
+      - path: IceCreamCone/Capsule015
+        weight: 1
+      - path: IceCreamCone/Capsule016
+        weight: 1
+      - path: IceCreamCone/Capsule017
+        weight: 1
+      - path: IceCreamCone/Capsule018
+        weight: 1
+      - path: IceCreamCone/Capsule019
+        weight: 1
+      - path: IceCreamCone/Capsule020
+        weight: 1
+      - path: IceCreamCone/Capsule021
+        weight: 1
+      - path: IceCreamCone/Capsule022
+        weight: 1
+      - path: IceCreamCone/Capsule023
+        weight: 1
+      - path: IceCreamCone/Capsule024
+        weight: 1
+      - path: IceCreamCone/Capsule025
+        weight: 1
+      - path: IceCreamCone/Capsule026
+        weight: 1
+      - path: IceCreamCone/Capsule027
+        weight: 1
+      - path: IceCreamCone/Capsule028
+        weight: 1
+      - path: IceCreamCone/Capsule029
+        weight: 1
+      - path: IceCreamCone/Capsule030
+        weight: 1
+      - path: IceCreamCone/Capsule031
+        weight: 1
+      - path: IceCreamCone/Capsule032
+        weight: 1
+      - path: IceCreamCone/Capsule033
+        weight: 1
+      - path: IceCreamCone/Capsule034
+        weight: 1
+      - path: IceCreamCone/Capsule035
+        weight: 1
+      - path: IceCreamCone/Capsule036
+        weight: 1
+      - path: IceCreamCone/Capsule037
+        weight: 1
+      - path: IceCreamCone/Capsule038
+        weight: 1
+      - path: IceCreamCone/Capsule039
+        weight: 1
+      - path: IceCreamCone/Capsule040
+        weight: 1
+      - path: IceCreamCone/Capsule041
+        weight: 1
+      - path: IceCreamCone/Capsule042
+        weight: 1
+      - path: IceCreamCone/Capsule043
+        weight: 1
+      - path: IceCreamCone/Capsule044
+        weight: 1
+      - path: IceCreamCone/Capsule045
+        weight: 1
+      - path: IceCreamCone/Capsule046
+        weight: 1
+      - path: IceCreamCone/Capsule047
+        weight: 1
+      - path: IceCreamCone/Capsule048
+        weight: 1
+      - path: IceCreamCone/Capsule049
+        weight: 1
+      - path: IceCreamCone/Capsule050
+        weight: 1
+      - path: IceCreamCone/Capsule051
+        weight: 1
+      - path: IceCreamCone/Capsule052
+        weight: 1
+      - path: IceCreamCone/Capsule053
+        weight: 1
+      - path: IceCreamCone/Capsule054
+        weight: 1
+      - path: IceCreamCone/Capsule055
+        weight: 1
+      - path: IceCreamCone/Capsule056
+        weight: 1
+      - path: IceCreamCone/Capsule057
+        weight: 1
+      - path: IceCreamCone/Capsule058
+        weight: 1
+      - path: IceCreamCone/Capsule059
+        weight: 1
+      - path: IceCreamCone/Capsule060
+        weight: 1
+      - path: IceCreamCone/Capsule061
+        weight: 1
+      - path: IceCreamCone/Capsule062
+        weight: 1
+      - path: IceCreamCone/Capsule063
+        weight: 1
+      - path: IceCreamCone/Capsule064
+        weight: 1
+      - path: IceCreamCone/Capsule065
+        weight: 1
+      - path: IceCreamCone/Capsule066
+        weight: 1
+      - path: IceCreamCone/Capsule067
+        weight: 1
+      - path: IceCreamCone/Capsule068
+        weight: 1
+      - path: IceCreamCone/Capsule069
+        weight: 1
+      - path: IceCreamCone/Capsule070
+        weight: 1
+      - path: IceCreamCone/Capsule071
+        weight: 1
+      - path: IceCreamCone/Capsule072
+        weight: 1
+      - path: IceCreamCone/Capsule073
+        weight: 1
+      - path: IceCreamCone/Capsule074
+        weight: 1
+      - path: IceCreamCone/Capsule075
+        weight: 1
+      - path: IceCreamCone/Capsule076
+        weight: 1
+      - path: IceCreamCone/Capsule077
+        weight: 1
+      - path: IceCreamCone/Capsule078
+        weight: 1
+      - path: IceCreamCone/Capsule079
+        weight: 1
+      - path: IceCreamCone/Capsule080
+        weight: 1
+      - path: IceCreamCone/Capsule081
+        weight: 1
+      - path: IceCreamCone/Capsule082
+        weight: 1
+      - path: IceCreamCone/Capsule083
+        weight: 1
+      - path: IceCreamCone/Capsule084
+        weight: 1
+      - path: IceCreamCone/Capsule085
+        weight: 1
+      - path: IceCreamCone/Capsule086
+        weight: 1
+      - path: IceCreamCone/Capsule087
+        weight: 1
+      - path: IceCreamCone/Capsule088
+        weight: 1
+      - path: IceCreamCone/Capsule089
+        weight: 1
+      - path: IceCreamCone/Capsule090
+        weight: 1
+      - path: IceCreamCone/Capsule091
+        weight: 1
+      - path: IceCreamCone/Capsule092
+        weight: 1
+      - path: IceCreamCone/Capsule093
+        weight: 1
+      - path: IceCreamCone/Capsule094
+        weight: 1
+      - path: IceCreamCone/Capsule095
+        weight: 1
+      - path: IceCreamCone/Capsule096
+        weight: 1
+      - path: IceCreamCone/Capsule097
+        weight: 1
+      - path: IceCreamCone/Capsule098
+        weight: 1
+      - path: IceCreamCone/Capsule099
+        weight: 1
+      - path: IceCreamCone/Capsule100
+        weight: 1
+      - path: IceCreamCone/Capsule101
+        weight: 1
+      - path: IceCreamCone/Capsule102
+        weight: 1
+      - path: IceCreamCone/Capsule103
+        weight: 1
+      - path: IceCreamCone/Capsule104
+        weight: 1
+      - path: IceCreamCone/Capsule105
+        weight: 1
+      - path: IceCreamCone/Cylinder001
+        weight: 1
+      - path: IceCreamCone/Cylinder002
+        weight: 1
+      - path: IceCreamCone/Sphere001
+        weight: 1
+      - path: IceCreamCone/Sphere002
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: walk
+      takeName: Take 001
+      firstFrame: 94
+      lastFrame: 114
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: Head/Left Shoulder
+        weight: 1
+      - path: Head/Left Shoulder/LeftArm
+        weight: 1
+      - path: Head/Left Shoulder/LeftArm/LeftForearm
+        weight: 1
+      - path: Head/Left Shoulder/LeftArm/LeftForearm/LeftHand
+        weight: 1
+      - path: Head/LeftSpine
+        weight: 1
+      - path: Head/LeftSpine/LeftThigh
+        weight: 1
+      - path: Head/LeftSpine/LeftThigh/LeftLeg
+        weight: 1
+      - path: Head/LeftSpine/LeftThigh/LeftLeg/LeftFoot
+        weight: 1
+      - path: Head/Right Shoulder
+        weight: 1
+      - path: Head/Right Shoulder/RightArm
+        weight: 1
+      - path: Head/Right Shoulder/RightArm/RightForearm
+        weight: 1
+      - path: Head/Right Shoulder/RightArm/RightForearm/RightHand
+        weight: 1
+      - path: Head/RightSpine
+        weight: 1
+      - path: Head/RightSpine/RightThigh
+        weight: 1
+      - path: Head/RightSpine/RightThigh/RightLeg
+        weight: 1
+      - path: Head/RightSpine/RightThigh/RightLeg/RightFoot
+        weight: 1
+      - path: IceCreamCone
+        weight: 1
+      - path: IceCreamCone/Arc001
+        weight: 1
+      - path: IceCreamCone/Box001
+        weight: 1
+      - path: IceCreamCone/Box002
+        weight: 1
+      - path: IceCreamCone/Box003
+        weight: 1
+      - path: IceCreamCone/Box004
+        weight: 1
+      - path: IceCreamCone/Capsule001
+        weight: 1
+      - path: IceCreamCone/Capsule002
+        weight: 1
+      - path: IceCreamCone/Capsule003
+        weight: 1
+      - path: IceCreamCone/Capsule004
+        weight: 1
+      - path: IceCreamCone/Capsule005
+        weight: 1
+      - path: IceCreamCone/Capsule006
+        weight: 1
+      - path: IceCreamCone/Capsule007
+        weight: 1
+      - path: IceCreamCone/Capsule008
+        weight: 1
+      - path: IceCreamCone/Capsule009
+        weight: 1
+      - path: IceCreamCone/Capsule010
+        weight: 1
+      - path: IceCreamCone/Capsule011
+        weight: 1
+      - path: IceCreamCone/Capsule012
+        weight: 1
+      - path: IceCreamCone/Capsule013
+        weight: 1
+      - path: IceCreamCone/Capsule014
+        weight: 1
+      - path: IceCreamCone/Capsule015
+        weight: 1
+      - path: IceCreamCone/Capsule016
+        weight: 1
+      - path: IceCreamCone/Capsule017
+        weight: 1
+      - path: IceCreamCone/Capsule018
+        weight: 1
+      - path: IceCreamCone/Capsule019
+        weight: 1
+      - path: IceCreamCone/Capsule020
+        weight: 1
+      - path: IceCreamCone/Capsule021
+        weight: 1
+      - path: IceCreamCone/Capsule022
+        weight: 1
+      - path: IceCreamCone/Capsule023
+        weight: 1
+      - path: IceCreamCone/Capsule024
+        weight: 1
+      - path: IceCreamCone/Capsule025
+        weight: 1
+      - path: IceCreamCone/Capsule026
+        weight: 1
+      - path: IceCreamCone/Capsule027
+        weight: 1
+      - path: IceCreamCone/Capsule028
+        weight: 1
+      - path: IceCreamCone/Capsule029
+        weight: 1
+      - path: IceCreamCone/Capsule030
+        weight: 1
+      - path: IceCreamCone/Capsule031
+        weight: 1
+      - path: IceCreamCone/Capsule032
+        weight: 1
+      - path: IceCreamCone/Capsule033
+        weight: 1
+      - path: IceCreamCone/Capsule034
+        weight: 1
+      - path: IceCreamCone/Capsule035
+        weight: 1
+      - path: IceCreamCone/Capsule036
+        weight: 1
+      - path: IceCreamCone/Capsule037
+        weight: 1
+      - path: IceCreamCone/Capsule038
+        weight: 1
+      - path: IceCreamCone/Capsule039
+        weight: 1
+      - path: IceCreamCone/Capsule040
+        weight: 1
+      - path: IceCreamCone/Capsule041
+        weight: 1
+      - path: IceCreamCone/Capsule042
+        weight: 1
+      - path: IceCreamCone/Capsule043
+        weight: 1
+      - path: IceCreamCone/Capsule044
+        weight: 1
+      - path: IceCreamCone/Capsule045
+        weight: 1
+      - path: IceCreamCone/Capsule046
+        weight: 1
+      - path: IceCreamCone/Capsule047
+        weight: 1
+      - path: IceCreamCone/Capsule048
+        weight: 1
+      - path: IceCreamCone/Capsule049
+        weight: 1
+      - path: IceCreamCone/Capsule050
+        weight: 1
+      - path: IceCreamCone/Capsule051
+        weight: 1
+      - path: IceCreamCone/Capsule052
+        weight: 1
+      - path: IceCreamCone/Capsule053
+        weight: 1
+      - path: IceCreamCone/Capsule054
+        weight: 1
+      - path: IceCreamCone/Capsule055
+        weight: 1
+      - path: IceCreamCone/Capsule056
+        weight: 1
+      - path: IceCreamCone/Capsule057
+        weight: 1
+      - path: IceCreamCone/Capsule058
+        weight: 1
+      - path: IceCreamCone/Capsule059
+        weight: 1
+      - path: IceCreamCone/Capsule060
+        weight: 1
+      - path: IceCreamCone/Capsule061
+        weight: 1
+      - path: IceCreamCone/Capsule062
+        weight: 1
+      - path: IceCreamCone/Capsule063
+        weight: 1
+      - path: IceCreamCone/Capsule064
+        weight: 1
+      - path: IceCreamCone/Capsule065
+        weight: 1
+      - path: IceCreamCone/Capsule066
+        weight: 1
+      - path: IceCreamCone/Capsule067
+        weight: 1
+      - path: IceCreamCone/Capsule068
+        weight: 1
+      - path: IceCreamCone/Capsule069
+        weight: 1
+      - path: IceCreamCone/Capsule070
+        weight: 1
+      - path: IceCreamCone/Capsule071
+        weight: 1
+      - path: IceCreamCone/Capsule072
+        weight: 1
+      - path: IceCreamCone/Capsule073
+        weight: 1
+      - path: IceCreamCone/Capsule074
+        weight: 1
+      - path: IceCreamCone/Capsule075
+        weight: 1
+      - path: IceCreamCone/Capsule076
+        weight: 1
+      - path: IceCreamCone/Capsule077
+        weight: 1
+      - path: IceCreamCone/Capsule078
+        weight: 1
+      - path: IceCreamCone/Capsule079
+        weight: 1
+      - path: IceCreamCone/Capsule080
+        weight: 1
+      - path: IceCreamCone/Capsule081
+        weight: 1
+      - path: IceCreamCone/Capsule082
+        weight: 1
+      - path: IceCreamCone/Capsule083
+        weight: 1
+      - path: IceCreamCone/Capsule084
+        weight: 1
+      - path: IceCreamCone/Capsule085
+        weight: 1
+      - path: IceCreamCone/Capsule086
+        weight: 1
+      - path: IceCreamCone/Capsule087
+        weight: 1
+      - path: IceCreamCone/Capsule088
+        weight: 1
+      - path: IceCreamCone/Capsule089
+        weight: 1
+      - path: IceCreamCone/Capsule090
+        weight: 1
+      - path: IceCreamCone/Capsule091
+        weight: 1
+      - path: IceCreamCone/Capsule092
+        weight: 1
+      - path: IceCreamCone/Capsule093
+        weight: 1
+      - path: IceCreamCone/Capsule094
+        weight: 1
+      - path: IceCreamCone/Capsule095
+        weight: 1
+      - path: IceCreamCone/Capsule096
+        weight: 1
+      - path: IceCreamCone/Capsule097
+        weight: 1
+      - path: IceCreamCone/Capsule098
+        weight: 1
+      - path: IceCreamCone/Capsule099
+        weight: 1
+      - path: IceCreamCone/Capsule100
+        weight: 1
+      - path: IceCreamCone/Capsule101
+        weight: 1
+      - path: IceCreamCone/Capsule102
+        weight: 1
+      - path: IceCreamCone/Capsule103
+        weight: 1
+      - path: IceCreamCone/Capsule104
+        weight: 1
+      - path: IceCreamCone/Capsule105
+        weight: 1
+      - path: IceCreamCone/Cylinder001
+        weight: 1
+      - path: IceCreamCone/Cylinder002
+        weight: 1
+      - path: IceCreamCone/Sphere001
+        weight: 1
+      - path: IceCreamCone/Sphere002
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

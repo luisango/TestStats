@@ -9,6 +9,8 @@ public class Results : MonoBehaviour
     public Text m_winner2;
     public Text m_winner3;
 
+    public int m_timer = 0;
+
 
     void Start()
     {
@@ -27,7 +29,7 @@ public class Results : MonoBehaviour
         {
             int thisPlayerScore = Manager.Minigame.Instance.GetLocalScoreForPlayer(player);
 
-            if (maxScore1 < thisPlayerScore || winner1 == null )
+            if (maxScore1 < thisPlayerScore || winner1 == null)
             {
                 maxScore3 = maxScore2;
                 maxScore2 = maxScore1;
@@ -43,7 +45,7 @@ public class Results : MonoBehaviour
                 winner3 = winner2;
                 winner2 = player;
             }
-            else if ( maxScore2 >= thisPlayerScore && maxScore3 < thisPlayerScore || winner3 == null )
+            else if (maxScore2 >= thisPlayerScore && maxScore3 < thisPlayerScore || winner3 == null)
             {
                 maxScore3 = thisPlayerScore;
                 winner3 = player;
@@ -51,26 +53,28 @@ public class Results : MonoBehaviour
         }
 
         m_winner1.text = winner1.GetNickname() + ": " + maxScore1;
-        winner1.GetStats().AddPoints( maxScore1 );
+        winner1.GetStats().AddPoints(maxScore1);
 
-        if ( winner2 != null )
+        if (winner2 != null)
         {
             m_winner2.text = winner2.GetNickname() + ": " + maxScore2;
-            winner2.GetStats().AddPoints( maxScore2 );
+            winner2.GetStats().AddPoints(maxScore2);
         }
-        if ( winner3 != null )
+        if (winner3 != null)
         {
             m_winner3.text = winner3.GetNickname() + ": " + maxScore3;
-            winner3.GetStats().AddPoints( maxScore3 );
+            winner3.GetStats().AddPoints(maxScore3);
         }
-        
+
     }
 
     void Update()
     {
+        m_timer++;
+
         foreach (Player.Wrapper player in Manager.Player.Instance.Get())
         {
-            if (player.GetInput().IsKeyDown(Player.Input.Key.Action))
+            if (m_timer > 5000 && player.GetInput().IsKeyDown(Player.Input.Key.Action))
             {
 
                 Manager.Scene.Instance.Load(Manager.Scene.Type.Board);

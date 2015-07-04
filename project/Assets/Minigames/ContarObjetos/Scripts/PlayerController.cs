@@ -4,6 +4,8 @@ using UnityEngine.UI;
 using System;
 using System.Collections;
 
+using PlayerWrapper = Player.Wrapper;
+
 
 namespace ContarObjetos
 {
@@ -15,7 +17,7 @@ namespace ContarObjetos
         public const int MAX_INTERVAL_TIME_CLICK = 8;
 
         // Timer params 
-        public const float MAX_TIME = 6.0f; // maximum time to count objects (secs)
+        public const float MAX_TIME = 15.0f; // maximum time to count objects (secs)
         private float initial_time;
 
         // Counting objects params
@@ -26,30 +28,56 @@ namespace ContarObjetos
         public int MAX_POINTS = 10;
         public int MIN_POINTS = 5;
 
+        public GameObject m_GUIPrefab;
+
         protected override void OnStart()
         {
             // Obtain time startup...
             initial_time = Time.realtimeSinceStartup;
 
+            int numPlayers     = Manager.Player.Instance.Get().Count;
+            int playerPosition = 1;
+            foreach (PlayerWrapper p in Manager.Player.Instance.Get())
+            {
+                if (GetPlayer() == p)
+                    break;
+
+                playerPosition++;
+            }
+
+
+            int canvasWidth = 800;
+            int canvasHeight = 600;
+
+            float canvasXStep = canvasWidth / (numPlayers + 1);
+            float canvasYStep = canvasHeight / 2;
+
+
+
             // Number objects to count...
             number_objects = GameObject.Find("MinigameController").
                                  GetComponent<MinigameController>().getNumberObjects();
 
-            // Name and model setting to the character...
-            this.transform.FindChild("Name").GetComponent<TextMesh>().text = GetPlayer().GetNickname();
+            // Vector3 pos_name = this.transform.FindChild("Name").transform.position;
+            // this.transform.FindChild("Name").transform.position = new Vector3(pos_name.x - (pos_name.x*0.1f),
+            //                                                                   pos_name.y - 0.3f,
+            //                                                                   pos_name.z - 6.5f);
+            // 
+            // Vector3 pos_model = this.transform.FindChild("Model").transform.position;
+            // this.transform.FindChild("Model").transform.position = new Vector3(pos_model.x,
+            //                                                                    pos_model.y - 0.5f,
+            //                                                                    pos_model.z - 6.5f);
 
-            Vector3 pos_name = this.transform.FindChild("Name").transform.position;
-            this.transform.FindChild("Name").transform.position = new Vector3(pos_name.x - (pos_name.x*0.1f),
-                                                                              pos_name.y - 0.3f,
-                                                                              pos_name.z - 6.5f);
-
-            Vector3 pos_model = this.transform.FindChild("Model").transform.position;
-            this.transform.FindChild("Model").transform.position = new Vector3(pos_model.x,
-                                                                               pos_model.y - 0.5f,
-                                                                               pos_model.z - 6.5f);
             // Canvas setting to the character...
-            this.transform.FindChild("Canvas_Count_objects_Player").transform.position = 
-                                                                   new Vector3(pos_model.x,
+            Vector2 pos = new Vector2(canvasXStep * playerPosition, -1 * canvasYStep);
+            m_GUIPrefab.GetComponent<RectTransform>().anchoredPosition = pos;
+
+
+            // Name and model setting to the character...
+            m_GUIPrefab.transform.FindChild("Score").FindChild("Name").GetComponent<Text>().text = GetPlayer().GetNickname();
+
+           /* this.transform.FindChild("Canvas_Count_objects_Player").transform.position = 
+                                                                   new Vector3(canvasXStep,
                                                                                    pos_model.y,
                                                                                    pos_model.z);
             this.transform.FindChild("Canvas_Count_objects_Player").
@@ -68,15 +96,15 @@ namespace ContarObjetos
 
             this.transform.FindChild("Canvas_Count_objects_Player").transform.FindChild("Text").
                                                                     GetComponent<Text>().color = GetPlayer().GetPuppet().GetColor();
-        }
+        
+            */
+            }
 
 
         protected override void OnUpdate()
         {
             // Reading number dialed by the user objects...
-            String text = this.transform.FindChild("Canvas_Count_objects_Player").
-                                                 transform.FindChild("Arrows").transform.FindChild("Text").
-                                                                               GetComponent<Text>().text;
+            String text = m_GUIPrefab.transform.FindChild("Score").GetComponent<Text>().text;
             number_counted_user = int.Parse(text);
 
             // Clear points
@@ -104,9 +132,8 @@ namespace ContarObjetos
             if (GetPlayer().GetInput().IsKeyPressed(Player.Input.Key.Right) && countUp == MAX_INTERVAL_TIME_CLICK)
             {
                 Debug.Log("Add Counter!");
-                this.transform.FindChild("Canvas_Count_objects_Player").
-                     transform.FindChild("Arrows").
-                     transform.FindChild("ButtonUp").GetComponent<Button>().onClick.Invoke();
+                m_GUIPrefab.transform.FindChild("Score").
+                     transform.FindChild("ButtonPlus").GetComponent<Button>().onClick.Invoke();
             }
             if (countUp > MAX_INTERVAL_TIME_CLICK) countUp = 0; // Adding little interval time
 
@@ -114,9 +141,8 @@ namespace ContarObjetos
             if (GetPlayer().GetInput().IsKeyPressed(Player.Input.Key.Left) && countDown == MAX_INTERVAL_TIME_CLICK)
             {
                 Debug.Log("Substract Counter!");
-                this.transform.FindChild("Canvas_Count_objects_Player").
-                     transform.FindChild("Arrows").
-                     transform.FindChild("ButtonDown").GetComponent<Button>().onClick.Invoke();
+                m_GUIPrefab.transform.FindChild("Score").
+                     transform.FindChild("ButtonMinus").GetComponent<Button>().onClick.Invoke();
             }
             if (countDown > MAX_INTERVAL_TIME_CLICK) countDown = 0; // Adding little interval time
 

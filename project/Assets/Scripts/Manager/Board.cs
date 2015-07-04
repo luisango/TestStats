@@ -35,6 +35,8 @@ namespace Manager
 
         public int m_scoreToWin;
 
+        public int m_turnsPassed;
+
         public Board()
         {
             PlayerWrapper m_currentPlayerObject = new PlayerWrapper();
@@ -250,6 +252,7 @@ namespace Manager
             }
 
             m_currentTurn += 1;
+            m_turnsPassed += 1;
 
             if (m_currentTurn > m_turn.Count - 1)
                 m_currentTurn = 0;

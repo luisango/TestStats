@@ -125,6 +125,11 @@ namespace Board
         /// </summary>
         private void PrecalculateWaypoints()
         {
+            if (this.transform.name == "Box17")
+            {
+                int i = 0;
+            }
+
             Transform t = this.transform.FindChild("Model").transform;
 
             int stepSplit = 5;
@@ -241,6 +246,12 @@ namespace Board
         {
             // TODO: Fix this, if needed, when pivot is fixed.
             Vector3 pos = this.transform.position;
+
+            if (m_waypoints == null || m_puppets.Count == m_waypoints.Count || m_puppets == null)
+            {
+                int i = 0;
+            }
+
             pos += m_waypoints[m_puppets.Count];
 
             return pos;

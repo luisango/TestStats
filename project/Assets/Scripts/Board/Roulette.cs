@@ -73,7 +73,7 @@ namespace Board
 
         public void TurnRoulette(float angularSpeed)
         {
-            m_angularSpeed = angularSpeed * UnityEngine.Random.Range( 0.0f, 1.0f );
+            m_angularSpeed = angularSpeed * UnityEngine.Random.Range( 0.01f, 1.0f );
             m_isRotating = true;
         }
 

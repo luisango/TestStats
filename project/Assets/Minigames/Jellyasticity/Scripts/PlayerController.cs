@@ -64,6 +64,9 @@ namespace Jellyasticity
                 //model.renderer.material.color = new Color(255, 0, 0);
                 this.transform.position = pos + new Vector3(speed * Time.deltaTime, 0, 0);
             }
+
+            if (pos.x < -10.0f) transform.position = new Vector3(-10.0f, transform.position.y, transform.position.z);
+            if (pos.x > 10.0f) transform.position = new Vector3(10.0f, transform.position.y, transform.position.z); 
         }
 
         protected override bool GameOverCheck()

@@ -6,6 +6,9 @@ namespace ContarObjetos
 {
     public class MinigameController : Minigame.Controller
     {
+        public GameObject[] m_models;
+        public GameObject m_GUIPrefab;
+
         public GameObject m_candyCloudContainer;
 
         public GameObject[] m_objects;
@@ -31,7 +34,6 @@ namespace ContarObjetos
             // Focused object the player must count
             m_focusedObject = Random.Range(0, m_objects.Length);
             GameObject ob = (GameObject)Instantiate(m_objects [m_focusedObject], new Vector3(0, 7.5f, 0), Quaternion.identity);
-            ob.transform.Rotate(new Vector3(1, 0, 0), 90);
             ob.GetComponent<CandyCloudController>().enabled = false;
 
             // Generating differents objects with movement:
@@ -65,11 +67,16 @@ namespace ContarObjetos
             {
                 // Instantiate player
                 GameObject newPlayer = InstantiatePlayer();
+                GameObject newCanvas = (GameObject)Instantiate(m_GUIPrefab);
+                newCanvas.transform.SetParent(GameObject.Find("Canvas_Count_objects").transform, false);
+
+                newPlayer.GetComponent<ContarObjetos.PlayerController>().m_GUIPrefab = newCanvas;
+
                 //int id = Manager.Player.Instance.Get()[i].GetPuppet().GetIdentifier();
                 //newPlayer = m_models[id];
 
                 // Set position
-                newPlayer.transform.position = new Vector3(lastSpawn, 0, 0);
+                newPlayer.transform.position = new Vector3(lastSpawn, -1000, 0);
 
                 // Add player as a child
                 newPlayer.transform.parent = this.transform;

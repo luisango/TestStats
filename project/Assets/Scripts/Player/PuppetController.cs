@@ -101,6 +101,7 @@ namespace Player
                 Vector3 pos =  m_path[m_endPos].GetWaypoint() - m_path[m_initialPos].GetWaypoint();
                 pos *= m_t;
 
+                transform.LookAt(transform.position + pos * -1);
                 this.transform.position = m_path[m_initialPos].GetWaypoint() + pos;
 
                 if (m_t >= 1.0f)

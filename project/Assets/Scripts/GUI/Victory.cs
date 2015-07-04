@@ -7,6 +7,8 @@ public class Victory : MonoBehaviour
 {
     public Text m_winner;
 
+    public int m_timer = 0;
+
 
     void Start()
     {
@@ -25,19 +27,17 @@ public class Victory : MonoBehaviour
                 winner = player;
             }
         }
-//<<<<<<< HEAD
 
-        m_winner.text = winner.GetNickname() + " : " + maxScore;
-//=======
         m_winner.text = winner.GetNickname();
-//>>>>>>> 92319fa9a7e48dbd64724b77c0fe1c880498d55f
     }
 
     void Update()
     {
+        m_timer++;
+
         foreach (Player.Wrapper player in Manager.Player.Instance.Get())
         {
-            if (player.GetInput().IsKeyDown(Player.Input.Key.Action))
+            if (m_timer > 5000 && player.GetInput().IsKeyDown(Player.Input.Key.Action))
             {
                 Manager.Scene.Instance.Load(Manager.Scene.Type.Credits);
             }

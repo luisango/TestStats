@@ -13,7 +13,7 @@ namespace Board
         void Update()
         {
             // TODO: REMOVE THIS CREEPY HACK!
-            if (Time.timeSinceLevelLoad > 3 && !m_isSpawned)
+            if (Time.timeSinceLevelLoad > 0.5f && !m_isSpawned)
             {
                 m_isSpawned = true;
                 Manager.Board.Instance.Respawn();

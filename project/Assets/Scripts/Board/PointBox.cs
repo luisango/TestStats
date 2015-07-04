@@ -25,6 +25,9 @@ namespace Board
 
             if (m_points == 0)
                 m_points = 1;
+
+            m_message.text = "the game starts now!\nhave sweet fun!";
+            m_message.color = new Vector4(0, 1, 0, 3);
         }
 
         protected override void BoxAction()
@@ -34,12 +37,12 @@ namespace Board
             if (m_points > 0)
             {
                 m_message.text = "+" + m_points + " points!";
-                m_message.color = new Vector4(0, 0, 1, 1);
+                m_message.color = new Vector4(0, 0, 1, 3);
             }
             else
             {
                 m_message.text = m_points + " points!";
-                m_message.color = new Vector4(1, 0, 0, 1);
+                m_message.color = new Vector4(1, 0, 0, 3);
             }
 
             Manager.Board.Instance.NextTurn();

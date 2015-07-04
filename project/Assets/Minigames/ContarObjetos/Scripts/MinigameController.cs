@@ -6,8 +6,6 @@ namespace ContarObjetos
 {
     public class MinigameController : Minigame.Controller
     {
-        public GameObject[] m_models;
-
         public GameObject m_candyCloudContainer;
 
         public GameObject[] m_objects;
@@ -33,6 +31,7 @@ namespace ContarObjetos
             // Focused object the player must count
             m_focusedObject = Random.Range(0, m_objects.Length);
             GameObject ob = (GameObject)Instantiate(m_objects [m_focusedObject], new Vector3(0, 7.5f, 0), Quaternion.identity);
+            ob.transform.Rotate(new Vector3(1, 0, 0), 90);
             ob.GetComponent<CandyCloudController>().enabled = false;
 
             // Generating differents objects with movement:

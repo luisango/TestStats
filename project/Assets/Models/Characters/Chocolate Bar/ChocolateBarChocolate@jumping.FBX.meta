@@ -1,42 +1,64 @@
 fileFormatVersion: 2
-guid: 68ec0228f4946a04688e26a642e28aa0
+guid: fd339ae82b11f2b4494a50f06ecf4541
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
     100000: Arc001
-    100002: Box001
-    100004: Box001 1
-    100006: Box002
-    100008: Box003
-    100010: Box004
-    100012: //RootNode
-    100014: Sphere001
-    100016: Sphere002
+    100002: Bone001
+    100004: Bone002
+    100006: Bone003
+    100008: Bone004
+    100010: Bone005
+    100012: Bone006
+    100014: Bone007
+    100016: Bone008
+    100018: Bone009
+    100020: Bone010
+    100022: Bone011
+    100024: Bone012
+    100026: Bone013
+    100028: Bone014
+    100030: Bone015
+    100032: Bone016
+    100034: Bone017
+    100036: Bone018
+    100038: Box001
+    100040: Box001 1
+    100042: Box002
+    100044: Box003
+    100046: Box004
+    100048: ChocolateBar
+    100050: //RootNode
+    100052: Sphere001
+    100054: Sphere002
     400000: Arc001
-    400002: Box001
-    400004: Box001 1
-    400006: Box002
-    400008: Box003
-    400010: Box004
-    400012: //RootNode
-    400014: Sphere001
-    400016: Sphere002
-    2300000: Arc001
-    2300002: Box001
-    2300004: Box001 1
-    2300006: Box002
-    2300008: Box003
-    2300010: Box004
-    2300012: Sphere001
-    2300014: Sphere002
-    3300000: Arc001
-    3300002: Box001
-    3300004: Box001 1
-    3300006: Box002
-    3300008: Box003
-    3300010: Box004
-    3300012: Sphere001
-    3300014: Sphere002
+    400002: Bone001
+    400004: Bone002
+    400006: Bone003
+    400008: Bone004
+    400010: Bone005
+    400012: Bone006
+    400014: Bone007
+    400016: Bone008
+    400018: Bone009
+    400020: Bone010
+    400022: Bone011
+    400024: Bone012
+    400026: Bone013
+    400028: Bone014
+    400030: Bone015
+    400032: Bone016
+    400034: Bone017
+    400036: Bone018
+    400038: Box001
+    400040: Box001 1
+    400042: Box002
+    400044: Box003
+    400046: Box004
+    400048: ChocolateBar
+    400050: //RootNode
+    400052: Sphere001
+    400054: Sphere002
     4300000: Box001
     4300002: Box001
     4300004: Box002
@@ -48,6 +70,14 @@ ModelImporter:
     7400000: Take 001
     9500000: //RootNode
     11100000: //RootNode
+    13700000: Arc001
+    13700002: Box001
+    13700004: Box001 1
+    13700006: Box002
+    13700008: Box003
+    13700010: Box004
+    13700012: Sphere001
+    13700014: Sphere002
   materials:
     importMaterials: 1
     materialName: 0
@@ -57,7 +87,7 @@ ModelImporter:
     bakeSimulation: 0
     optimizeGameObjects: 0
     motionNodeName: 
-    animationCompression: 3
+    animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
     animationScaleError: .5
@@ -99,6 +129,6 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 1
   additionalBone: 0
   userData: 
